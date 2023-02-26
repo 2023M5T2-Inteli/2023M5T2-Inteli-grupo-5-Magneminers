@@ -19,8 +19,8 @@ find_coms() # Executa a função
 comunicacao_serial = serial.Serial("COM5", taxa_transmissao, timeout = tempo_espera) # Abre um objeto de comunicação com a porta na qual o Raspberry Pi Pico está
 
 while True:
-
-    line = comunicacao_serial.readline() # Realiza a leitura de um pacote de informaçãoes via serial
-    print(line.decode("UTF-8")) # Exibe a string que foi enviada pelo Raspberry Pi Pico decodificada como texto
+    #Leitura do Sensor infravermelho conectado no Raspberry Pico W
+    valor_distancia = comunicacao_serial.readline() # Realiza a leitura de um pacote de informaçãoes via serial
+    print(valor_distancia.decode("UTF-8")) # Exibe a string que foi enviada pelo Raspberry Pi Pico decodificada como texto
 
 
