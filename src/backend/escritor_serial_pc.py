@@ -25,20 +25,18 @@ find_coms() # Executa a função escrita a cima
 # Serial e as variáveis escritas a cima
 comunicacao_serial = serial.Serial("COM7", taxa_transmissao, timeout = tempo_espera)
 
-# Inicializa o loop do python de requisição/envio a Serial do Raspberry caso seja conectado e tudo a cima de certo
+# Inicializa o loop do python de requisição/envio a Serial do Raspberry caso seja conectado e tudo a cima de certo para comecar a manipulacao do eletroima
 while True:
 
-    #estado = input("Digite: ")
-
-    # Gera um número aleatório de 0 a 100
-    estado = input("Ha: ")
+    # Espera o input do usuario para mudar o estado do eletroima
+    estado_eletroima = input("Estado: ")
     # Transforma em string para depois ser codificado e ser enviado ao Raspberry 
-    estado = str(estado)
-    # Apresenta o número gerado no terminal do Python
-    print(estado)
+    estado_eletroima = str(estado_eletroima)
+    # Apresenta o número de estado no terminal do Python
+    print(estado_eletroima)
     # Codifica o número para que consiga ser enviado ao Raspberry.
-    estadoteste = estado.encode()
+    estado_eletroima_encode = estado.encode()
 
-    # Envia o número gerado para o Raspberry através da linha de comando que definiu as suas propriedades escrevendo através da serial
-    comunicacao_serial.write(estadoteste + b"\n") # Escreve o número na serial
-    time.sleep(1) # Espera um segundo e repete
+    # Envia o número de estado para o Raspberry através da linha de comando que definiu as suas propriedades, escrevendo através da serial
+    comunicacao_serial.write(estado_eletroima_encode + b"\n") # Escreve o número na serial para o Raspberry receber e fazer a manipulacao atraves da Ponte H
+    time.sleep(1) # Espera um segundo e repete o loop
