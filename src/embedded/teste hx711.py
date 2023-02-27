@@ -1,4 +1,5 @@
 import machine
+import sys
 from hx711 import HX711 # - https://github.com/SergeyPiskunov/micropython-hx711
 from time import sleep
 
@@ -10,6 +11,7 @@ hx = HX711(2, 3)
 while True:
     val = hx.read()
     print("Load cell value: ", val)
+    sys.stdout.write(val)
     sleep(0.1)
     
     
