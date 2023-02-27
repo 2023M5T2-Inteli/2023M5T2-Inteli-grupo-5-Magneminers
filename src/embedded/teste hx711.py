@@ -12,6 +12,6 @@ while True:
     val = hx.read()
     print("Load cell value: ", val)
     sys.stdout.write(val)
-    sleep(0.1)
+    sleep(2)
     
     
