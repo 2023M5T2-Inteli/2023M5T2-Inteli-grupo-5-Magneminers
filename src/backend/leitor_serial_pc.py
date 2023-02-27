@@ -20,7 +20,7 @@ comunicacao_serial = serial.Serial("COM5", taxa_transmissao, timeout = tempo_esp
 
 while True:
 
-    line = comunicacao_serial.readline() # Realiza a leitura de um pacote de informaçãoes via serial
-    print(line.decode("UTF-8")) # Exibe a string que foi enviada pelo Raspberry Pi Pico decodificada como texto
+    valor_loadcell = comunicacao_serial.readline() # Realiza a leitura de um pacote de informaçãoes via serial
+    print(valor_loadcell.decode("UTF-8")) # Exibe a string que foi enviada pelo Raspberry Pi Pico decodificada como texto
 
 
