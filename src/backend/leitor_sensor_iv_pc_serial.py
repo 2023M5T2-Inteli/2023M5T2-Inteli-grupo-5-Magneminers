@@ -1,6 +1,5 @@
 import serial 
 import serial.tools.list_ports
-from time import sleep
 
 # Lista todas as portas COM, uma delas é o Raspberry Pi Pico
 def lista_coms():
@@ -30,7 +29,7 @@ def encontra_rasp(portas_encontradas):
 def conecta_serial(porta_com, taxa_transmissao, tempo_espera):
 
     comunicacao_serial = serial.Serial(porta_com, taxa_transmissao, timeout = tempo_espera)
-    
+
     return comunicacao_serial
 
 tempo_espera = 2
@@ -42,5 +41,5 @@ comunicacao_serial = conecta_serial(porta_rasp, taxa_transmissao, tempo_espera) 
 
 while True:
     #Leitura do Sensor infravermelho conectado no Raspberry Pico W
-    valor_distancia = comunicacao_serial.readline() # Realiza a leitura de um pacote de informaçãoes via serial
-    print(valor_distancia.decode("UTF-8")) # Exibe a string que foi enviada pelo Raspberry Pi Pico decodificada como texto
+    valor_distancia = comunicacao_serial.readline() # Realiza a leitura de um pacote de informaçãoes via serial:
+    print(valor_distancia.decode("utf-8")) # Exibe a string que foi enviada pelo Raspberry Pi Pico decodificada como texto
