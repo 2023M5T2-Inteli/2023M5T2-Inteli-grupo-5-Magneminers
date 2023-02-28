@@ -14,9 +14,29 @@ def find_coms():
 
     return ports_found
 
-find_coms() # Executa a função
+# Encontra a porta COM do Raspberry Pi Pico
+def encontra_rasp(portas_encontradas):
 
-comunicacao_serial = serial.Serial("COM5", taxa_transmissao, timeout = tempo_espera) # Abre um objeto de comunicação com a porta na qual o Raspberry Pi Pico está
+    for porta in portas_encontradas:
+        if "serial" in str(porta).lower():
+            porta_rasp = str(porta)[:4]
+            print(f"Raspberry Pi Pico encontrado na porta: {porta_rasp}")
+            return porta_rasp
+
+    print("Raspberry Pi Pico não encontrado.")
+
+    return None
+
+# Abre um objeto de comunicação com a porta na qual o Raspberry Pi Pico está
+def conecta_serial(porta_com, taxa_transmissao, tempo_espera):
+
+    comunicacao_serial = serial.Serial(porta_com, taxa_transmissao, timeout = tempo_espera)
+
+    return comunicacao_serial
+
+portas_com = lista_coms() # Lista todas as portas COM
+porta_rasp = encontra_rasp(portas_com) # Encontra a porta COM do Raspberry Pi Pico
+comunicacao_serial = conecta_serial(porta_rasp, taxa_transmissao, tempo_espera) # Abre um objeto de comunicação com a porta na qual o Raspberry Pi Pico está
 
 while True:
 
