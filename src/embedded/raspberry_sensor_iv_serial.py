@@ -13,8 +13,9 @@ def le_distancia(pino_sensor_iv):
 
 def escreve_serial(id_sensor, leitura_numerica):
     
-    string_mensagem = id_sensor + ":" + str(leitura_numerica)
+    string_mensagem = (id_sensor + ":" + str(leitura_numerica) + "\n").encode()
     sys.stdout.write(string_mensagem)
+    print()
     
     return string_mensagem
 
@@ -23,7 +24,6 @@ entrada_sensor_iv = machine.ADC(28)
 while True:
     
     distancia = le_distancia(entrada_sensor_iv)
-    
+
     escreve_serial("iv", distancia)
-    print("\n")
     sleep(0.5)
