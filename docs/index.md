@@ -397,14 +397,14 @@ A primeira imagem mostra como seria a tela de início, tem como principal objeti
 
 Diante da necessidade de acoplar os eletroimas  e o sensor infravermelho em uma extensao do braço robotico e proteje-los, decidimos por colocar-los em uma estrutura com o formato de um martelo, onde na cabeça se encontram os sensores e o cabo seria para a conexao braço-suporte e para passar o devido cabeamento. Optamos por deixar o espaço dos eletroimãs e do sensor infra-vermelho pre-estabelecidos e bem delimitados para que nao se movimentem durante os ensaios a fim de uma melhor precisao e acuraria destes. Segue abaixo o esquemático dessa proposta com as devidas medidas para sua função:
 
-**![](https://drive.google.com/file/d/1zaIvrMcYq2KbzN5UGCbWAQ4_Xun76QFn/view?usp=sharing)**
-**![](https://drive.google.com/file/d/1Y2MOmjSzLI6k6yXosUy5qHzClh2J7gZ7/view?usp=sharing)**
+**![](https://drive.google.com/file/d//uc?id=1zaIvrMcYq2KbzN5UGCbWAQ4_Xun76QFn)**
+**![](https://drive.google.com/file/d//uc?id=1Y2MOmjSzLI6k6yXosUy5qHzClh2J7gZ7)**
 
 ### Célula de carga - Balança Invertida 
 
 A fim de analisar a todo o momento o resultado da mineracao magnetica, decidimos utilizar de uma balanca invertida contando com dois imas de neodimio e a estrutura necessaria para manter a celula de carga estavel. Com isso desenvolvemos esse esquematico responsavel por interagir com os materiais magnéticos ja minerados e constantemente indicar se ouve uma nova deposicao deste. Com isso, caso seja o momento de encerrar o ensaio, saberemos com mais precisao diante das medidas fornecidas por esse sistema. Segue o esquematico:
 
-**![](https://drive.google.com/file/d/1ZeIkQTFZZP8aqx837ansdjqPMqKRnrnM/view?usp=sharing)**
+**![](https://drive.google.com/file/d/uc?id=1ZeIkQTFZZP8aqx837ansdjqPMqKRnrnM)**
 
 ### Raspberry e Ponte-H
 
