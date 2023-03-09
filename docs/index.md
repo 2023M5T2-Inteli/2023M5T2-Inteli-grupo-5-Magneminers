@@ -397,14 +397,14 @@ A primeira imagem mostra como seria a tela de início, tem como principal objeti
 
 Diante da necessidade de acoplar os eletroimas  e o sensor infravermelho em uma extensao do braço robotico e proteje-los, decidimos por colocar-los em uma estrutura com o formato de um martelo, onde na cabeça se encontram os sensores e o cabo seria para a conexao braço-suporte e para passar o devido cabeamento. Optamos por deixar o espaço dos eletroimãs e do sensor infra-vermelho pre-estabelecidos e bem delimitados para que nao se movimentem durante os ensaios a fim de uma melhor precisao e acuraria destes. Segue abaixo o esquemático dessa proposta com as devidas medidas para sua função:
 
-**![](https://drive.google.com/file/d//uc?id=1zaIvrMcYq2KbzN5UGCbWAQ4_Xun76QFn)**
-**![](https://drive.google.com/file/d//uc?id=1Y2MOmjSzLI6k6yXosUy5qHzClh2J7gZ7)**
+**![Suporte](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/desenho%20t%C3%A9cnico/Suporte%20Eletroim%C3%A3.pdf)**
+**![Tampa]([https://drive.google.com/file/d/uc?id=1Y2MOmjSzLI6k6yXosUy5qHzClh2J7gZ7](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/desenho%20t%C3%A9cnico/Tampa%20Eletroim%C3%A3.pdf))**
 
 ### Célula de carga - Balança Invertida 
 
 A fim de analisar a todo o momento o resultado da mineracao magnetica, decidimos utilizar de uma balanca invertida contando com dois imas de neodimio e a estrutura necessaria para manter a celula de carga estavel. Com isso desenvolvemos esse esquematico responsavel por interagir com os materiais magnéticos ja minerados e constantemente indicar se ouve uma nova deposicao deste. Com isso, caso seja o momento de encerrar o ensaio, saberemos com mais precisao diante das medidas fornecidas por esse sistema. Segue o esquematico:
 
-**![](https://drive.google.com/uc?export=view&id=10AmZjKRTH_lhSfp0Y88Z1qyCXC0i7X6j)**
+**![Célula de Carga](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/desenho%20t%C3%A9cnico/Sistema%20de%20Pesagem.pdf)**
 
 ### Raspberry e Ponte-H
 
