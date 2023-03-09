@@ -404,7 +404,7 @@ Diante da necessidade de acoplar os eletroimas  e o sensor infravermelho em uma 
 
 A fim de analisar a todo o momento o resultado da mineracao magnetica, decidimos utilizar de uma balanca invertida contando com dois imas de neodimio e a estrutura necessaria para manter a celula de carga estavel. Com isso desenvolvemos esse esquematico responsavel por interagir com os materiais magnéticos ja minerados e constantemente indicar se ouve uma nova deposicao deste. Com isso, caso seja o momento de encerrar o ensaio, saberemos com mais precisao diante das medidas fornecidas por esse sistema. Segue o esquematico:
 
-**![](https://drive.google.com/file/d/uc?id=1ZeIkQTFZZP8aqx837ansdjqPMqKRnrnM)**
+**![](https://drive.google.com/file/d/uc?id=10AmZjKRTH_lhSfp0Y88Z1qyCXC0i7X6j)**
 
 ### Raspberry e Ponte-H
 
