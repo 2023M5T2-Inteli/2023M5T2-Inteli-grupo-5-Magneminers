@@ -1,10 +1,13 @@
+# Importação das bibliotecas necessárias
+
 import serial.tools.list_ports
 from time import sleep
 
-tempo_espera = 2
-taxa_transmissao = 115200
+tempo_espera = 2 # Define o tempo de espera da comunicação serial como 2 segundos
+taxa_transmissao = 115200 # Define a taxa de transmissão
 
-# Lista todas as portas COM, uma delas é o Raspberry Pi Pico
+# A função abaixo busca e exibe as portas COM conectadas ao dispositivo
+
 def find_coms():
 
     ports_found = serial.tools.list_ports.comports()
@@ -14,7 +17,8 @@ def find_coms():
 
     return ports_found
 
-# Encontra a porta COM do Raspberry Pi Pico
+# A função abaixo busca e exibe a porta COM do microcontrolador Raspberry Pi Pico W
+
 def encontra_rasp(portas_encontradas):
 
     for porta in portas_encontradas:
@@ -22,25 +26,24 @@ def encontra_rasp(portas_encontradas):
             porta_rasp = str(porta)[:4]
             print(f"Raspberry Pi Pico encontrado na porta: {porta_rasp}")
             return porta_rasp
-
-    print("Raspberry Pi Pico não encontrado.")
+        else:
+            print("Raspberry Pi Pico não encontrado.")
 
     return None
 
-# Abre um objeto de comunicação com a porta na qual o Raspberry Pi Pico está
+# A função abaixo abre um objeto de comunicação com a porta na qual o Raspberry Pi Pico W está
+
 def conecta_serial(porta_com, taxa_transmissao, tempo_espera):
 
     comunicacao_serial = serial.Serial(porta_com, taxa_transmissao, timeout = tempo_espera)
 
     return comunicacao_serial
 
-portas_com = lista_coms() # Lista todas as portas COM
+portas_com = find_coms() # Executa a função que busca as portas conectadas
 porta_rasp = encontra_rasp(portas_com) # Encontra a porta COM do Raspberry Pi Pico
 comunicacao_serial = conecta_serial(porta_rasp, taxa_transmissao, tempo_espera) # Abre um objeto de comunicação com a porta na qual o Raspberry Pi Pico está
 
 while True:
 
-    valor_loadcell = comunicacao_serial.readline() # Realiza a leitura de um pacote de informaçãoes via serial
+    valor_loadcell = comunicacao_serial.readline() # Realiza a leitura dos dados do sensor de carga via serial
     print(valor_loadcell.decode("UTF-8")) # Exibe a string que foi enviada pelo Raspberry Pi Pico decodificada como texto
-
-
