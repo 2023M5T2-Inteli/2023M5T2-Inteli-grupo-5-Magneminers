@@ -412,7 +412,9 @@ A fim de analisar a todo o momento o resultado da mineração magnética, decidi
 [Esquemático - Balança Invertida](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/desenho%20t%C3%A9cnico/Sistema%20de%20Pesagem.pdf)
 
 [Critical Prototype - Balança Invertida - Cima](https://drive.google.com/file/d/18v75N5mcSwMZQ_Y8WQfT--D35jWacEtI/view?usp=sharing)
+
 [Critical Prototype - Balança Invertida - Cima 2](https://drive.google.com/file/d/18ogk88TdoeAinoBkg7l-GPYsJYgq-GWR/view?usp=sharing)
+
 [Critical Prototype - Balança Invertida - Lado](https://drive.google.com/file/d/18d0FCTdJePoBcd0r55J64wxs5HSgPAec/view?usp=sharing)
 
 Após o desenvolvimento de seu Critical Prototype (Protótipo Crítico), temos a seguir o resultados dos testes nas condições imaginadas para esta proposta, sendo o objetivo a possibilidade de análise da variação do material magnético depositado na última bandeja: 
