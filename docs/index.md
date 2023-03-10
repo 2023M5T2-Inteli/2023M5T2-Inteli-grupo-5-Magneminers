@@ -393,31 +393,36 @@ A primeira imagem mostra como seria a tela de início, tem como principal objeti
 
 ### Eletroimã e Sensor-iv
 
-Diante da necessidade de acoplar os eletroimas  e o sensor infravermelho em uma extensao do braço robotico e proteje-los, decidimos por colocar-los em uma estrutura com o formato de um martelo, onde na cabeça se encontram os sensores e o cabo seria para a conexao braço-suporte e para passar o devido cabeamento. Optamos por deixar o espaço dos eletroimãs e do sensor infra-vermelho pre-estabelecidos e bem delimitados para que nao se movimentem durante os ensaios a fim de uma melhor precisao e acuraria destes. Segue abaixo o esquemático dessa proposta com as devidas medidas para sua função:
+Diante da necessidade de acoplar os eletroimãs e o sensor infravermelho em uma extensão do braço robótico e proteje-los (principalmente da agua utilizada nos ensaios), decidimos por colocar-los em uma estrutura com o formato de um martelo, onde na cabeça se encontram os sensores e o cabo seria para a conexao braço-suporte e para passar o devido cabeamento. Optamos por deixar o espaço dos eletroimãs e do sensor infra-vermelho pre-estabelecidos e bem delimitados para que nao se movimentem durante os ensaios a fim de uma melhor precisão e acurácia destes. Segue abaixo o esquemático desta proposta com as devidas medidas para sua função:
 
 [Suporte - Eletroimã e Sensor-iv](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/desenho%20t%C3%A9cnico/Suporte%20Eletroim%C3%A3.pdf)
 
-[Tampa do Suporte](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/desenho%20t%C3%A9cnico/Tampa%20Eletroim%C3%A3.pdf))
+[Tampa do Suporte](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/desenho%20t%C3%A9cnico/Tampa%20Eletroim%C3%A3.pdf)
 
 ### Célula de carga - Balança Invertida 
 
-A fim de analisar a todo o momento o resultado da mineracao magnetica, decidimos utilizar de uma balanca invertida contando com dois imas de neodimio e a estrutura necessaria para manter a celula de carga estavel. Com isso desenvolvemos esse esquematico responsavel por interagir com os materiais magnéticos ja minerados e constantemente indicar se ouve uma nova deposicao deste. Com isso, caso seja o momento de encerrar o ensaio, saberemos com mais precisao diante das medidas fornecidas por esse sistema. Segue o esquematico:
+A fim de analisar a todo o momento o resultado da mineração magnética, decidimos utilizar de uma balança invertida, contando com dois imas de neodimio acoplados a esta e a estrutura física necessária para manter a célula de carga estável. Com isso desenvolvemos esse esquemático responsável por interagir com os materiais magnéticos já minerados e constantemente indicar se houve uma nova deposição deste. Com isso, caso seja o momento de encerrar o ensaio, saberemos com mais precisão diante das medidas fornecidas por esse sistema. Segue o esquemático:
 
 [Esquemático - Balança Invertida](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/desenho%20t%C3%A9cnico/Sistema%20de%20Pesagem.pdf)
 
-Após o desenvolvimento de seu critical prototype, temos a seguir o resultados dos testes nas condições imaginadas para esta proposta, sendo a possibilidade de análise do material magnético depositado na última bandeja: 
+Após o desenvolvimento de seu Critical Prototype (Protótipo Crítico), temos a seguir o resultados dos testes nas condições imaginadas para esta proposta, sendo a possibilidade de análise do material magnético depositado na última bandeja: 
 
 [Vídeo - Balança Invertida](https://drive.google.com/file/d/18AQkZWnrjABxDkiGYUiNH107GUUoEOUV/view?usp=sharing)
 
 ### Raspberry e Ponte-H
 
-A solução conta com o microcontrolador Rasperry Pi Pico W e com o auxílio de uma ponte H ligada a este, conseguimos desenvolver o controle de corrente dos eletroimãs, algo critico para o projeto. Com isso, desenvolvemos a estrutura necessaria para garantir a seguranca e eficiencia dessa parte da solução. Segue o esquemático para consolidar esse sistema:
+A solução conta com o microcontrolador Rasperry Pi Pico W e com o auxílio de uma ponte H ligada a este, conseguimos desenvolver o controle de corrente dos eletroimãs, algo crítico para o projeto. Com isso, desenvolvemos a estrutura necessária para garantir a segurança e eficiência dessa parte da solução, soldando os dispositivos em uma placa universal de maneira adequada. Segue o esquemático para consolidar esse sistema:
 
 [Raspberry e Ponte H](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/esquematicos_eletronicos/docs/esquematicos_eletronicos/Diagrama%20Esquem%C3%A1tico%20Placa%20Principal.pdf) 
 
+[Raspberry e Ponte H - Frente](https://drive.google.com/file/d/18ZcZ5jWd7yVzV_dPy8ISLU9n7XfAHW-w/view?usp=sharing)
+
+[Raspberry e Ponte H - Verso](https://drive.google.com/file/d/18ZQ6Yr7m9OOsZ3ropWMi4S4IFalj3ADV/view?usp=sharing)
+
+
 ### Bandeja Radial
 
-Diante da análise das dimensões de movimento do braço robótico, optamos por uma bandeja radial que aproveitara ao máximo das possibilidades do braço.
+Diante da análise das dimensões de movimento do braço robótico, optamos por uma bandeja radial que aproveitara ao máximo das possibilidades do braço. Buscamos aproveitar ao máximo (Rotação de 270° e 34 cm de raio).
 
 [Bandeja Radial](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/desenho%20t%C3%A9cnico/Bandeja%20Radial.pdf)
 
