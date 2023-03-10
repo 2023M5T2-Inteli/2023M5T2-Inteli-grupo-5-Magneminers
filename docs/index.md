@@ -401,6 +401,10 @@ Diante da necessidade de acoplar os eletroimãs e o sensor infravermelho em uma 
 
 [Tampa do Suporte](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/desenho%20t%C3%A9cnico/Tampa%20Eletroim%C3%A3.pdf)
 
+[Arquivo Auto Desk Inventor - Suporte](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/arquivo%20de%20modelo%203d/Suporte%20Eletroim%C3%A3.ipt)
+
+[Arquivo Auto Desk Inventor - Tampa](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/arquivo%20de%20modelo%203d/Tampa%20Eletroim%C3%A3.ipt)
+
 ### Célula de carga - Balança Invertida 
 
 A fim de analisar a todo o momento o resultado da mineração magnética, decidimos utilizar de uma balança invertida, contando com dois imas de neodimio acoplados a esta e a estrutura física necessária para manter a célula de carga estável. Com isso desenvolvemos esse esquemático responsável por interagir com os materiais magnéticos já minerados e constantemente indicar se houve uma nova deposição deste. Com isso, caso seja o momento de encerrar o ensaio, saberemos com mais precisão diante das medidas fornecidas por esse sistema. Segue o esquemático:
@@ -415,6 +419,8 @@ Após o desenvolvimento de seu Critical Prototype (Protótipo Crítico), temos a
 
 [Vídeo - Balança Invertida](https://drive.google.com/file/d/18AQkZWnrjABxDkiGYUiNH107GUUoEOUV/view?usp=sharing)
 
+[Arquivo Auto Desk Inventor - Balança invertida](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/arquivo%20de%20modelo%203d/Sistema%20de%20Pesagem.ipt)
+
 ### Raspberry e Ponte-H
 
 A solução conta com o microcontrolador Rasperry Pi Pico W e com o auxílio de uma ponte H ligada a este, conseguimos desenvolver o controle de corrente dos eletroimãs, algo crítico para o projeto. Com isso, desenvolvemos a estrutura necessária para garantir a segurança e eficiência dessa parte da solução, soldando os dispositivos em uma placa universal de maneira adequada. Segue o esquemático para consolidar esse sistema:
@@ -428,10 +434,11 @@ A solução conta com o microcontrolador Rasperry Pi Pico W e com o auxílio de 
 
 ### Bandeja Radial
 
-Diante da análise das dimensões de movimento do braço robótico (Rotação de 270° e 34 cm de raio), optamos por um conjunto de três bandejas radiais que permitirá o aproveitamento máximo dessas dimensões. Segue o esquemático:
+Diante da análise das dimensões de movimento do braço robótico (Rotação de 270° e 34 cm de raio), optamos por um conjunto de três bandejas radiais que permitirão o aproveitamento máximo dessas dimensões. Segue o esquemático:
 
 [Bandeja Radial](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/desenho%20t%C3%A9cnico/Conjunto%20de%20Bandeja%20Radial.pdf)
 
+[Arquivo Auto Desk Inventor - Bandeja Radial](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/arquivo%20de%20modelo%203d/Bandeja%20Radial.ipt)
 
 # Referências
   
