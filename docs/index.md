@@ -437,7 +437,8 @@ A fim de analisar a todo o momento o resultado da mineração magnética, decidi
 
 Após o desenvolvimento de seu Critical Prototype (Protótipo Crítico), temos a seguir o resultados dos testes nas condições imaginadas para esta proposta, sendo o objetivo a possibilidade de análise da variação do material magnético depositado na última bandeja. Segue vídeo para validação: 
 
-![Vídeo - Balança Invertida](/media/Balanca-invertida.mp4)
+[Vídeo - Balança Invertida](https://drive.google.com/file/d/1h4DZN_CTTuU6obXVIsl4oBb2Dh6Px9GG/view?usp=share_link)
+
 
 ### Raspberry e Ponte-H
 
