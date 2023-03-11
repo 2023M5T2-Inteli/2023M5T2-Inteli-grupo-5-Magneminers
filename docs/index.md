@@ -193,6 +193,7 @@ Considerando o processo de separação magnética realizado, atualmente, pelo In
 
 | Total | R$ 2312,00 ||
 
+
   
 
 **<font  size=2> Tabela 1 — Valores correspondentes aos componentes do procedimento de separação magnética atual </font>**
@@ -215,12 +216,11 @@ Considerando o processo de separação magnética realizado, atualmente, pelo In
 
 **<font  size=2> Tabela 2 — Valores correspondentes aos componentes da solução desenvolvida para o novo procedimento </font>**
 
-  
-  
+Em suma, a qualidade dos ensaios constitui o elemento que agrega valor à solução. Com a retirada da mão de obra, cuja ação no ensaio passa a ser automatizada, o tempo ganho pelo operador para outras tarefas é significativo a longo prazo, salvando um custo operacional para os stakeholders. Diante da análise dos custos da operação e retorno dos ensaios — supondo o valor de R$ 2000,00 por ensaio —, a solução se pagaria em, aproximadamente, nove ensaios.  
+
 
 ## Análise SWOT
 
-  
 
 ![](https://lh6.googleusercontent.com/zG8EnpZDgBawCTeDtsdIlDg2p6Ucljp306zIdN2e-vJLtzRxG_w4UnhNh5kEH32OZFgOrrOLHLhEsK2zV2kvmrZR1lcEbKyZ-tMikonjjLosjdmX5_fPNudNE6e7JZkfUH1QL_X20P0MP9xkGtSSoBw)
 
@@ -230,7 +230,6 @@ Considerando o processo de separação magnética realizado, atualmente, pelo In
 
 ## Value Proposition Canvas
 
-  
 
 ![](https://lh5.googleusercontent.com/xYxOS-4i-mqXFikfxJAc7g0b_FhPT96ku_k4FdCSHb3YkBMeSY1eqs4W_UaXE3cQJeg-VFHbNcAk1VyiD-jfpKKON3ua7EBH9ka5fBGwX1h3VGxSt3bfBo4WJKTvUS08PMLSops4Ap2DkbRSgd3jYMk)
 
@@ -253,8 +252,6 @@ Considerando o processo de separação magnética realizado, atualmente, pelo In
 
 ## Módulos do Sistema e Visão Geral (Big Picture) (1.0)
 
-  
-  
 
 | **Componente**| **Descrição da função/características/requisitos** |
 
@@ -395,7 +392,15 @@ A primeira imagem mostra como seria a tela de início, tem como principal objeti
 
 ### Eletroimã e Sensor-iv
 
-Diante da necessidade de acoplar os eletroimãs e o sensor infravermelho em uma extensão do braço robótico e proteje-los (principalmente da agua utilizada nos ensaios), decidimos por colocar-los em uma estrutura com o formato de um martelo, onde na cabeça se encontram os sensores e o cabo seria para a conexao braço-suporte e para passar o devido cabeamento. Optamos por deixar o espaço dos eletroimãs e do sensor infra-vermelho pre-estabelecidos e bem delimitados para que nao se movimentem durante os ensaios a fim de uma melhor precisão e acurácia destes. Segue abaixo o esquemático desta proposta com as devidas medidas para sua função:
+Materiais utilizados:
+
+- Dois eletroimãs de 9V.
+- Uma placa universal (3cmX4cm)
+- Um Led RGB
+- Jumpers e Solda 
+- AutoDesk Inventor para modelagem
+
+Diante da necessidade de acoplar os eletroimãs e o sensor infravermelho em uma extensão do braço robótico e proteje-los (principalmente da agua utilizada nos ensaios), decidimos por colocar-los em uma estrutura com o formato de um martelo, onde na cabeça se encontram os sensores acoplados à placa universal devidamente ligados e o cabo para a conexão braço-suporte e para passar o devido cabeamento que acompanhará o braço robótico por cima. Optamos por deixar o espaço dos eletroimãs e do sensor infra-vermelho pré-estabelecidos e bem delimitados para que não se movimentem durante os ensaios, a fim de uma melhor precisão e acurácia destes. Segue abaixo o esquemático desta proposta com as devidas medidas para sua função:
 
 [Suporte - Eletroimã e Sensor-iv](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/desenho%20t%C3%A9cnico/Suporte%20Eletroim%C3%A3.pdf)
 
@@ -407,7 +412,14 @@ Diante da necessidade de acoplar os eletroimãs e o sensor infravermelho em uma 
 
 ### Célula de carga - Balança Invertida 
 
-A fim de analisar a todo o momento o resultado da mineração magnética, decidimos utilizar de uma balança invertida, contando com dois imas de neodimio acoplados a esta e a estrutura física necessária para manter a célula de carga estável. Com isso desenvolvemos esse esquemático responsável por interagir com os materiais magnéticos já minerados e constantemente indicar se houve uma nova deposição deste. Com isso, caso seja o momento de encerrar o ensaio, saberemos com mais precisão diante das medidas fornecidas por esse sistema. Segue o esquemático:
+Materiais utilizados:
+
+- Célula de Carga (1KG)
+- Dois Parafusos e duas porcas
+- Duas madeiras MDF (10cmX6cm)
+- Imãs de Neodímio (Utilizamos dois de um HD)
+
+A fim de analisar a todo o momento o resultado da mineração magnética, decidimos utilizar de uma balança invertida, contando com dois imãs de neodímio acoplados na parte superior do sistema e a estrutura física necessária para manter a célula de carga estável (Madeiras presas em cada uma de suas devidas extremidades com os parafusos e porcas). Com isso desenvolvemos esse esquemático responsável por interagir com os materiais magnéticos já minerados e constantemente indicar se houve uma nova deposição deste. Com isso, caso seja o momento de encerrar o ensaio, saberemos com mais precisão diante das medidas fornecidas por esse sistema. Segue o esquemático:
 
 [Esquemático - Balança Invertida](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/desenho%20t%C3%A9cnico/Sistema%20de%20Pesagem.pdf)
 
@@ -425,7 +437,14 @@ Após o desenvolvimento de seu Critical Prototype (Protótipo Crítico), temos a
 
 ### Raspberry e Ponte-H
 
-A solução conta com o microcontrolador Rasperry Pi Pico W e com o auxílio de uma ponte H ligada a este, conseguimos desenvolver o controle de corrente dos eletroimãs, algo crítico para o projeto. Com isso, desenvolvemos a estrutura necessária para garantir a segurança e eficiência dessa parte da solução, soldando os dispositivos em uma placa universal de maneira adequada. Segue o esquemático para consolidar esse sistema:
+Materiais utilizados:
+
+- Raspberry pi pico w 
+- Ponte H 
+- Placa universal (12cmX8cm)
+- Jumpers e solda
+
+A solução conta com o microcontrolador Rasperry Pi Pico W e com o auxílio de uma ponte H ligada a este, conseguimos desenvolver o controle de corrente dos eletroimãs, algo crítico para o projeto. A fim de manter seguro e organizados, acoplamos esses materiais em uma placa universal de maneira que fique mais fácil a integração do sistema como um todo (esta parte da solução está vinculada com o suporte para os eletroimãs, uma vez que a ponte h é responsável por alimentar estes). Com isso, desenvolvemos a estrutura necessária para garantir a segurança e eficiência dessa parte da solução, soldando os dispositivos em uma placa universal de maneira adequada. Segue o esquemático para consolidar esse sistema:
 
 [Raspberry e Ponte H](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/esquematicos_eletronicos/docs/esquematicos_eletronicos/Diagrama%20Esquem%C3%A1tico%20Placa%20Principal.pdf) 
 
