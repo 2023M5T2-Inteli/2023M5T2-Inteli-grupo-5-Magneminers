@@ -421,9 +421,10 @@ Materiais utilizados:
 
 A fim de analisar a todo o momento o resultado da mineração magnética, decidimos utilizar de uma balança invertida, contando com dois imãs de neodímio acoplados na parte superior do sistema e a estrutura física necessária para manter a célula de carga estável (Madeiras presas em cada uma de suas devidas extremidades com os parafusos e porcas). Com isso desenvolvemos esse esquemático responsável por interagir com os materiais magnéticos já minerados e constantemente indicar se houve uma nova deposição deste. Com isso, caso seja o momento de encerrar o ensaio, saberemos com mais precisão diante das medidas fornecidas por esse sistema. Segue o esquemático:
 
-[Esquemático - Balança Invertida](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/desenho%20t%C3%A9cnico/Sistema%20de%20Pesagem.pdf)
 
-[Critical Prototype - Balança Invertida - Cima](https://drive.google.com/file/d/18v75N5mcSwMZQ_Y8WQfT--D35jWacEtI/view?usp=sharing)
+![Esquemático - Balança Invertida](/media/Sistema%20de%20Pesagem.jpg)
+
+[Critical Prototype - Balança Invertida - Cima](/media/BI-Cima.jpg)
 
 [Critical Prototype - Balança Invertida - Cima 2](https://drive.google.com/file/d/18ogk88TdoeAinoBkg7l-GPYsJYgq-GWR/view?usp=sharing)
 
