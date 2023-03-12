@@ -1,0 +1,296 @@
+import React from 'react'
+
+import projectStyles from '.style.module.css'
+import styles from './frame4.module.css'
+
+const Frame4 = (props) => {
+  return (
+    <div>
+      <div className={styles['frame4']}>
+        <div className={styles['telade-operao']}>
+          <div className={styles['contedo']}>
+            <div className={styles['telade-status']}>
+              <img
+                alt="TeladeStatus1810"
+                src="/playground_assets/teladestatus1810-1hw-700h.png"
+                className={styles['telade-status1']}
+              />
+              <img
+                alt="TeladeStatus1810"
+                src="/playground_assets/teladestatus1810-1hw-700h.png"
+                className={styles['telade-status2']}
+              />
+              <span className={styles['text']}>
+                <span>Status:</span>
+              </span>
+              <span className={styles['text02']}>
+                <span>Status dos Componentes:</span>
+              </span>
+              <span className={styles['text04']}>
+                <span>Função Rodando:</span>
+              </span>
+              <span className={styles['text06']}>
+                <span>
+                  Imã:
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                    }}
+                  />
+                </span>
+              </span>
+              <span className={styles['text08']}>
+                <span>y=30</span>
+              </span>
+              <span className={styles['text10']}>
+                <span>x=20</span>
+              </span>
+              <span className={styles['text12']}>
+                <span>z=50</span>
+              </span>
+              <span className={styles['text14']}>
+                <span>Voltagem Atual: 12v</span>
+              </span>
+              <span>Text</span>
+              <span className={styles['text17']}>
+                <span>
+                  Peso no braço:
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                    }}
+                  />
+                </span>
+              </span>
+              <span className={styles['text19']}>
+                <span>Peso: 167 g</span>
+              </span>
+              <span className={styles['text21']}>
+                <span>
+                  Peso na Bandeja Final:
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                    }}
+                  />
+                </span>
+              </span>
+              <span className={styles['text23']}>
+                <span>
+                  Peso: 342 g
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: ' ',
+                    }}
+                  />
+                </span>
+              </span>
+              <img
+                alt="Line22514"
+                src="/playground_assets/line22514-yrhh.svg"
+                className={styles['line2']}
+              />
+              <span className={styles['text25']}>
+                <span>def Varredura(referencia_zero):</span>
+              </span>
+            </div>
+            <div className={styles['frame3']}>
+              <div className={styles['controlede-movimento']}>
+                <div className={styles['controlede-coordenadas']}>
+                  <span className={styles['text27']}>
+                    <span>Controle de Coordenadas</span>
+                  </span>
+                  <div className={styles['avano']}>
+                    <span className={styles['text29']}>Avanço :</span>
+                    <img
+                      alt="Rectangle12I472"
+                      src="/playground_assets/rectangle12i472-att6-200h.png"
+                      className={` ${styles['rectangle12']} ${projectStyles['input']} `}
+                    />
+                  </div>
+                  <div className={styles['coordenadas-x-y-z']}>
+                    <div className={styles['controle-x-y']}>
+                      <div className={styles['frame1']}>
+                        <div
+                          className={` ${styles['x']} ${projectStyles['button']} `}
+                        >
+                          <span className={styles['text30']}>
+                            <span>X-</span>
+                          </span>
+                        </div>
+                        <div
+                          className={` ${styles['x1']} ${projectStyles['button']} `}
+                        >
+                          <img
+                            alt="Rectangle13I395"
+                            src="/playground_assets/rectangle13i395-z3t4-200w.png"
+                            className={styles['rectangle13']}
+                          />
+                          <span className={styles['text32']}>
+                            <span>X+</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div className={styles['frame2']}>
+                        <div
+                          className={` ${styles['y']} ${projectStyles['button']} `}
+                        >
+                          <span className={styles['text34']}>
+                            <span>Y+</span>
+                          </span>
+                        </div>
+                        <div
+                          className={` ${styles['y1']} ${projectStyles['button']} `}
+                        >
+                          <span className={styles['text36']}>Y-</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      className={` ${styles['controle-z']} ${projectStyles['button']} `}
+                    >
+                      <img
+                        alt="Rectangle11I395"
+                        src="/playground_assets/rectangle11i395-jtcl-200w.png"
+                        className={` ${styles['rectangle11']} ${projectStyles['button']} `}
+                      />
+                      <img
+                        alt="Rectangle12I395"
+                        src="/playground_assets/rectangle12i395-gf2-200w.png"
+                        className={` ${styles['rectangle121']} ${projectStyles['button']} `}
+                      />
+                      <div className={styles['x2']}>
+                        <span className={styles['text37']}>
+                          <span>Z+</span>
+                        </span>
+                      </div>
+                      <div className={styles['y2']}>
+                        <span className={styles['text39']}>
+                          <span>Z-</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles['confg-atuador']}>
+                  <span className={styles['text41']}>
+                    <span>Controle de Atuadores</span>
+                  </span>
+                  <div className={styles['coordenadas-x-y-z1']}>
+                    <div className={styles['controle-z1']}>
+                      <img
+                        alt="Rectangle11I396"
+                        src="/playground_assets/rectangle11i396-ijxu-200h.png"
+                        className={` ${styles['rectangle111']} ${projectStyles['button']} `}
+                      />
+                      <img
+                        alt="Rectangle12I396"
+                        src="/playground_assets/rectangle12i396-cg5g-200h.png"
+                        className={` ${styles['rectangle122']} ${projectStyles['button']} `}
+                      />
+                      <div className={styles['x3']}>
+                        <span className={styles['text43']}>
+                          <span>R+</span>
+                        </span>
+                      </div>
+                      <div className={styles['y3']}>
+                        <span className={styles['text45']}>
+                          <span>R-</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div className={styles['r']}>
+                    <span className={styles['text47']}>
+                      <span>R=</span>
+                    </span>
+                  </div>
+                  <div className={styles['checkbox']}>
+                    <div className={styles['pneumtica']}>
+                      <div className={styles['controls-place-checkbox']}>
+                        <div className={styles['controls-place-checkbox1']}>
+                          <div
+                            className={
+                              styles['controls-checkbox-disabled-checked']
+                            }
+                          >
+                            <div
+                              className={
+                                styles['controls-checkbox-disabled-checked1']
+                              }
+                            >
+                              <div className={styles['icon']}>
+                                <div className={styles['icon-check']}>
+                                  <div className={styles['icon-fill-dark']}>
+                                    <img
+                                      alt="IconFillDarkI241"
+                                      src="/playground_assets/iconfilldarki241-232-200h.png"
+                                      className={styles['icon-fill-dark1']}
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div className={styles['controls-global-label']}>
+                            <div className={styles['controls-global-label1']}>
+                              <span className={styles['text49']}>
+                                <span>Pneumático</span>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <img
+                        alt="Rectangle46I241"
+                        src="/playground_assets/rectangle46i241-04x-200h.png"
+                        className={` ${styles['rectangle46']} ${projectStyles['input']} `}
+                      />
+                    </div>
+                  </div>
+                  <div className={styles['barra-deslizante']}>
+                    <img
+                      alt="Line2I472"
+                      src="/playground_assets/line2i472-j02.svg"
+                      className={styles['line21']}
+                    />
+                    <img
+                      alt="Ellipse1I472"
+                      src="/playground_assets/ellipse1i472-t0i-200h.png"
+                      className={` ${styles['ellipse1']} ${projectStyles['input']} `}
+                    />
+                    <span className={styles['text51']}>
+                      <span>Min:___</span>
+                    </span>
+                    <span className={styles['text53']}>
+                      <span>Max:___</span>
+                    </span>
+                    <span className={styles['text55']}>
+                      <span>Voltagem:</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={styles['grupode-botes']}>
+            <div
+              className={` ${styles['refernciar']} ${projectStyles['button']} `}
+            >
+              <span className={styles['text57']}>
+                <span>Referênciar</span>
+              </span>
+            </div>
+            <div
+              className={` ${styles['parade-emergncia']} ${projectStyles['button']} `}
+            >
+              <span className={styles['text59']}>Parada Emergência</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+export default Frame4

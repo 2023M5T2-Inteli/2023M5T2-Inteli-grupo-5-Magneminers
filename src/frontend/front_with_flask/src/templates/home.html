@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
+  <title>Front Magneminers</home></title>
+</head>
+<body>
+  <div class="botoes">
+    <div class="botoeschild">
+      &emsp;&emsp;<form action="cima" method="post">
+        <button type="submit" name="C" value="{{((posicoes[posicoes|length - 1].y|int) + 5)}}">C</button>
+    </form>
+      <br>
+      &emsp;&emsp;<form action="esquerda" method="post">
+        <button type="submit" name="E" value="{{((posicoes[posicoes|length - 1].x|int) - 5)}}">E</button>
+    </form>
+    &emsp;&emsp;<form action="direita" method="post">
+      <button type="submit" name="D" value="{{((posicoes[posicoes|length - 1].x|int) + 5)}}">D</button>
+  </form>
+      <br>
+      &emsp;&emsp;<form action="baixo" method="post">
+        <button type="submit" name="B" value="{{((posicoes[posicoes|length - 1].y|int) - 5)}}">B</button>
+    </form>
+      <br>
+    </div>
+  </div>
+  <hr>
+<h1>Posicoes:</h1>
+  <ul>
+    <li><b>X:</b>{{posicoes[(posicoes|length - 1)].x}}</li>
+    <li><b>Y: </b>{{posicoes[(posicoes|length - 1)].y}}</li>
+    <li><b>Z: </b>{{posicoes[(posicoes|length - 1)].z}}</li>
+    <li><b>R: </b>{{posicoes[(posicoes|length - 1)].r}}</li>
+    <li><b>J1: </b>{{posicoes[(posicoes|length - 1)].j1}}</li>
+    <li><b>J2: </b>{{posicoes[(posicoes|length - 1)].j2}}</li>
+    <li><b>J3: </b>{{posicoes[(posicoes|length - 1)].j3}}</li>
+    <li><b>J4: </b>{{posicoes[(posicoes|length - 1)].j4}}</li>
+  </ul>
+  &emsp;&emsp;<form action="reset" method="post">
+    <button type="submit" name="reset" value="">Reset</button>
+</form>
+  <br>
+</body>
+</html>
