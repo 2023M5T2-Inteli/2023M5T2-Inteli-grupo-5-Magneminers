@@ -1,0 +1,15 @@
+button {
+    font-size: 40px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally*/
+    margin: 0 auto;
+}
+
+.botoeschild {
+    justify-content: right;
+    margin: 0 auto;
+}
