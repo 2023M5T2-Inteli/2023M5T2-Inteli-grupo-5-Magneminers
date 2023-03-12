@@ -8,7 +8,7 @@
 </tr>
 </table>
 
-<font  size="+12"><center>
+<font size="20"><center>
 Concepção de sistema de automação industrial
 </center></font>
 
@@ -43,7 +43,7 @@ Concepção de sistema de automação industrial
   - [Esquemáticos](#esquemáticos)
     - [Eletroímã e Sensor Infravermelho](#eletroímã-e-sensor-infravermelho)
     - [Célula de carga - Balança Invertida](#célula-de-carga---balança-invertida)
-    - [Raspberry e Ponte-H](#raspberry-e-ponte-h)
+    - [Raspberry Pi Pico W e Ponte H](#raspberry-pi-pico-w-e-ponte-h)
     - [Bandeja Radial](#bandeja-radial)
   - [Validação de Protótipos](#validação-de-protótipos)
 - [Referências](#referências)
@@ -52,14 +52,13 @@ Concepção de sistema de automação industrial
 
 # Autores
 
-* Amanda Fontes
-* Gabriel Pascoli
-* Gabriela Dias
-* Gustavo Pereira
-* João Carazzato
-* Kil Matheus
-* Luiz Borges
-  
+Amanda Ribeiro Fontes
+Gabriel Pascoli
+Gabriela Barretto Dias
+Gustavo Francisco Neto Pereira
+João Pedro Gonçalves Carazzato
+Kil Matheus Gomes Teixeira
+Luiz Fernando da Silva Borges  
 
 # Visão Geral do Projeto
 
@@ -168,9 +167,13 @@ Começamos os testes, primeiramente, buscando entender os sensores que precisáv
 
 ### Demonstrações de Funcionamento dos Sensores
 
-[**DEMONSTRAÇÃO DA CALIBRAÇÃO DO SENSOR DE DISTÂNCIA INFRAVERMELHO**](https://drive.google.com/file/d/1Ca5yPUheEd5piRgm2pBVEWkggLV0Kput/view?usp=sharing)
+Abaixo, encontram-se os vídeos de demonstração de funcionamento dos sensores utilizados na solução.
 
-[**DEMONSTRAÇÃO DA LEITURA DA CÉLULA DE CARGA**](https://drive.google.com/file/d/1_PykpKwE5UDx0YWhsY6CiHbBpMDh4OsE/view?usp=sharing)
+[<img src="https://lh3.googleusercontent.com/fqUKYFc17_odvZCvnTXnoRLqCDH9Pn9qDU89iT06e85d7JCMgehLY_zv11d5XwpVpe9WBhRMjyfWFEQnsnYrQ1qyxWmC6A1tT2TWTOM-Va5HO0muF4CpKcszElloyR_C5pqJr0lwGDwhx7vwfNHzgyg" width="100%">](https://drive.google.com/file/d/1Ca5yPUheEd5piRgm2pBVEWkggLV0Kput/view?usp=sharing/)
+<center><font size="2"> Vídeo para demonstração da calibração do sensor de distância infravermelho </font></center>
+
+[<img src="https://lh6.googleusercontent.com/auAXAe9Xtx8LeL_hgrhevCSoSas-2hgLQiDJkmaKQMo5Aln3AQPqphcAsPrAwtK9bnkqbQE60VdnC7FYCSS_ISZA1q_zkiNb_pNwf5CONbB9MUBZJx5vqdt1c2HjwwsXzADE1AOcUq4_KOQLKPHPiGU" width="100%">](https://drive.google.com/file/d/1_PykpKwE5UDx0YWhsY6CiHbBpMDh4OsE/view?usp=sharing)
+<center><font size=2> Vídeo para demonstração da leitura da célula de carga </font></center>
 
 ## Atuadores
 
@@ -268,10 +271,12 @@ A fim de analisar a todo o momento o resultado da mineração magnética, decidi
  
 Após o desenvolvimento de seu Critical Prototype (Protótipo Crítico), temos a seguir o resultados dos testes nas condições imaginadas para esta proposta, sendo o objetivo a possibilidade de análise da variação do material magnético depositado na última bandeja. Segue vídeo para validação:
 
-[Vídeo - Balança Invertida](https://drive.google.com/file/d/1h4DZN_CTTuU6obXVIsl4oBb2Dh6Px9GG/view?usp=share_link)
+
+[<img src="https://lh3.googleusercontent.com/LEucmNsJTVKrFEJilw-L9K_mW73_YonFrutF2LBpQdQBBJtlpJAzWrnxKNiPXgJjcz0PUfj1uXqKpZDLee4G5w87_VubbwwtLm1lI6OCIn4xfy2Su3Dk0Yfhb_0TrT6ElUhsCQsXMZdjToojH60N_I8" width="100%">](https://drive.google.com/file/d/1h4DZN_CTTuU6obXVIsl4oBb2Dh6Px9GG/view?usp=share_link)
+<center><font size="2"> Vídeo para demonstração do funcionamento da balança invertida </font></center>
 
 
-### Raspberry e Ponte-H
+### Raspberry Pi Pico W e Ponte H
 
 Materiais utilizados:
 
@@ -283,46 +288,25 @@ Materiais utilizados:
 
 - Jumpers e solda
 
-  
-  
-
 A solução conta com o microcontrolador Rasperry Pi Pico W e com o auxílio de uma ponte H ligada a este, conseguimos desenvolver o controle de corrente dos eletroimãs, algo crítico para o projeto. A fim de manter seguro e organizados, acoplamos esses materiais em uma placa universal de maneira que fique fixo com seu circuito e portanto de mais fácil integração ao resto do sistema como um todo (esta parte da solução está vinculada com o suporte para os eletroimãs, uma vez que a ponte-H é responsável por alimentar estes e permitir sua polarização e dispolarização de maneira imediata e precisa). Com isso, desenvolvemos a estrutura necessária para garantir a segurança e eficiência dessa parte da solução, soldando os dispositivos em uma placa universal de maneira adequada. Segue o esquemático para consolidar esse sistema:
 
-  
+![Diagrama Esquemático Placa Principal.jpg](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Diagrama%20Esquem%C3%A1tico%20Placa%20Principal.jpg?raw=true)
 
-![Esquemático - Raspberry e Ponte H](/media/Diagrama%20Esquem%C3%A1tico%20Placa%20Principal.jpg)
-
-  
-
-![Raspberry e Ponte H - Frente](/media/Frente.jpg)
-
+![Frente.jpg](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Frente.jpg?raw=true)
   
 
 ### Bandeja Radial
 
-  
+ Materiais utilizados:
 
-Materiais utilizados:
-
-  
-
-- AutoDesk Inventor para modelagem
-
+ - Autodesk Inventor para modelagem
 - Impressora 3D
-
-  
 
 Diante da análise das dimensões de movimento do braço robótico (Rotação de 270° e 34 cm de raio), optamos por um conjunto de três bandejas radiais que permitirão o aproveitamento máximo dessas dimensões. Segue o esquemático:
 
-  
+![Conjunto de Bandeja Radial.jpg](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Conjunto%20de%20Bandeja%20Radial.jpg?raw=true)
 
-![Bandeja Radial](/media/Conjunto%20de%20Bandeja%20Radial.jpg)
-
-  
-
-[Arquivo Auto Desk Inventor - Bandeja Radial](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/arquivo%20de%20modelo%203d/Bandeja%20Radial.ipt)
-
-  
+[Arquivo Autodesk Inventor - Bandeja Radial](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/arquivo%20de%20modelo%203d/Bandeja%20Radial.ipt)
 
 ## Validação de Protótipos
 
@@ -330,35 +314,17 @@ Para fins de validação dos protótipos iniciais da solução, segue a consolid
 
 ![Critical-Prototype.jpg](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Critical-Prototype.jpg?raw=true)  
 
-[Vídeo Demonstrativo](https://drive.google.com/file/d/1txtCYVejKdHhF4Ub3VqGtsHanooMbTtl/view?usp=sharing)
 
-  
+[<img src="https://lh4.googleusercontent.com/72hif2xu81BUXbT-QnjV6JxvITd-5OMrs_6IRucYrypywCMPoHQbRooMXUI68x3uT1HOcjXxZzqC4WylVjOw3ospo_CIIq_OPmc0d3pswFj2GK29BPvGuL-KFxiPYhK57hlKPKO8l5GG_PTrYPJQdXg" width="100%">](https://drive.google.com/file/d/1txtCYVejKdHhF4Ub3VqGtsHanooMbTtl/view?usp=sharing)
+<center><font size="2"> Vídeo demonstrativo dos dispositivos em funcionamento </font></center>
 
 # Referências
-
   
 
 # Anexos
 
-  
-  
-
 [Protótipo da Solução](https://www.figma.com/file/qpL2svgLY1MpCohLCb2k15/Magne?node-id=0%3A1&t=zmi4EzKLzb1IFHik-1)
-
-  
-
-  
 
 [Arquitetura da Solução](https://drive.google.com/file/d/1GmHzUDCgvJjUn4TxMIrUaGz_GWzLzhXE/view?usp=sharing)
 
-  
-
-  
-
-[Apresentação da Sprint I](https://drive.google.com/file/d/1Jz6XxM3A0B85eHnMizRiv6yyCspteYLu/view?usp=share_link)
-
-  
-
-  
-
-Apresentação da Sprint II
+[Apresentação Sprint I - Entendimento do Negócio e Entendimento do Design](https://drive.google.com/file/d/1Jz6XxM3A0B85eHnMizRiv6yyCspteYLu/view?usp=share_link)
