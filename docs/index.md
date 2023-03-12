@@ -91,6 +91,8 @@ Concepção de sistema de automação industrial
 
 - [Esquemáticos](#esquemáticos)
 
+- [Validação de Protótipos](#validação-de-protótipos)
+ 
 - [Referências](#referências)
 
 - [Anexos](#anexos)
@@ -375,7 +377,6 @@ Dando início aos testes, foi possível realizar a movimentação do braço de a
 
 ## Protótipo de interface com o usuário
 
-  
 
 Abaixo, encontram-se as imagens relativas à prototipação da interface gráfica por meio da qual será possível manipular e configurar o robô.
 A primeira imagem mostra como seria a tela de início, tem como principal objetivo mostrar o Status de todas as integrações da solução. Qual é a situação atual do Robô, que tipo de comando ele está recebendo e retornando, e a situação dos componentes, se o imã está em funcionamento e com quanto de voltagem está trabalhando, qual é o peso da bandeja final e se o sistema de revolvimento está em funcionamento. Na lateral direita de página, podemos ver controles que podem movimentar o robô de maneira mais precisa e linear, podendo mover os 3 eixos de coordenadas, uma de cada vez. Tambem pode-se reparar no campo mais abaixo, o controle de atuadores na qual o mesmo pode acionar o compente acoplado utilizando voltagem ou pneumático.
@@ -397,7 +398,7 @@ Materiais utilizados:
 - Dois eletroimãs de 9V.
 - Uma placa universal (3cmX4cm)
 - Um Led RGB
-- Jumpers e Solda 
+- Jumpers, Solda e Parafusos (2) 
 - AutoDesk Inventor para modelagem
 - Impressora 3D
 
@@ -406,6 +407,12 @@ Diante da necessidade de acoplar os eletroimãs e o sensor infravermelho em uma 
 ![Esquemático - Suporte - Eletroimã e Sensor-iv](/media/Suporte%20Eletroim%C3%A3.jpg)
 
 ![Esquemático - Tampa do Suporte](/media/Tampa%20Eletroim%C3%A3.jpg)
+
+![Eletroimã e Sensor-iv](/media/Eletroima.jpeg)
+
+![Eletroimã e Sensor-iv2](/media/Eletroima.jpegg)
+
+![Eletroimã e Sensor-iv3](/media/Eletroima.jpeg)
 
 [Arquivo Auto Desk Inventor - Suporte](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/arquivo%20de%20modelo%203d/Suporte%20Eletroim%C3%A3.ipt)
 
@@ -422,8 +429,7 @@ Materiais utilizados:
 - AutoDesk Inventor para modelagem
 - Impressora 3D
 
-A fim de analisar a todo o momento o resultado da mineração magnética, decidimos utilizar de uma balança invertida, contando com dois imãs de neodímio acoplados na parte superior do sistema e a estrutura física necessária para manter a célula de carga estável (Madeiras presas em cada uma de suas devidas extremidades com os parafusos e porcas). Com isso desenvolvemos esse esquemático responsável por interagir com os materiais magnéticos já minerados e constantemente indicar se houve uma nova deposição deste. Com isso, caso seja o momento de encerrar o ensaio, saberemos com mais precisão diante das medidas fornecidas por esse sistema. Segue o esquemático:
-
+A fim de analisar a todo o momento o resultado da mineração magnética, decidimos utilizar de uma balança invertida, contando com dois imãs de neodímio acoplados na parte superior do sistema (visando que a deformação da célula seja por indução magnética, por isso o nome) e a estrutura física necessária para manter a célula de carga estável (madeiras presas em cada uma de suas devidas extremidades com os parafusos e porcas). Com isso desenvolvemos esse esquemático responsável por interagir com os materiais magnéticos já minerados e constantemente indicar se houve uma nova deposição deste. Assim, caso seja o momento de encerrar o ensaio, saberemos com mais precisão diante das medidas fornecidas por esse sistema. Segue o esquemático:
 
 ![Esquemático - Balança Invertida](/media/Sistema%20de%20Pesagem.jpg)
 
@@ -446,11 +452,11 @@ Materiais utilizados:
 
 - Raspberry pi pico w 
 - Ponte H 
-- Placa universal (12cmX8cm)
+- Placa universal 
 - Jumpers e solda
 
 
-A solução conta com o microcontrolador Rasperry Pi Pico W e com o auxílio de uma ponte H ligada a este, conseguimos desenvolver o controle de corrente dos eletroimãs, algo crítico para o projeto. A fim de manter seguro e organizados, acoplamos esses materiais em uma placa universal de maneira que fique mais fácil a integração do sistema como um todo (esta parte da solução está vinculada com o suporte para os eletroimãs, uma vez que a ponte h é responsável por alimentar estes). Com isso, desenvolvemos a estrutura necessária para garantir a segurança e eficiência dessa parte da solução, soldando os dispositivos em uma placa universal de maneira adequada. Segue o esquemático para consolidar esse sistema:
+A solução conta com o microcontrolador Rasperry Pi Pico W e com o auxílio de uma ponte H ligada a este, conseguimos desenvolver o controle de corrente dos eletroimãs, algo crítico para o projeto. A fim de manter seguro e organizados, acoplamos esses materiais em uma placa universal de maneira que fique fixo com seu circuito e portanto de mais fácil integração ao resto do sistema como um todo (esta parte da solução está vinculada com o suporte para os eletroimãs, uma vez que a ponte-H é responsável por alimentar estes e permitir sua polarização e dispolarização de maneira imediata e precisa). Com isso, desenvolvemos a estrutura necessária para garantir a segurança e eficiência dessa parte da solução, soldando os dispositivos em uma placa universal de maneira adequada. Segue o esquemático para consolidar esse sistema:
 
 ![Esquemático - Raspberry e Ponte H](/media/Diagrama%20Esquem%C3%A1tico%20Placa%20Principal.jpg) 
 
@@ -468,6 +474,14 @@ Diante da análise das dimensões de movimento do braço robótico (Rotação de
 ![Bandeja Radial](/media/Conjunto%20de%20Bandeja%20Radial.jpg)
 
 [Arquivo Auto Desk Inventor - Bandeja Radial](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/arquivo%20de%20modelo%203d/Bandeja%20Radial.ipt)
+
+## Validação de Protótipos
+
+Para fins de validação dos protótipos iniciais da solução, segue a consolidação da integração dos componentes: [Eletroimã e Sensor-iv](#eletroimã-e-sensor-iv), [Balança Invertida](#célula-de-carga---balança-invertida) e [Raspberry e Ponte-H](#raspberry-e-ponte-h) e vídeo de seu funcionamento:
+
+![Protótipo Consolidado](/media/Critical-Prototype.jpg)
+
+[Vídeo Demonstrativo](https://drive.google.com/file/d/1txtCYVejKdHhF4Ub3VqGtsHanooMbTtl/view?usp=sharing)
 
 # Referências
   
