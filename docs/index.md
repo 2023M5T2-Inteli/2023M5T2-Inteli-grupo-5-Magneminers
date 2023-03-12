@@ -345,7 +345,7 @@ Começamos os testes, primeiramente, buscando entender os sensores que precisáv
 
   
 
-Diante das necessidades do projeto, os atuadores principais seriam o **braço robótico**, o microcontrolador **Raspberry Pi Pico W**, uma **ponte H** e os **eletroímãs**. A princípio, o braço poderá ser manipulado por meio de um script em Python que irá conter os comandos ideais para realizar sua movimentação. Assim, será possível realizar adaptações para cada ensaio diante dos dados gerados pelos sensores e as ferramentas englobados na solução. O microcontrolador Raspberry ficará responsável pela centralização da solução, dispondo dos dados dos sensores e se comunicando com os scripts de outros atuadores via serial. Por exemplo, em contato com o script do braço robótico previamente citado, ele atualizará as informações necessárias para o procedimento ter a melhor acurácia e precisão possível, como o momento de finalizar o ensaio e a distância que ele precisa se movimentar para se posicionar corretamente sobre a bandeja.
+Diante das necessidades do projeto, os atuadores principais seriam o **braço robótico**, o microcontrolador **Raspberry Pi Pico W**, uma **ponte-H** e os **eletroímãs**. A princípio, o braço poderá ser manipulado por meio de um script em Python que irá conter os comandos ideais para realizar sua movimentação. Assim, será possível realizar adaptações para cada ensaio diante dos dados gerados pelos sensores e as ferramentas englobados na solução. O microcontrolador Raspberry ficará responsável pela centralização da solução, dispondo dos dados dos sensores e se comunicando com os scripts de outros atuadores via serial. Por exemplo, em contato com o script do braço robótico previamente citado, ele atualizará as informações necessárias para o procedimento ter a melhor acurácia e precisão possível, como o momento de finalizar o ensaio e a distância que ele precisa se movimentar para se posicionar corretamente sobre a bandeja.
 
   
 
@@ -389,7 +389,8 @@ A primeira imagem mostra como seria a tela de início, tem como principal objeti
 
 **![](https://lh6.googleusercontent.com/OW5uM3qnbidyQepBadF9RvSuumPyCVdJYkqrgdwJfAM97-keoVPAuGMx9JuE7CCqDapeCSrc6VBYfo1D8VZ6nQgTq7gsUWm5gjuk2Dnt0-wdf94ZfrX8OfGU3L5kO9a8zZHVNnNBTfHVSeBkijjpOMg)**
 
- ## Esquemáticos 
+
+## Esquemáticos 
 
 ### Eletroimã e Sensor-iv
 
@@ -397,12 +398,12 @@ Materiais utilizados:
 
 - Dois eletroimãs de 9V.
 - Uma placa universal (3cmX4cm)
-- Um Led RGB
+- Um Led RGB 
 - Jumpers, Solda e Parafusos (2) 
 - AutoDesk Inventor para modelagem
 - Impressora 3D
 
-Diante da necessidade de acoplar os eletroimãs e o sensor infravermelho em uma extensão do braço robótico e proteje-los (principalmente da água utilizada nos ensaios), decidimos por colocar-los na parte interior de uma estrutura com o formato de um martelo, na cabeça se encontram os sensores acoplados à placa universal devidamente ligados e o cabo servirá para a conexão braço-suporte e para passar o devido cabeamento que acompanhará o braço robótico por cima. Optamos por deixar o espaço dos eletroimãs e do sensor infra-vermelho pré-estabelecidos e bem delimitados para que não se movimentem durante os ensaios, a fim de uma melhor precisão e acurácia destes. Segue abaixo o esquemático desta proposta com as devidas medidas para sua função:
+Diante da necessidade de acoplar os eletroimãs, sensor infra-vermelho e um LED RGB em uma extensão do braço robótico e proteje-los (principalmente da água utilizada nos ensaios), decidimos por colocar-los na parte interior de uma estrutura com o formato de um martelo, na cabeça se encontram os sensores e LED acoplados à placa universal devidamente ligados, com o LED exposto em um furo específico (feeback sobre o estado atual do eletroimã, sendo polarizado ou despolarizado) e o cabo servirá para a conexão braço-suporte e para passar o devido cabeamento que acompanhará o braço robótico por cima. Optamos por deixar o espaço dos eletroimãs e do sensor infra-vermelho pré-estabelecidos e bem delimitados para que não se movimentem durante os ensaios, a fim de uma melhor precisão e acurácia destes. Segue abaixo o esquemático desta proposta com as devidas medidas para sua função:
 
 ![Esquemático - Suporte - Eletroimã e Sensor-iv](/media/Suporte%20Eletroim%C3%A3.jpg)
 
@@ -445,7 +446,6 @@ Após o desenvolvimento de seu Critical Prototype (Protótipo Crítico), temos a
 
 [Vídeo - Balança Invertida](https://drive.google.com/file/d/1h4DZN_CTTuU6obXVIsl4oBb2Dh6Px9GG/view?usp=share_link)
 
-
 ### Raspberry e Ponte-H
 
 Materiais utilizados:
@@ -455,8 +455,7 @@ Materiais utilizados:
 - Placa universal 
 - Jumpers e solda
 
-
-A solução conta com o microcontrolador Rasperry Pi Pico W e com o auxílio de uma ponte H ligada a este, conseguimos desenvolver o controle de corrente dos eletroimãs, algo crítico para o projeto. A fim de manter seguro e organizados, acoplamos esses materiais em uma placa universal de maneira que fique fixo com seu circuito e portanto de mais fácil integração ao resto do sistema como um todo (esta parte da solução está vinculada com o suporte para os eletroimãs, uma vez que a ponte-H é responsável por alimentar estes e permitir sua polarização e dispolarização de maneira imediata e precisa). Com isso, desenvolvemos a estrutura necessária para garantir a segurança e eficiência dessa parte da solução, soldando os dispositivos em uma placa universal de maneira adequada. Segue o esquemático para consolidar esse sistema:
+A solução conta com o microcontrolador Rasperry Pi Pico W e com o auxílio de uma ponte H ligada a este, conseguimos desenvolver o controle de corrente dos eletroimãs, algo crítico para o projeto. A fim de manter seguro e organizados, acoplamos esses materiais em uma placa universal de maneira que fique fixo com seu circuito e portanto de mais fácil integração ao resto do sistema como um todo (esta parte da solução está vinculada com o suporte para os eletroimãs, uma vez que a ponte-H é responsável por alimentar estes e permitir sua polarização e despolarização de maneira imediata e precisa). Com isso, desenvolvemos a estrutura necessária para garantir a segurança e eficiência dessa parte da solução, soldando os dispositivos em uma placa universal de maneira adequada. Segue o esquemático para consolidar esse sistema:
 
 ![Esquemático - Raspberry e Ponte H](/media/Diagrama%20Esquem%C3%A1tico%20Placa%20Principal.jpg) 
 
@@ -475,7 +474,8 @@ Diante da análise das dimensões de movimento do braço robótico (Rotação de
 
 [Arquivo Auto Desk Inventor - Bandeja Radial](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/arquivo%20de%20modelo%203d/Bandeja%20Radial.ipt)
 
-## Validação de Protótipos
+
+# Validação de Protótipos
 
 Para fins de validação dos protótipos iniciais da solução, segue a consolidação da integração dos componentes: [Eletroimã e Sensor-iv](#eletroimã-e-sensor-iv), [Balança Invertida](#célula-de-carga---balança-invertida) e [Raspberry e Ponte-H](#raspberry-e-ponte-h) e vídeo de seu funcionamento:
 
