@@ -315,8 +315,10 @@ Para fins de validação dos protótipos iniciais da solução, segue a consolid
 
 ![Critical-Prototype.jpg](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Critical-Prototype.jpg?raw=true)  
 
+ Vídeo demonstrativo dos dispositivos em funcionamento:
+ 
 [<img src="https://lh4.googleusercontent.com/72hif2xu81BUXbT-QnjV6JxvITd-5OMrs_6IRucYrypywCMPoHQbRooMXUI68x3uT1HOcjXxZzqC4WylVjOw3ospo_CIIq_OPmc0d3pswFj2GK29BPvGuL-KFxiPYhK57hlKPKO8l5GG_PTrYPJQdXg" width="100%">](https://drive.google.com/file/d/1txtCYVejKdHhF4Ub3VqGtsHanooMbTtl/view?usp=sharing)
-<center><font size="2"> Vídeo demonstrativo dos dispositivos em funcionamento </font></center>
+
 
 # Referências
   
