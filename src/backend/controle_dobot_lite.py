@@ -131,7 +131,11 @@ def despertar(taxa_transmissao, tempo_espera, altura_subida):
     return com_dispositivo, x0, y0, z0, braco_robotico
 
 # Desliga o braço robótico e o eletroíma
-def adormecer(braco_robotico, com_dispositivo):
+def adormecer(braco_robotico, com_dispositivo, x0, y0, z0, altura_subida):
+    # Retorna o braço para a posição inicial
+    braco_robotico.move_to(x0, y0, z0 + altura_subida, wait = True)  
+    braco_robotico.move_to(x0, y0, z0, wait = True) 
+    
     braco_robotico.close()
     com_dispositivo.close()
 
