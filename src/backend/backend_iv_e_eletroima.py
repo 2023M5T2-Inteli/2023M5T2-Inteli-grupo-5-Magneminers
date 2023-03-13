@@ -41,7 +41,8 @@ def processo_conexao(taxa_de_transmissao_comunicacao, tempo_de_espera_conexao):
     portas_com = lista_coms() # Lista todas as portas COM
     porta_rasp = encontra_rasp(portas_com) # Encontra a porta COM do Raspberry Pi Pico
     comunicacao_serial = conecta_serial(porta_rasp, taxa_de_transmissao_comunicacao, tempo_de_espera_conexao) # Abre um objeto de comunicação com a porta na qual o Raspberry Pi Pico está
-
+    return comunicacao_serial
+    
 def enviar_info_ao_rasp(sensor, estado, valor_pwm):
     #Junta todos em uma string
     info_sensor = str(sensor) + "," + str(estado) + "," + str(valor_pwm)
