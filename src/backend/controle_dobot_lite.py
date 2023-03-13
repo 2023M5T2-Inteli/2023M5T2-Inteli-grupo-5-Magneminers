@@ -1,115 +1,188 @@
 # Importação das bibliotecas necessárias para o script
-import serial 
-import serial.tools.list_ports
-import pydobot
 from time import sleep
+from enum import Enum
+import serial.tools.list_ports
+import serial
+import pydobot
 
+# Configurações de comunicação
 TEMPO_ESPERA_CONEXAO = 2 # segundos
 TAXA_TRANSMISSAO_COMUNICACAO = 115200 # bits por segundo
 
-# Função para encontrar os COMs disponíveis
-def lista_coms():
-    coms_encontradas = serial.tools.list_ports.comports()
-    print("[COM ports found]")
-    for item in coms_encontradas:
-        print(str(item))
-    return coms_encontradas
+# Enumeração das ações do eletroímã
+class AcoesEletroima(Enum):
+    LIGAR = 1
+    DESLIGAR = 0
 
+# Enumeração das posições do Dobot Magician Lite
+class Poses(Enum):
+    ALTURA_SUBIDA = 70
+    ALTURA_BANDEJA = 30
+
+    X_BANDEJA_A = 20
+    Y_BANDEJA_A = -108
+    DESLOCAMENTO_X_BANDEJA_A = 42
+    DESLOCAMENTO_Y_BANDEJA_A = -21
+
+    X_BANDEJA_B = 67
+    Y_BANDEJA_B = -5
+    DESLOCAMENTO_X_BANDEJA_B = 50
+    DESLOCAMENTO_Y_BANDEJA_B = 0
+
+    X_BANDEJA_C = 30
+    Y_BANDEJA_C = 108
+    DESLOCAMENTO_X_BANDEJA_C = 42
+    DESLOCAMENTO_Y_BANDEJA_C = 21
+
+# Configurações do ensaio
+class Ensaio(Enum):
+    NUMERO_VARRERUDAS_AMOSTRA = 5
+    NUMERO_CICLOS_ENSAIO = 10
+
+# Lista todas as portas COM, uma delas é o Raspberry Pi Pico
+def lista_coms():
+    portas_encontradas = serial.tools.list_ports.comports()
+    print("\nPortas COM encontradas: ")
+    for item in portas_encontradas:
+        print(str(item))
+    print("\n")
+    return portas_encontradas
+
+# Encontra a porta COM do Raspberry Pi Pico
+def encontra_rasp(portas_encontradas):
+    for porta in portas_encontradas:
+        if "serial" in str(porta).lower():
+            porta_rasp = str(porta)[:4]
+            print(f"Raspberry Pi Pico encontrado na porta: {porta_rasp}")
+            return porta_rasp
+    print("Raspberry Pi Pico não encontrado.")
+
+    return None
+
+# Abre um objeto de comunicação com a porta na qual o Raspberry Pi Pico está
+def conecta_serial(porta_com, taxa_transmissao, tempo_espera):
+    comunicacao_serial = serial.Serial(porta_com, taxa_transmissao, timeout = tempo_espera)
+    return comunicacao_serial
+
+# Envia um comando para o Raspberry Pi Pico controlar o eletroímã
 def controle_eletroima(com_serial_ima, estado):
     com_serial_ima.write(str(estado).encode() +b"\n")
     return None
 
-portas_com = lista_coms() # Executa a função escrita a cima
+# Configura a comunicação do eletroíma e do braço
+def setup(taxa_transmissao_comunicacao, tempo_espera_conexao):
+    print("Listando portas COM... \n")
+    portas_com = lista_coms() # Lista todas as portas COM
+    print("Encontrando porta COM do Raspberry Pi Pico... \n")
+    porta_rasp = encontra_rasp(portas_com) # Encontra a porta COM do Raspberry Pi Pico
+    print("Conectando com o Raspberry Pi Pico... \n")
+    com_rasp = conecta_serial(porta_rasp, taxa_transmissao_comunicacao, timeout=tempo_espera_conexao) # Abre um objeto de comunicação com a porta na qual o Raspberry Pi Pico está
+    print("Conectando com o Dobot Magitian Lite... \n")
+    braco_dobot = pydobot.Dobot(port=portas_com[0], verbose=False) # Cria um objeto que controla o braço
+    
+    return com_rasp, braco_dobot
 
-com_eletromima = serial.Serial("COM7", TAXA_TRANSMISSAO_COMUNICACAO, timeout=TEMPO_ESPERA_CONEXAO) # Cria um objeto de comunicação serial
+# Faz com que o braço vá até a bandeja, abeixe sua ponta de amostragem, varra a bandeja n vezes e suba novamente
+def percorre_bandeja(x0, y0, z0, braco_dobot, x_bandeja, y_bandeja, deslocamento_x_bandeja,     deslocamento_y_bandeja, altura_subida, altura_bandeja, n_varreduras, com_eletroima, estado_eletroima):
 
-maganalyzer_braco = pydobot.Dobot(port=portas_com[0], verbose=False) # Cria um objeto que controla o braço
+    # Ir até a bandeja de amostragem
+    braco_dobot.move_to(x0 + x_bandeja, 
+                        y0 + y_bandeja,
+                        z0 + altura_subida,
+                        wait = True)  
+    
+    # Controla eletroíma
+    controle_eletroima(com_eletroima, estado_eletroima)
 
-(x, y, z, r, j1, j2, j3, j4) = maganalyzer_braco.pose() # Pega a posição atual do braço
+    # Descer até a amostra
+    braco_dobot.move_to(x0 + x_bandeja, 
+                        y0 + y_bandeja,
+                        z0 + Poses.ALTURA_BANDEJA.value,
+                        wait = True)  
+    
+    # Percorre bandeja n vezes
+    for i in range(n_varreduras):
+        braco_dobot.move_to(x0 + x_bandeja + deslocamento_x_bandeja, 
+                            y0 + y_bandeja + deslocamento_y_bandeja,
+                            z0 + altura_bandeja,
+                            wait = True) 
+        
+        braco_dobot.move_to(x0 + x_bandeja, 
+                            y0 + y_bandeja,
+                            z0 + altura_bandeja,
+                            wait = True)  
+        
+        print("Varredura ", i, " de ", n_varreduras)
 
-print(f'x:{x} y:{y} z:{z} j1:{j1} j2:{j2} j3:{j3} j4:{j4}') # Imprime a posição atual do braço
+    # Suspender braço acima da bandeja para ir para a próxima
+    braco_dobot.move_to(x0 + x_bandeja, 
+                        y0 + y_bandeja,
+                        z0 + altura_subida,
+                        wait = True)  
+    
+    return None
+    
+# Prepara o braço robótico e o eletroíma para o ensaio
+def despertar(taxa_transmissao, tempo_espera, altura_subida):
+    com_dispositivo, braco_robotico = setup(taxa_transmissao,  tempo_espera)
+    (x0, y0, z0, r0, j10, j20, j30, j40) = braco_robotico.pose() 
+    braco_robotico.move_to(x0, y0, z0 + altura_subida, r0, wait=True)
 
-# Função para fazer a ponta do braço robótico ir até a bandeja contendo a amostra e percorrer toda sua extensão. Permite que as coordenadas do canto superior esqueda de cada bandeja sejam passadas como parâmetro
-def percorre_bandeja(bandeja_canto_x, bandeja_canto_y, com_eletroima):
+    return com_dispositivo, x0, y0, z0, braco_robotico
 
-    maganalyzer_braco.move_to(x + bandeja_canto_x, y - bandeja_canto_y, z + 30, r, wait=True) # Move a ponta do braço para a posição inicial
+# Desliga o braço robótico e o eletroíma
+def adormecer(braco_robotico, com_dispositivo):
+    braco_robotico.close()
+    com_dispositivo.close()
 
-    controle_eletroima(com_eletroima, 1) # Liga o eletroímã
+    return None
 
-    # Percorre a bandeja
-    print("A")
-    maganalyzer_braco.move_to(x + bandeja_canto_x, y - bandeja_canto_y + 30, z + 30, r, wait=True)
-    print("B")
-    maganalyzer_braco.move_to(x + bandeja_canto_x + 10, y - bandeja_canto_y + 30, z + 30, r, wait=True)
-    print("C")
-    maganalyzer_braco.move_to(x + bandeja_canto_x + 10, y - bandeja_canto_y - 3, z + 30, r, wait=True)
-    print("D")
-    maganalyzer_braco.move_to(x + bandeja_canto_x + 10 + 10, y - bandeja_canto_y - 3, z + 30, r, wait=True)
-    print("E")
-    maganalyzer_braco.move_to(x + bandeja_canto_x + 10 + 10, y - bandeja_canto_y - 3 + 30, z + 30, r, wait=True)
-    print("F")
-    maganalyzer_braco.move_to(x + bandeja_canto_x + 10 + 10 + 10, y - bandeja_canto_y - 3 + 30, z + 30, r, wait=True)
-    print("G")
-    maganalyzer_braco.move_to(x + bandeja_canto_x + 10 + 10 + 10, y - bandeja_canto_y - 3 , z + 30, r, wait=True)
-    print("H")
-    maganalyzer_braco.move_to(x + bandeja_canto_x + 10 + 10 + 10 + 10, y - bandeja_canto_y - 3 , z + 30, r, wait=True)
-    print("I")
-    maganalyzer_braco.move_to(x + bandeja_canto_x + 10 + 10 + 10 + 10, y - bandeja_canto_y - 3 + 30 , z + 30, r, wait=True)
-    print("J")
-    maganalyzer_braco.move_to(x + bandeja_canto_x + 10 + 10 + 10 + 10, y - bandeja_canto_y - 3 + 30 , z + 30, r, wait=True)
-    print("K")
-    maganalyzer_braco.move_to(x + bandeja_canto_x + 10 + 10 + 10 + 10 + 10, y - bandeja_canto_y - 3 + 30 , z + 30, r, wait=True)
-    print("L")
-    maganalyzer_braco.move_to(x + bandeja_canto_x + 10 + 10 + 10 + 10 + 10, y - bandeja_canto_y - 3, z + 30, r, wait=True)
-    maganalyzer_braco.move_to(x + bandeja_canto_x + 10 + 10 + 10 + 10 + 10 + 10, y - bandeja_canto_y - 3, z + 30, r, wait=True)
-    maganalyzer_braco.move_to(x + bandeja_canto_x + 10 + 10 + 10 + 10 + 10 + 10, y - bandeja_canto_y - 3 + 30, z + 30, r, wait=True)
-    maganalyzer_braco.move_to(x + bandeja_canto_x + 10 + 10 + 10 + 10 + 10 + 10 + 10, y - bandeja_canto_y - 3 + 30, z + 30, r, wait=True)
-    maganalyzer_braco.move_to(x + bandeja_canto_x + 10 + 10 + 10 + 10 + 10 + 10 + 10, y - bandeja_canto_y - 3, z + 30, r, wait=True)
-    maganalyzer_braco.move_to(x + bandeja_canto_x + 10 + 10 + 10 + 10 + 10 + 10 + 10, y - bandeja_canto_y - 3, z + 70, r, wait=True)
-    maganalyzer_braco.move_to(x + bandeja_canto_x, y, z + 70, r, wait=True)
+if __name__ == "__main__":
 
-    controle_eletroima(com_eletroima, 3) # Ativa o revolvedor de amostra após o percorrimento da primeira bandeja
+    # Inicializa o ensaio
+    maganalyzer, x0, y0, z0, com_eletroima = despertar(TAXA_TRANSMISSAO_COMUNICACAO, TEMPO_ESPERA_CONEXAO, Poses.ALTURA_SUBIDA.value)
 
-    # Executa a lavagem na bandeja do meio
-    maganalyzer_braco.move_to(x + bandeja_canto_x, y, z + 40, r, wait=True)
-    maganalyzer_braco.move_to(x + bandeja_canto_x + 70, y, z + 40, r, wait=True)
-    maganalyzer_braco.move_to(x + bandeja_canto_x, y, z + 40, r, wait=True)
-    maganalyzer_braco.move_to(x + bandeja_canto_x + 70, y, z + 40, r, wait=True)
-    maganalyzer_braco.move_to(x + bandeja_canto_x, y, z + 40, r, wait=True)
-    maganalyzer_braco.move_to(x + bandeja_canto_x + 70, y, z + 40, r, wait=True)
-    maganalyzer_braco.move_to(x + bandeja_canto_x, y, z + 40, r, wait=True)
-    maganalyzer_braco.move_to(x + bandeja_canto_x + 70, y, z + 40, r, wait=True)
-    maganalyzer_braco.move_to(x + bandeja_canto_x, y, z + 40, r, wait=True)
-    maganalyzer_braco.move_to(x + bandeja_canto_x, y, z + 70, r, wait=True)
-    maganalyzer_braco.move_to(x + bandeja_canto_x, y + 100, z + 70, r, wait=True)
-    maganalyzer_braco.move_to(x + bandeja_canto_x, y + 100, z + 40, r, wait=True)
+    # Executa o ensaio
+    for i in range(Ensaio.NUMERO_CICLOS_ENSAIO.value):
 
-    controle_eletroima(com_eletroima, 0) # Desativa o eletroima
+        # Amostra material
+        percorre_bandeja(x0, y0, z0, 
+                        maganalyzer, 
+                        Poses.X_BANDEJA_A.value,
+                        Poses.Y_BANDEJA_A.value, 
+                        Poses.DESLOCAMENTO_X_BANDEJA_A.value, 
+                        Poses.DESLOCAMENTO_Y_BANDEJA_A.value, 
+                        Poses.ALTURA_SUBIDA.value, 
+                        Poses.ALTURA_BANDEJA.value, 
+                        Ensaio.NUMERO_VARRERUDAS_AMOSTRA.value, 
+                        com_eletroima, 
+                        AcoesEletroima.LIGAR.value)
 
-    # Deposita a amostra na última bandeja
-    maganalyzer_braco.move_to(x + bandeja_canto_x + 70, y + 100, z + 40, r, wait=True)
-    maganalyzer_braco.move_to(x + bandeja_canto_x, y + 100, z + 40, r, wait=True)
-    maganalyzer_braco.move_to(x + bandeja_canto_x + 70, y + 100, z + 40, r, wait=True)
-    maganalyzer_braco.move_to(x + bandeja_canto_x, y + 100, z + 40, r, wait=True)
-    maganalyzer_braco.move_to(x + bandeja_canto_x + 70, y + 100, z + 40, r, wait=True)
-    maganalyzer_braco.move_to(x + bandeja_canto_x, y + 100, z + 40, r, wait=True)
-    maganalyzer_braco.move_to(x + bandeja_canto_x, y + 100, z + 70, r, wait=True)
+        # Lava material
+        percorre_bandeja(x0, y0, z0, 
+                        maganalyzer, 
+                        Poses.X_BANDEJA_B.value,
+                        Poses.Y_BANDEJA_B.value, 
+                        Poses.DESLOCAMENTO_X_BANDEJA_B.value, 
+                        Poses.DESLOCAMENTO_Y_BANDEJA_B.value, 
+                        Poses.ALTURA_SUBIDA.value, 
+                        Poses.ALTURA_BANDEJA.value, 
+                        Ensaio.NUMERO_VARRERUDAS_AMOSTRA.value, 
+                        com_eletroima, 
+                        AcoesEletroima.LIGAR.value)
 
-for i in range(1):
-
-    a = maganalyzer_braco.pose()
-
-    print("x:", a[0], " y:", a[1], " z:", a[2]) 
-    sleep(1)
-
-    maganalyzer_braco.move_to(x, y, z + 70, r, wait=True)
-
-    # Realiza o ciclo de amostragem, lavagem e deposição 3 vezes
-    for i in range(3):
-
-        maganalyzer_braco.move_to(x + 50, y - 120, z + 70, r, wait=True)
-
-        percorre_bandeja(50, 120)
-
-# Fecha a conexão com o robô
-maganalyzer_braco.close()
+        # Deposita material
+        percorre_bandeja(x0, y0, z0, 
+                        maganalyzer, 
+                        Poses.X_BANDEJA_C.value,
+                        Poses.Y_BANDEJA_C.value, 
+                        Poses.DESLOCAMENTO_X_BANDEJA_C.value, 
+                        Poses.DESLOCAMENTO_Y_BANDEJA_C.value, 
+                        Poses.ALTURA_SUBIDA.value, 
+                        Poses.ALTURA_BANDEJA.value, 
+                        Ensaio.NUMERO_VARRERUDAS_AMOSTRA.value, 
+                        com_eletroima, 
+                        AcoesEletroima.DESLIGAR.value)
+        
+    # Finaliza o ensaio
+    adormecer(maganalyzer, com_eletroima)
