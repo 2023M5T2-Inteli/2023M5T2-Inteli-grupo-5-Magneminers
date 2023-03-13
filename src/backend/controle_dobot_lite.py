@@ -189,4 +189,4 @@ if __name__ == "__main__":
                         AcoesEletroima.DESLIGAR.value)
         
     # Finaliza o ensaio
-    adormecer(maganalyzer, com_eletroima)
+    adormecer(maganalyzer, com_eletroima, x0, y0, z0, Poses.ALTURA_SUBIDA.value)
