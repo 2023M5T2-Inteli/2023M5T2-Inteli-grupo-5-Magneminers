@@ -12,97 +12,50 @@
     <div class="base">
         <div class="parametros bloco">
             <form action="criar" method="post">
-                <h1>Digite as variaveis do novo ensaio:</h1>
-                    <label for="x">X - B1:</label>
-                    <input type="text" id="x1" name="x1"><br><br>
-                    <label for="y">Y - B1:</label>
-                    <input type="text" id="y1" name="y1"><br><br>
-                    <label for="z">Z - B1:</label>
-                    <input type="text" id="z1" name="z1"><br><br>
-                    <label for="x">Deslocamento - X - B1:</label>
-                    <input type="text" id="xd1" name="xd1"><br><br>
-                    <label for="y">Deslocamento - Y - B1:</label>
-                    <input type="text" id="yd1" name="yd1"><br><br>
-                    <label for="x">X - B2:</label>
-                    <input type="text" id="x2" name="x2"><br><br>
-                    <label for="y">Y - B2:</label>
-                    <input type="text" id="y2" name="y2"><br><br>
-                    <label for="z">Z - B2:</label>
-                    <input type="text" id="z2" name="z2"><br><br>
-                    <label for="x">Deslocamento - X - B2:</label>
-                    <input type="text" id="xd2" name="xd2"><br><br>
-                    <label for="y">Deslocamento - Y - B2:</label>
-                    <input type="text" id="yd2" name="yd2"><br><br>
-                    <label for="x">X - B3:</label>
-                    <input type="text" id="x3" name="x3"><br><br>
-                    <label for="y">Y - B3:</label>
-                    <input type="text" id="y3" name="y3"><br><br>
-                    <label for="z">Z - B3:</label>
-                    <input type="text" id="z3" name="z3"><br><br>
-                    <label for="x">Deslocamento - X - B3:</label>
-                    <input type="text" id="xd3" name="xd3"><br><br>
-                    <label for="y">Deslocamento - Y - B3:</label>
-                    <input type="text" id="yd3" name="yd3"><br><br>
-                    <label for="z">Potência do Eletroímã:</label>
-                    <input type="text" id="ptc" name="ptc"><br><br>
-                    <label for="z">N° de varreduras:</label>
-                    <input type="text" id="vrr" name="varr"><br><br>
-                    <label for="z">N° de ciclos:</label>
-                    <input type="text" id="cic" name="cic"><br><br>
-                    <button type="submit" value="Adicionar">Enviar</button>
+                <h1>Posicione o robo para o ensaio e aperter salvar pose:</h1>
+                    <button type="submit" value="Adicionar">Salvar pose</button>
             </form>
+            <form action="finalizar" method="post">
+                  <label for="x">Dimensôes das bandejas: </label>
+                  <input type="number" id="bd1" name="bd1"><br><br>
+                  <input type="number" id="bd2" name="bd2"><br><br>
+                  <label for="z">N° de varreduras:</label>
+                  <input type="number" id="vrr" name="vrr"><br><br>
+                  <label for="z">N° de ciclos:</label>
+                  <input type="number" id="cic" name="cic"><br><br> 
+                  <button type="submit" value="Adicionar">INICIAR!</button>
+          </form>
             <br>
+              <!-- <button class='onButton' onclick="subir()" name="subir" value="subir">subir</button> -->
             <div class="led bloco">
                 <form action='led' method='POST'>
-                    :bulb:
+                
                   <button class='onButton' onclick="ledOn()" name="on" value="on">on</button>
                   <button class='offButton' onclick="ledOff()" name="off" value="off">off</button>
                 </form>
             </div>
-            <!-- <table>
+            <table>
               <tr>
                 <td>x1</td>
                 <td>y1</td>
                 <td>z1</td>
-                <td>xd1</td>
-                <td>yd1</td>
-                <td>x2</td>
-                <td>y2</td>
-                <td>z2</td>
-                <td>xd2</td>
-                <td>yd2</td>
-                <td>x3</td>
-                <td>y3</td>
-                <td>z3</td>
-                <td>xd3</td>
-                <td>yd3</td>
-                <td>ptc</td>
-                <td>vrr</td>
-                <td>cic</td>
               </tr>
             {% for posicao in posicoes%}
               <tr>
                 <td>{{posicao.x1}}</td>
                 <td>{{posicao.y1}}</td>
                 <td>{{posicao.z1}}</td>
-                <td>{{posicao.xd1}}</td>
-                <td>{{posicao.yd1}}</td>
-                <td>{{posicao.x2}}</td>
-                <td>{{posicao.y2}}</td>
-                <td>{{posicao.z2}}</td>
-                <td>{{posicao.xd2}}</td>
-                <td>{{posicao.yd2}}</td>
-                <td>{{posicao.x3}}</td>
-                <td>{{posicao.y3}}</td>
-                <td>{{posicao.z3}}</td>
-                <td>{{posicao.xd3}}</td>
-                <td>{{posicao.yd3}}</td>
-                <td>{{posicao.ptc}}</td>
-                <td>{{posicao.vrr}}</td>
-                <td>{{posicao.cic}}</td>
               </tr>
             {% endfor %}
-            </table> -->
+            {% for ensaio in ensaios%}
+              <tr>
+                <td>{{ensaio.bd1}}</td>
+                <td>{{ensaio.bd2}}</td>
+                <td>{{ensaio.vrr}}</td>
+                <td>{{ensaio.cic}}</td>
+              </tr>
+            {% endfor %}
+            </table>
         </div>
         <div class="tela">
             <h1>Teste grupo</h1>

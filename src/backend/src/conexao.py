@@ -1,6 +1,7 @@
 import serial
-import time
 import serial.tools.list_ports
+import pydobot
+
 
 def lista_coms():
 
@@ -11,6 +12,7 @@ def lista_coms():
     print("\n")
 
     return portas_encontradas
+
 
 # Encontra a porta COM do Raspberry Pi Pico
 def encontra_rasp(portas_encontradas):
@@ -32,17 +34,17 @@ def conecta_serial(porta_com, taxa_transmissao, tempo_espera):
 
     return comunicacao_serial
 
-
-
 # Realiza todo o processo de conexao ate o rasp pela chamada de outras funcoes
 def processo_conexao(taxa_de_transmissao_comunicacao, tempo_de_espera_conexao):
-	portas_com = lista_coms() # Lista todas as portas COM
-	porta_rasp = encontra_rasp(portas_com) # Encontra a porta COM do Raspberry Pi Pico
-	comunicacao_serial = conecta_serial(porta_rasp, taxa_de_transmissao_comunicacao,tempo_de_espera_conexao) # Abre um objeto de comunicação com a porta na qual o Raspberry Pi Pico está
-	return comunicacao_serial
+    portas_com = lista_coms() # Lista todas as portas COM
+    porta_rasp = encontra_rasp(portas_com) # Encontra a porta COM do Raspberry Pi Pico
+    porta_dobot = portas_com[2].device # Encontra a porta COM do Dobot Magician Lite
+    comunicacao_serial = conecta_serial(porta_rasp, taxa_de_transmissao_comunicacao,tempo_de_espera_conexao) # Abre um objeto de comunicação com a porta na qual o Raspberry Pi Pico está
+    print("Conectando com o Dobot Magitian Lite... \n")
+    braco_dobot = pydobot.Dobot(port=porta_dobot, verbose=False) # Cria um objeto que controla o braço
+    return comunicacao_serial, braco_dobot
 
-#taxa_transmissao = serial.Serial("COM6",115200)
 taxa_transmissao = 115200 # bits por segundo
 tempo_espera = 2 # segundos
 
-resposta_para_tudo = processo_conexao(taxa_transmissao, tempo_espera)
+resposta_para_tudo, dobot = processo_conexao(taxa_transmissao, tempo_espera)
