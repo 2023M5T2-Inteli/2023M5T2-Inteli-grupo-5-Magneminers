@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Turbo Flask Example</title>
+</head>
+<body>
+    <h1 id="value"></h1>
+    <script>
+        const value = document.getElementById("value");
+        async function updateValue() {
+            const response = await fetch('/get-value');
+            const data = await response.json();
+            value.innerText = data.value;
+        }
+        setInterval(updateValue, 1000);
+    </script>
+</body>
+</html>
