@@ -8,7 +8,7 @@
 </tr>
 </table>
 
-<font size="20"><center>
+<font size='20'><center>
 Concepção de sistema de automação industrial
 </center></font>
 
@@ -40,25 +40,26 @@ Concepção de sistema de automação industrial
 - [Análise de Experiência do Usuário](#análise-de-experiência-do-usuário)
   - [User Stories](#user-stories)
   - [Protótipo de interface com o usuário](#protótipo-de-interface-com-o-usuário)
-  - [Esquemáticos](#esquemáticos)
-    - [Eletroímã e Sensor Infravermelho](#eletroímã-e-sensor-infravermelho)
-    - [Célula de carga - Balança Invertida](#célula-de-carga---balança-invertida)
-    - [Raspberry Pi Pico W e Ponte H](#raspberry-pi-pico-w-e-ponte-h)
+  - [Dispositivos Eletrônicos](#dispositivos-eletrônicos)
+    - [Dispositivo acoplado à garra do braço robótico (eletroímãs e sensor infravermelho)](#dispositivo-acoplado-à-garra-do-braço-robótico-eletroímãs-e-sensor-infravermelho)
+    - [Balança invertida: sistema de pesagem utilizando célula de carga](#balança-invertida-sistema-de-pesagem-utilizando-célula-de-carga)
+    - [Dispositivo principal: Raspberry Pi Pico W e Ponte H](#dispositivo-principal-raspberry-pi-pico-w-e-ponte-h)
+  - [Dispositivos Mecânicos](#dispositivos-mecânicos)
     - [Bandeja Radial](#bandeja-radial)
-  - [Validação de Protótipos](#validação-de-protótipos)
+  - [Validação de Dispositivos](#validação-de-dispositivos)
 - [Referências](#referências)
 - [Anexos](#anexos)
 
 
 # Autores
 
-Amanda Ribeiro Fontes
-Gabriel Pascoli
-Gabriela Barretto Dias
-Gustavo Francisco Neto Pereira
-João Pedro Gonçalves Carazzato
-Kil Matheus Gomes Teixeira
-Luiz Fernando da Silva Borges  
+[Amanda Ribeiro Fontes](https://www.linkedin.com/in/amanda-fontes/)
+[Gabriel Pascoli](https://www.linkedin.com/in/gabriel-pascoli-73733b200/)
+[Gabriela Barretto Dias](https://www.linkedin.com/in/gabriela-dias-38b484250/)
+[Gustavo Francisco Neto Pereira](https://www.linkedin.com/in/gustavo-pereira1/)
+[João Pedro Gonçalves Carazzato](https://www.linkedin.com/in/jo%C3%A3o-pedro-gon%C3%A7alves-carazzato-147120231/)
+[Kil Matheus Gomes Teixeira](https://www.linkedin.com/in/kil-matheus-gomes-teixeira-78257020a/)
+[Luiz Fernando da Silva Borges](https://www.linkedin.com/in/sbluizfernando/)
 
 # Visão Geral do Projeto
 
@@ -85,6 +86,8 @@ O objetivo do parceiro é automatizar o processo de ensaio de separação de mat
 
 ## Contexto da indústria
 
+*Contexto_da_indústria*
+
 ## Análise financeira
 
 Considerando o processo de separação magnética realizado, atualmente, pelo Instituto de Pesquisas Tecnológicas, dispõem-se abaixo os valores referentes ao início da operação.
@@ -110,20 +113,20 @@ Considerando o processo de separação magnética realizado, atualmente, pelo In
 
 Em suma, a qualidade dos ensaios constitui o elemento que agrega valor à solução. Com a retirada da mão de obra, cuja ação no ensaio passa a ser automatizada, o tempo ganho pelo operador para outras tarefas é significativo a longo prazo, salvando um custo operacional para os stakeholders. Diante da análise dos custos da operação e retorno dos ensaios — supondo o valor de R$ 2000,00 por ensaio —, a solução se pagaria em, aproximadamente, nove ensaios.
 
-## Análise SWOT  
+## Análise SWOT
 ![](https://lh6.googleusercontent.com/zG8EnpZDgBawCTeDtsdIlDg2p6Ucljp306zIdN2e-vJLtzRxG_w4UnhNh5kEH32OZFgOrrOLHLhEsK2zV2kvmrZR1lcEbKyZ-tMikonjjLosjdmX5_fPNudNE6e7JZkfUH1QL_X20P0MP9xkGtSSoBw)
 
-**<font  size=2> Figura 1 — Análise SWOT (forças, oportunidades, fraquezas e ameaças) do Instituto de Pesquisas Tecnológicas </font>**
+**<font size=2> Figura 1 — Análise SWOT (forças, oportunidades, fraquezas e ameaças) do Instituto de Pesquisas Tecnológicas </font>**
 
 ## Value Proposition Canvas
 ![](https://lh5.googleusercontent.com/xYxOS-4i-mqXFikfxJAc7g0b_FhPT96ku_k4FdCSHb3YkBMeSY1eqs4W_UaXE3cQJeg-VFHbNcAk1VyiD-jfpKKON3ua7EBH9ka5fBGwX1h3VGxSt3bfBo4WJKTvUS08PMLSops4Ap2DkbRSgd3jYMk)
 
-**<font  size=2> Figura 2 — Value Proposition Canvas do atual procedimento de separação magnética realizado pelo IPT </font>**
+**<font size=2> Figura 2 — Value Proposition Canvas do atual procedimento de separação magnética realizado pelo IPT </font>**
 
 ## Matriz de Riscos
 ![](https://lh6.googleusercontent.com/PsuqnxqBCrQZD-gd0dvqBnxThe2AOZWL6vFaLv27mIcgcPJA148UVNPkAnvzPRf696h6kdDlmeOSMsuxcbGsQ7I_WNAlkO6A7GrB65i5mTCvBZB_YU6-Kf9qKl5sqVSC8ANSYEWgnSgn2K9Eush8ml0)
 
-**<font  size=2> Figura 3 — Matriz de Riscos da solução desenvolvida </font>**
+**<font size=2> Figura 3 — Matriz de Riscos da solução desenvolvida </font>**
 
 # Arquitetura do Sistema
 
@@ -140,14 +143,16 @@ Em suma, a qualidade dos ensaios constitui o elemento que agrega valor à soluç
   
 ### Croqui da Solução
 ![](https://lh6.googleusercontent.com/ztk3zc9XaL34iNjuaPBuNVShRFIyjokR2Jst5DncvFbHIP54xMl98ww9CKMHN8QmR6n_dpUhHCBDjhhLnVa-wM5NKoTncqdeOXLbuwEs-bQmc2i5oCHimDtJOG6Kifzzl1vRTCi0IrapvS6h1T3StKI)
-  
-![](https://lh6.googleusercontent.com/h4amFfWdV1cBVHwKohGJG-WkZxRD2XilNjKyljW65xQtF6-O_A-T3Vr2XQTKXalTua54MzlmMWVOQPJDdET_461QWDJG2EaT0YILkZ0aF1DRAhSqUgUCoRmJkkrOlTCSnLFsZ_9a8OftsXZsOJtS0iA)
+  **<font  size=2> Figura 4 — Versão inicial do croqui da solução </font>**
 
+![](https://lh6.googleusercontent.com/h4amFfWdV1cBVHwKohGJG-WkZxRD2XilNjKyljW65xQtF6-O_A-T3Vr2XQTKXalTua54MzlmMWVOQPJDdET_461QWDJG2EaT0YILkZ0aF1DRAhSqUgUCoRmJkkrOlTCSnLFsZ_9a8OftsXZsOJtS0iA)
+  **<font  size=2> Figura 5 — Versão inicial do dispositivo mecânico de suporte para eletroímãs </font>**
   
 
 ## Módulos do Sistema e Visão Geral (Big Picture) (2.0)
 ![](https://lh4.googleusercontent.com/Z5mUwJhEBQMw7qMIhjXzP2YzD2WnL8AAS5TnRI3obXeeZ5wV_fIfszd9qe3LvEW1ql9qz9bZnjREranW4u2LUhCnXDGfMPerODt9Z6T7X5SKTqfQKILhZ0A05YJ4FuuEE-oZA1XZSNeos0sty9EX2jE)
-  
+    **<font  size=2> Figura 6 — Diagrama da solução </font>**
+
 
 | **Componente / Conexão**| **Descrição da função** | Tipo: entrada / saída / atuador |
 |--- |--- | --- |
@@ -163,6 +168,22 @@ Em suma, a qualidade dos ensaios constitui o elemento que agrega valor à soluç
 
 ### Testes preliminares de resposta dos sensores
 
+**Sensor: 
+Função:
+Controle:
+Entrada esperada:
+Saída esperada:
+Entrada obtida:
+Saída obtida:**
+
+**Sensor: 
+Função:
+Controle:
+Entrada esperada:
+Saída esperada:
+Entrada obtida:
+Saída obtida:**
+
 Começamos os testes, primeiramente, buscando entender os sensores que precisávamos para o projeto, a fim de deixá-lo mais completo. A partir disso, entendemos a necessidade de um **sensor de distância**, para manter o teste o mais preciso possível a partir das necessidades do cliente (manter a mesma distância para maior precisão do processo) eliminando os pontos negativos que o robô tinha por atuar sozinho. Os testes desse sensor foram realizados em junção a um copo de café, atuando com o objeto que queríamos descobrir a distância, funcionando da seguinte forma: possuindo duas lentes, a primeira emite uma luz infravermelha enquanto a segunda captura os sinais da mesma, essa captura funciona através da reflexão da luz na superfície do objeto/local que queremos saber a distância, ao retornar a segunda lente, a partir da intensidade que a luz retorna, é possível descobrir a distância através de um fórmula, medindo distâncias entre 4 a 30 cm com um máximo de 2 cm de desvio da medida real. Em seguida, decidimos utilizar uma **célula de carga** (1kg) e um módulo conversor hx711 específico para realizar leituras analógicas melhores, para verificar a variação de peso na bandeja de deposição de material ferromagnético já minerado. Para o teste, utilizamos dois mini ímãs colocados um em seguida do outro, para assim analisar as variações nas leituras da célula. Concluímos que o funcionamento dela seria eficaz para nossa solução uma vez que sua sensibilidade permitirá que encerramos o processo de mineração com precisão, ou seja, quando já não ocorrer deposição de ferro magnético minerado neste ensaio.
 
 ### Demonstrações de Funcionamento dos Sensores
@@ -170,14 +191,22 @@ Começamos os testes, primeiramente, buscando entender os sensores que precisáv
 Abaixo, encontram-se os vídeos de demonstração de funcionamento dos sensores utilizados na solução.
 
 [<img src="https://lh3.googleusercontent.com/fqUKYFc17_odvZCvnTXnoRLqCDH9Pn9qDU89iT06e85d7JCMgehLY_zv11d5XwpVpe9WBhRMjyfWFEQnsnYrQ1qyxWmC6A1tT2TWTOM-Va5HO0muF4CpKcszElloyR_C5pqJr0lwGDwhx7vwfNHzgyg" width="100%">](https://drive.google.com/file/d/1Ca5yPUheEd5piRgm2pBVEWkggLV0Kput/view?usp=sharing/)
-<center><font size="2"> Vídeo para demonstração da calibração do sensor de distância infravermelho </font></center>
+**<font size="2"> Vídeo para demonstração da calibração do sensor de distância infravermelho </font>**
 
 [<img src="https://lh6.googleusercontent.com/auAXAe9Xtx8LeL_hgrhevCSoSas-2hgLQiDJkmaKQMo5Aln3AQPqphcAsPrAwtK9bnkqbQE60VdnC7FYCSS_ISZA1q_zkiNb_pNwf5CONbB9MUBZJx5vqdt1c2HjwwsXzADE1AOcUq4_KOQLKPHPiGU" width="100%">](https://drive.google.com/file/d/1_PykpKwE5UDx0YWhsY6CiHbBpMDh4OsE/view?usp=sharing)
-<center><font size=2> Vídeo para demonstração da leitura da célula de carga </font></center>
+**<font size=2> Vídeo para demonstração da leitura da célula de carga </font>**
 
 ## Atuadores
 
 ### Testes preliminares de resposta dos atuadores
+
+Atuador: 
+Função:
+Controle:
+Entrada esperada:
+Saída esperada:
+Entrada obtida:
+Saída obtida:
 
  Diante das necessidades do projeto, os atuadores principais seriam o **braço robótico**, o microcontrolador **Raspberry Pi Pico W**, uma **ponte H** e os **eletroímãs**. A princípio, o braço poderá ser manipulado por meio de um script em Python que irá conter os comandos ideais para realizar sua movimentação. Assim, será possível realizar adaptações para cada ensaio diante dos dados gerados pelos sensores e as ferramentas englobados na solução. O microcontrolador Raspberry ficará responsável pela centralização da solução, dispondo dos dados dos sensores e se comunicando com os scripts de outros atuadores via serial. Por exemplo, em contato com o script do braço robótico previamente citado, ele atualizará as informações necessárias para o procedimento ter a melhor acurácia e precisão possível, como o momento de finalizar o ensaio e a distância que ele precisa se movimentar para se posicionar corretamente sobre a bandeja.
 
@@ -207,9 +236,9 @@ A primeira imagem mostra como seria a tela de início, tem como principal objeti
 ![](https://lh4.googleusercontent.com/-leIWCVZ6h71iuO5nrKRNCiL6M3v2s-F6YT3wfqj0WZ_n9rTOn_-JtPe_AKyriKC6r2yKJwvpkDY7q4fpvTuPOmWiN0arAbJAvKxDDWQNKsdRn00KxmeLaTNXBvXr0R1pZT9EUWhXsyjWl4k0Xk_3G8)
 ![](https://lh3.googleusercontent.com/AAZiukdZP169G3rSsd7Mjdb5XNqiA1DmRrz5wreyyGKyAWW7B-RLvG1KOppVzq9wZypDRm8BksFqkm-j6af3J6eeuTFOCKVYBPaA_y-oCN19bxBpjudHgHvxYOhdAZmhhJhdXBlPmbbqtx3rzBkM8BE)![](https://lh6.googleusercontent.com/OW5uM3qnbidyQepBadF9RvSuumPyCVdJYkqrgdwJfAM97-keoVPAuGMx9JuE7CCqDapeCSrc6VBYfo1D8VZ6nQgTq7gsUWm5gjuk2Dnt0-wdf94ZfrX8OfGU3L5kO9a8zZHVNnNBTfHVSeBkijjpOMg)
 
-## Esquemáticos
+## Dispositivos Eletrônicos
 
-### Eletroímã e Sensor Infravermelho
+### Dispositivo acoplado à garra do braço robótico (eletroímãs e sensor infravermelho)
 
 Materiais utilizados:
 
@@ -237,11 +266,11 @@ Diante da necessidade de acoplar os eletroímãs e o sensor infravermelho em uma
 
 ![Elertroima3.jpeg](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Elertroima3.jpeg?raw=true)   
 
-[Arquivo Autodesk Inventor - Suporte Eletroímãs](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/arquivo%20de%20modelo%203d/Suporte%20Eletroim%C3%A3.ipt)
+[Modelo 3D - Suporte Eletroímãs](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/arquivo%20de%20modelo%203d/Suporte%20Eletroim%C3%A3.ipt)
 
-[Arquivo Autodesk Inventor - Tampa Eletroímãs](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/arquivo%20de%20modelo%203d/Tampa%20Eletroim%C3%A3.ipt)
+[Modelo 3D - Tampa Eletroímãs](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/arquivo%20de%20modelo%203d/Tampa%20Eletroim%C3%A3.ipt)
 
-### Célula de carga - Balança Invertida
+### Balança invertida: sistema de pesagem utilizando célula de carga
 
 Materiais utilizados:
 
@@ -267,7 +296,7 @@ A fim de analisar a todo o momento o resultado da mineração magnética, decidi
   
 ![BI-Lado.jpg](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/BI-Lado.jpg?raw=true)
   
-[Arquivo Autodesk Inventor - Balança Invertida](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/arquivo%20de%20modelo%203d/Sistema%20de%20Pesagem.ipt)
+[Modelo 3D - Balança Invertida](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/arquivo%20de%20modelo%203d/Sistema%20de%20Pesagem.ipt)
  
 Após o desenvolvimento de seu Critical Prototype (Protótipo Crítico), temos a seguir o resultados dos testes nas condições imaginadas para esta proposta, sendo o objetivo a possibilidade de análise da variação do material magnético depositado na última bandeja. Segue vídeo para validação:
 
@@ -276,7 +305,9 @@ Após o desenvolvimento de seu Critical Prototype (Protótipo Crítico), temos a
 <center><font size="2"> Vídeo para demonstração do funcionamento da balança invertida </font></center>
 
 
-### Raspberry Pi Pico W e Ponte H
+### Dispositivo principal: Raspberry Pi Pico W e Ponte H
+
+*Descrição da placa principal*
 
 Materiais utilizados:
 
@@ -294,6 +325,9 @@ A solução conta com o microcontrolador Rasperry Pi Pico W e com o auxílio de 
 
 ![Frente.jpg](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Frente.jpg?raw=true)
   
+## Dispositivos Mecânicos
+
+*Descrição dos dispositivos mecânicos fabricados*
 
 ### Bandeja Radial
 
@@ -309,7 +343,7 @@ Diante da análise das dimensões de movimento do braço robótico (Rotação de
 [Arquivo Autodesk Inventor - Bandeja Radial](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/arquivo%20de%20modelo%203d/Bandeja%20Radial.ipt)
 
 
-## Validação de Protótipos
+## Validação de Dispositivos
 
 Para fins de validação dos protótipos iniciais da solução, segue a consolidação da integração dos componentes: [Eletroimã e Sensor-iv](#eletroímã-e-sensor-infravermelho), [Balança Invertida](#célula-de-carga---balança-invertida) e [Raspberry e Ponte-H](#raspberry-pi-pico-w-e-ponte-h) e vídeo de seu funcionamento:
 
