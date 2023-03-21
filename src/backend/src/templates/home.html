@@ -11,20 +11,39 @@
 <body>
     <div class="base">
         <div class="parametros bloco">
-            <form action="criar" method="post">
-                <h1>Posicione o robo para o ensaio e aperter salvar pose:</h1>
-                    <button type="submit" value="Adicionar">Salvar pose</button>
+          <h1>Posicione o robo para o ensaio e aperter salvar pose:</h1>
+          <form action="criar" method="post"> 
+            <label for="ensaio">Ensaio:</label>
+            <input type="number" id="ensaio" name="ensaio"><br><br> 
+            <label for="vrr">N° de varreduras:</label>
+            <input type="number" id="vrr" name="vrr"><br><br>
+            <label for="cic">N° de ciclos:</label>
+            <input type="number" id="cic" name="cic"><br><br> 
+            <button type="submit" value="Adicionar">Criar Ensaio!</button>
+            
+          </form>
+        
+            <form action="b1" method="post">
+                  <button type="submit" value="Adicionar">Salvar B1</button>
+            </form>
+            <form action="b1_e" method="post">
+                  <button type="submit" value="Adicionar">Extremidade B1</button>
+            </form>
+            <form action="b2" method="post">              
+                  <button type="submit" value="Adicionar">Salvar B2</button>
+            </form>
+            <form action="b2_e" method="post">              
+                  <button type="submit" value="Adicionar">Extremidade B2</button>
+            </form>
+            <form action="b3" method="post">             
+                  <button type="submit" value="Adicionar">B3</button>
+            </form>
+            <form action="b3_e" method="post"> 
+                  <button type="submit" value="Adicionar">Extremidade B3</button>
             </form>
             <form action="finalizar" method="post">
-                  <label for="x">Dimensôes das bandejas: </label>
-                  <input type="number" id="bd1" name="bd1"><br><br>
-                  <input type="number" id="bd2" name="bd2"><br><br>
-                  <label for="z">N° de varreduras:</label>
-                  <input type="number" id="vrr" name="vrr"><br><br>
-                  <label for="z">N° de ciclos:</label>
-                  <input type="number" id="cic" name="cic"><br><br> 
                   <button type="submit" value="Adicionar">INICIAR!</button>
-          </form>
+            </form>
             <br>
               <!-- <button class='onButton' onclick="subir()" name="subir" value="subir">subir</button> -->
             <div class="led bloco">
@@ -33,30 +52,7 @@
                   <button class='onButton' onclick="ledOn()" name="on" value="on">on</button>
                   <button class='offButton' onclick="ledOff()" name="off" value="off">off</button>
                 </form>
-            </div>
-            <table>
-              <tr>
-                <td>x1</td>
-                <td>y1</td>
-                <td>z1</td>
-              </tr>
-            {% for posicao in posicoes%}
-              <tr>
-                <td>{{posicao.x1}}</td>
-                <td>{{posicao.y1}}</td>
-                <td>{{posicao.z1}}</td>
-              </tr>
-            {% endfor %}
-            {% for ensaio in ensaios%}
-              <tr>
-                <td>{{ensaio.bd1}}</td>
-                <td>{{ensaio.bd2}}</td>
-                <td>{{ensaio.vrr}}</td>
-                <td>{{ensaio.cic}}</td>
-              </tr>
-            {% endfor %}
-            </table>
-        </div>
+            
         <div class="tela">
             <h1>Teste grupo</h1>
         </div>

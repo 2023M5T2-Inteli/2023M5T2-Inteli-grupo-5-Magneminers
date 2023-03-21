@@ -1,22 +1,16 @@
 from flask import Flask, render_template, Response, request, redirect
-from data.posicoes import Posicao, Ensaio
+from data.mongodb import criar_ensaio, update_ensaio_b1, update_ensaio_b2, update_ensaio_b3, update_ensaio_b1_e, update_ensaio_b2_e, update_ensaio_b3_e, encontra_ensaio
 from conexao import resposta_para_tudo
-from joystick import coordenadas
-
-
-posicoes =[
-    # Posicao(x1 = "0", y1 = "0", z1 = "0", xd1 = "0", yd1 = "0", x2 = "0", y2 = "0", z2 = "0", xd2 = "0", yd2 = "0", x3 = "0", y3 = "0", z3 = "0", xd3 = "0", yd3 = "0", ptc = "0", vrr = "0", cic = "0")
-]
-
-ensaios = [
-	
-]
+from joystick import coordenadas, coordenadas_e
+#from controle_dobot_lite import start
 
 app = Flask(__name__)
 
+ensaio = None
+
 @app.route("/")
 def index():
-    return render_template("home.html", posicoes=posicoes)
+    return render_template("home.html", ensaio=ensaio)
 
 def ledOn():
     resposta_para_tudo.write(str('1').encode() + b"\n")
@@ -40,68 +34,60 @@ def led():
 	return redirect("/")
 
 @app.route("/criar", methods=["POST"])
+def cria_ensaio():
+	global ensaio
 
-def gerar_coordenada():
+	ensaio = request.form["ensaio"]
 
-    #posicao = Posicao(
-        # x1=request.form["x1"],
-        # y1=request.form["y1"],
-        # z1=request.form["z1"],
+	criar_ensaio(ensaio, request.form["cic"], request.form["vrr"])
+	return redirect("/")
 
-        # xd1=request.form["xd1"],
-        # yd1=request.form["yd1"],
 
-        # x2=request.form["x2"],
-        # y2=request.form["y2"],
-        # z2=request.form["z2"],
+@app.route("/b1", methods=["POST"])
+def b1():
+	x, y, z = coordenadas()
+	update_ensaio_b1(x, y, z, ensaio)
+	return redirect("/")
 
-        # xd2=request.form["xd2"],
-        # yd2=request.form["yd2"],
-
-        # x3=request.form["x3"],
-        # y3=request.form["y3"],
-        # z3=request.form["z3"],
-
-        # xd3=request.form["xd3"],
-        # yd3=request.form["yd3"],
-
-        # ptc=request.form["ptc"],
-        # vrr=request.form["vrr"],
-        # cic=request.form["cic"]
-        
-    #)
-
-    x0, y0, z0 = coordenadas()
-
-    posicao = Posicao(
-        x1=x0,
-        y1=y0,
-        z1=z0
-    )
-
-    global posicoes
+@app.route("/b2", methods=["POST"])
+def b2():
+	x, y, z = coordenadas()
+	update_ensaio_b2(x, y, z, ensaio)
+	return redirect("/")
+	
+@app.route("/b3", methods=["POST"])
+def b3():
+	x, y, z = coordenadas()
+	update_ensaio_b3(x, y, z, ensaio)
+	return redirect("/")
+	
+@app.route("/b1_e", methods=["POST"])
+def b1_e():
+	x, y = coordenadas_e()
+	update_ensaio_b1_e(x, y, ensaio)
+	return redirect("/")
+	
+@app.route("/b2_e", methods=["POST"])
+def b2_e():
+	x, y = coordenadas_e()
+	update_ensaio_b2_e(x, y, ensaio)
+	return redirect("/")
+	
+@app.route("/b3_e", methods=["POST"])
+def b3_e():
+	x, y = coordenadas_e()
+	update_ensaio_b3_e(x, y, ensaio)    
+	return redirect("/")
     
-    posicoes.append(posicao)
-
-    return redirect("/")
 
 @app.route("/finalizar", methods=["POST"])
-def gerar_ensaio():	
-	
-    ensaioo = Ensaio( 
-        bd1=request.form["bd1"],
-        bd2=request.form["bd2"],
-        vrr=request.form["vrr"],
-        cic=request.form["cic"]
-    )
-    
-    global ensaios
-    ensaios.append(ensaioo)
+def iniciar_ensaio():	
 
-    with open("src\controle_dobot_lite.py") as f:
-       exec(f.read())
-    
-    return redirect("/")
+	# start(ensaio)
+
+	with open("src\controle_dobot_lite.py") as f:
+		exec(f.read())
+	return redirect("/")
 
 
 if __name__ == "__main__":
