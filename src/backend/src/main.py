@@ -40,7 +40,7 @@ def update_ensaio_b3_e(x, y, e):
     return print("B3_e Atualizado")
 
 
-def encontra_ensaio(): 
+def encontra_ensaio(): #Precisa substituir o id por um request.form 
     ensaio_pronto = collection.find_one({"_id": "22"}) 
     print(type(ensaio_pronto))
     return ensaio_pronto
