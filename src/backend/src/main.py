@@ -1,10 +1,51 @@
 from flask import Flask, render_template, Response, request, redirect
-from data.mongodb import criar_ensaio, update_ensaio_b1, update_ensaio_b2, update_ensaio_b3, update_ensaio_b1_e, update_ensaio_b2_e, update_ensaio_b3_e, encontra_ensaio
+#from mongodb import criar_ensaio, update_ensaio_b1, update_ensaio_b2, update_ensaio_b3, update_ensaio_b1_e, update_ensaio_b2_e, update_ensaio_b3_e
 from conexao import resposta_para_tudo
 from joystick import coordenadas, coordenadas_e
-#from controle_dobot_lite import start
+import pymongo
+from pymongo import MongoClient
 
 app = Flask(__name__)
+
+cluster = MongoClient("mongodb+srv://Gabi-Barretto:DarthVader01@modulo5.ftovxoa.mongodb.net/?retryWrites=true&w=majority")
+db = cluster["Ensaios"]
+collection = db["Ensaios"]
+
+def criar_ensaio(e, cic, vrr):
+    collection.insert_one({"_id": e, "cic": cic, "vrr": vrr})
+    return print("Ensaio criado com sucesso")
+
+def update_ensaio_b1(x, y, z, e):
+    collection.update_one({"_id": e}, {"$set": {"x1": x, "y1": y, "z1": z}})
+    return print("B1 Atualizado")
+
+def update_ensaio_b2(x, y, z, e):
+    collection.update_one({"_id": e}, {"$set":  {"x2": x, "y2": y, "z2": z}})
+    return print("B2 Atualizado")
+
+def update_ensaio_b3(x, y, z, e):
+    collection.update_one({"_id": e}, {"$set":  {"x3": x, "y3": y, "z3": z}})
+    return print("B3 Atualizado")
+
+def update_ensaio_b1_e(x, y, e):
+    collection.update_one({"_id": e}, {"$set":  {"x1_e": x, "y1_e": y}})
+    return print("B1_e Atualizado")
+
+def update_ensaio_b2_e(x, y, e):
+    collection.update_one({"_id": e}, {"$set":  {"x2_e": x, "y2_e": y}})
+    return print("B2_e Atualizado")
+
+def update_ensaio_b3_e(x, y, e):
+    collection.update_one({"_id": e}, {"$set":  {"x3_e": x, "y3_e": y}})
+    return print("B3_e Atualizado")
+
+
+def encontra_ensaio(): 
+    ensaio_pronto = collection.find_one({"_id": "22"}) 
+    print(type(ensaio_pronto))
+    return ensaio_pronto
+
+global ensaio
 
 ensaio = None
 
@@ -83,10 +124,9 @@ def b3_e():
 @app.route("/finalizar", methods=["POST"])
 def iniciar_ensaio():	
 
-	# start(ensaio)
-
 	with open("src\controle_dobot_lite.py") as f:
 		exec(f.read())
+
 	return redirect("/")
 
 
