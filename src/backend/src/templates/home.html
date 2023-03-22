@@ -42,13 +42,13 @@
                   <button type="submit" value="Adicionar">Extremidade B3</button>
             </form>
             <form action="finalizar" method="post">
+                  <label for="id_ensaio">Ensaio a iniciar:</label>
+                  <input type="number" id="id_ensaio" name="id_ensaio">
                   <button type="submit" value="Adicionar">INICIAR!</button>
             </form>
             <br>
-              <!-- <button class='onButton' onclick="subir()" name="subir" value="subir">subir</button> -->
             <div class="led bloco">
-                <form action='led' method='POST'>
-                
+                <form action='led' method='POST'>               
                   <button class='onButton' onclick="ledOn()" name="on" value="on">on</button>
                   <button class='offButton' onclick="ledOff()" name="off" value="off">off</button>
                 </form>
