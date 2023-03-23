@@ -357,25 +357,25 @@ Para fins de validação dos protótipos iniciais da solução, segue a consolid
 A comunicação entre dispositivos é fundamental para o sucesso do projeto em questão. Nesse sentido, para garantir um desempenho eficiente e preciso, foi necessário o desenvolvimento de um backend que atenda às necessidades específicas do sistema. A presente seção tem como objetivo apresentar as principais características e funcionalidades desse backend, visando fornecer informações claras e objetivas para o uso e manutenção dos dispositivos envolvidos.
 
 ### Instruções de instalação gerais
-- Instalar python
-- Instalar IDE (thonny rec)
-- A ordem de conexões do xxxx deve ser seguida conforme a imagem abaixo onde:
-A: Comunicação da balança
-B: Comunicação da balança
-C: 5V da balança
-D: Acionador do led
-E: Acionador do led
-F: GND da balança
-G: 2ª polaridade do eletroimã
-H: GND do Led
-I: 1ª polaridade do eletroimã
+- Instalar a última versão do Python (3.11.2) <br>
+- Instalar IDE compatível com o Raspberry Pi Pico W (Para todo o desenvolvimento do projeto e suas testagens foi-se utilizado o Thonny) <br>
+- A ordem das conexões da barra de pinos macho deve ser seguida conforme a imagem abaixo onde: <br>
+A: Comunicação da balança <br>
+B: Comunicação da balança <br>
+C: 5V da balança <br>
+D: Acionador do led <br>
+E: Acionador do led <br>
+F: GND da balança <br>
+G: 2ª polaridade do eletroimã <br>
+H: GND do Led <br>
+I: 1ª polaridade do eletroimã <br>
 "FOTO DAS CONEXÕES"
 
 ### Arquivos importantes
 
 #### Célula de Carga
 Nome do arquivo: backend_celula_de_carga.py <br>
-
+<img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/diagramas_backend/C%C3%A9lula%20de%20carga.png?raw=true"  width="25%">
 
 # Referências
   
