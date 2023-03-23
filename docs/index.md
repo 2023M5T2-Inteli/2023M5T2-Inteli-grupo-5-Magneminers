@@ -353,6 +353,29 @@ Para fins de validação dos protótipos iniciais da solução, segue a consolid
  
 [<img src="https://lh4.googleusercontent.com/72hif2xu81BUXbT-QnjV6JxvITd-5OMrs_6IRucYrypywCMPoHQbRooMXUI68x3uT1HOcjXxZzqC4WylVjOw3ospo_CIIq_OPmc0d3pswFj2GK29BPvGuL-KFxiPYhK57hlKPKO8l5GG_PTrYPJQdXg" width="100%">](https://drive.google.com/file/d/1txtCYVejKdHhF4Ub3VqGtsHanooMbTtl/view?usp=sharing)
 
+## Análise do Processamento de Informações e Regras de Negócio
+A comunicação entre dispositivos é fundamental para o sucesso do projeto em questão. Nesse sentido, para garantir um desempenho eficiente e preciso, foi necessário o desenvolvimento de um backend que atenda às necessidades específicas do sistema. A presente seção tem como objetivo apresentar as principais características e funcionalidades desse backend, visando fornecer informações claras e objetivas para o uso e manutenção dos dispositivos envolvidos.
+
+### Instruções de instalação gerais
+- Instalar python
+- Instalar IDE (thonny rec)
+- A ordem de conexões do xxxx deve ser seguida conforme a imagem abaixo onde:
+A: Comunicação da balança
+B: Comunicação da balança
+C: 5V da balança
+D: Acionador do led
+E: Acionador do led
+F: GND da balança
+G: 2ª polaridade do eletroimã
+H: GND do Led
+I: 1ª polaridade do eletroimã
+"FOTO DAS CONEXÕES"
+
+### Arquivos importantes
+
+#### Célula de Carga
+Nome do arquivo: backend_celula_de_carga.py <br>
+
 
 # Referências
   
