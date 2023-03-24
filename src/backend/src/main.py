@@ -1,11 +1,13 @@
 from flask import Flask, render_template, Response, request, redirect
-#from mongodb import criar_ensaio, update_ensaio_b1, update_ensaio_b2, update_ensaio_b3, update_ensaio_b1_e, update_ensaio_b2_e, update_ensaio_b3_e
 from conexao import resposta_para_tudo
 from joystick import coordenadas, coordenadas_e
 import pymongo
 from pymongo import MongoClient
+from data.robot_singleton import RobotSingleton
 
 app = Flask(__name__)
+
+global ensaio, ensaiof, id_ensaio
 
 cluster = MongoClient("mongodb+srv://Gabi-Barretto:DarthVader01@modulo5.ftovxoa.mongodb.net/?retryWrites=true&w=majority")
 db = cluster["Ensaios"]
@@ -40,12 +42,10 @@ def update_ensaio_b3_e(x, y, e):
     return print("B3_e Atualizado")
 
 
-def encontra_ensaio(): #Precisa substituir o id por um request.form 
-    ensaio_pronto = collection.find_one({"_id": request.form["id_ensaio"]}) 
+def encontra_ensaio(id_ensaio): #Precisa substituir o id por um request.form 
+    ensaio_pronto = collection.find_one({"_id": id_ensaio}) 
     print(type(ensaio_pronto))
     return ensaio_pronto
-
-global ensaio
 
 ensaio = None
 
@@ -76,7 +76,6 @@ def led():
 
 @app.route("/criar", methods=["POST"])
 def cria_ensaio():
-	global ensaio
 
 	ensaio = request.form["ensaio"]
 
@@ -124,9 +123,18 @@ def b3_e():
 @app.route("/finalizar", methods=["POST"])
 def iniciar_ensaio():	
 
-	with open("src\controle_dobot_lite.py") as f:
-		exec(f.read())
+	id_ensaio = request.form["id_ensaio"]
+	
+	ensaiof = encontra_ensaio(id_ensaio)
 
+	#print(ensaiof)
+
+	robot = RobotSingleton()
+	robot.set_ensaio_id(ensaiof)
+	print(robot.get_ensaio_id())
+
+	with open("src/controle_dobot_lite.py") as f:
+		exec(f.read())
 	return redirect("/")
 
 

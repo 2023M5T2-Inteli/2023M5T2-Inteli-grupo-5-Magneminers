@@ -1,11 +1,23 @@
 # Importação das bibliotecas necessárias para o script
 from enum import Enum
+#import main
 from conexao import resposta_para_tudo, dobot
-from main import encontra_ensaio
+from data.robot_singleton import RobotSingleton
 
-global ensaio_iniciar, controle_eletroima, percorre_bandeja, despertar, adormercer, AcoesEletroima, Poses, Detalhes
+global controle_eletroima, percorre_bandeja, despertar, adormercer, AcoesEletroima, Poses, Detalhes
 
-ensaio_iniciar = encontra_ensaio()
+robot = RobotSingleton()
+# ensaio_iniciar = main.encontra_ensaio(main.id_ensaio)
+ensaio_iniciar = robot.get_ensaio_id()
+print(ensaio_iniciar)
+
+
+# def envia_id(id):
+#     global id_ensaio
+#     id_ensaio = id
+#     return None
+
+# ensaio_iniciar = encontra_ensaio(id_ensaio)
 
 if ensaio_iniciar is None:
     print("Error: No ensaio_iniciar found.")
@@ -13,12 +25,16 @@ if ensaio_iniciar is None:
 else:
     print(ensaio_iniciar["x1"])
 
+# ensaio_iniciar = encontra_ensaio("22")
+
 class AcoesEletroima(Enum):
     LIGAR = 1
     DESLIGAR = 0
 
 # Enumeração das posições do Dobot Magician Lite
 class Poses(Enum):
+
+    global ensaio_iniciar
 
     ALTURA_SUBIDA = 70
     ALTURA_BANDEJA = 30
