@@ -76,6 +76,7 @@ def led():
 
 @app.route("/criar", methods=["POST"])
 def cria_ensaio():
+	global ensaio
 
 	ensaio = request.form["ensaio"]
 

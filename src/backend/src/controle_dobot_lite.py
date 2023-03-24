@@ -37,7 +37,7 @@ class Poses(Enum):
     global ensaio_iniciar
 
     ALTURA_SUBIDA = 70
-    ALTURA_BANDEJA = 30
+    ALTURA_BANDEJA = 20
 
     X_BANDEJA_A = int(ensaio_iniciar["x1"]) 
     Y_BANDEJA_A = int(ensaio_iniciar["y1"])
@@ -86,6 +86,13 @@ def percorre_bandeja(x0, y0, z0, braco_dobot, x_bandeja, y_bandeja, deslocamento
 
     # Percorre bandeja n vezes
     for i in range(n_varreduras):
+
+        braco_dobot.move_to(x_bandeja, 
+                            y_bandeja,
+                            altura_bandeja,
+                            0,
+                            wait = True)  
+        
         braco_dobot.move_to(deslocamento_x_bandeja, 
                             deslocamento_y_bandeja,
                             altura_bandeja,
