@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
+  <link rel="stylesheet" href="style/style.css">
+  <title>IPT - Aplicação</title>
+</head>
+
+<body>
+
+  <div class="bloco">
+      <h1>Ordem de Serviço</h1>
+      <br>
+      <p class="texto">Preencha os campos abaixos referênte a Amostra para o Ensaio</p>
+      <br>
+
+      <form action="/criar" method="post">
+        <div class="alinhamento">
+          <div>
+            <p for="cliente">Nome do Cliente</p>
+            <input type="text" name="cliente" id="cliente" placeholder="Cliente">
+          </div>
+          <div>
+            <p for="amostra">Nome da Amostra</p>
+            <input type="text" name="amostra" id="amostra" placeholder="Amostra">
+          </div>
+          <div>
+            <p for="projeto">Nome do projeto</p>
+            <input type="text" name="projeto" id="projeto" placeholder="Projeto">
+          </div>
+          <div>
+            <p for="usuario">Usuario/Operador</p>
+            <input type="text" name="usuario" id="usuario" placeholder="Usuario/Operador">
+          </div>
+        </div>
+        <br>
+    <hr>
+    <br>
+    <h1>Dados para o Ensaio</h1>
+    <br>
+    <p class="texto">Preencha os campos abaixos antes de configurar as Coordenadas.</p>
+
+          <div class="alinhamento">
+            <div>
+              <p>N° do Ensaio</p>
+              <input type="number" name="ensaio" id="ensaio" placeholder="000-000">
+            </div>
+            <div>
+              <p>N° de Varreduras</p>
+              <input type="number" name="vrr" id="vrr" placeholder="Varreduras">
+            </div>
+            <div>
+              <p>N° de Ciclos</p>
+              <input type="number" name="cic" id="cic" placeholder="Ciclos">
+            </div>
+            
+            <button type="submit" value="Adicionar" class="anim">Salvar Ordem de Serviço</button>
+          </div>
+      </form>
+    </div>
+
+  <div class="bloco">
+    <h1>Confg. Coordenadas Bandeja / Suporte</h1>
+    <br>
+    <p class="texto">Posicione o braço do Robo conforme indicado nas figuras abaixo, e depois grave as coordenadas clincando no botão indicado. </p>
+    <br>
+    <div class="alinhamento">
+      <div>
+        <form action="" method="post"><button type="submit" class="anim">Gravar X, Y, Z</button></form>
+          <div class="bandeja"><div class="bandeja2"><div class="referencia"></div><div class="referencia2"></div></div></div>
+        <br>
+          <form action="" method="post"><button type="submit" class="anim"> Gravar X, Y</button></form>
+      </div>
+
+      <div>
+        <form action="" method="post"><button type="submit" class="anim">Gravar X, Y</button></form>
+          <div class="bandeja"><div class="bandeja2"><div class="referencia"></div><div class="referencia2"></div></div></div>
+        <br>
+          <form action="" method="post"><button type="submit" class="anim"> Gravar X, Y</button></form>
+      </div>
+
+      <div>
+        <form action="" method="post"><button type="submit" class="anim">Gravar X, Y</button></form>
+          <div class="bandeja"><div class="bandeja2"><div class="referencia"></div><div class="referencia2"></div></div></div>
+        <br>
+          <form action="" method="post"><button type="submit" class="anim"> Gravar X, Y</button></form>
+
+        </div>
+
+        <div>
+          <h1>Controle Eletroimã</h1>
+          <br>
+          <p class="texto">Configure a Potência do EletroImã para a realização do Ensaio.</p>
+          <br>
+          <form action="" method="post">
+            <div class="">
+              <p>Voltagem Mínima</p>
+                <input type="text" name="" id="">
+                <br>
+              <p>Voltagem Máximo</p>
+                <input type="text" name="" id="">
+                <br>
+                <button type="submit">Salvar</button>
+            </div>
+          </form>
+          <div class="alinhamento">
+            <form action="" method="post"><button type="submit" class="anim">Ligar</button></form>
+            <form action="" method="post"></form><button type="submit" class="anim">Desligar</button>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="bloco alinhamento">
+    <div class="alinhamento">
+      <form action="" method="post"><button type="submit" class="anim">Ligar Led</button></form>
+      <form action="" method="post"><button type="submit" class="anim">Desligar Led</button></form>
+    </div>
+    <form action="" method="post"><button type="submit" class="anim">Iniciar Ensaio</button></form>
+  </div>
+  
+</body>
+</html>
