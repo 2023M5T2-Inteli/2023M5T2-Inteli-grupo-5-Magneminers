@@ -46,7 +46,7 @@
           <div class="alinhamento">
             <div>
               <p>N° do Ensaio</p>
-              <input type="number" name="ensaio" id="ensaio" placeholder="000-000" class="teste">
+              <input type="number" name="ensaio" id="ensaio" placeholder="00" class="teste">
             </div>
             <div>
               <p>N° de Varreduras</p>
@@ -69,25 +69,24 @@
     <br>
     <div class="alinhamento">
       <div>
-        <form action="" method="post"><button type="submit" class="anim">Gravar X, Y, Z</button></form>
+        <form action="b1" method="post"><button type="submit" class="anim">B1 Gravar X, Y, Z</button></form>
           <div class="bandeja"><div class="bandeja2"><div class="referencia"></div><div class="referencia2"></div></div></div>
         <br>
-          <form action="" method="post"><button type="submit" class="anim"> Gravar X, Y</button></form>
+          <form action="b1_e" method="post"><button type="submit" class="anim">B1 Gravar X, Y</button></form>
       </div>
 
       <div>
-        <form action="" method="post"><button type="submit" class="anim">Gravar X, Y</button></form>
+        <form action="b2" method="post"><button type="submit" class="anim">B2 Gravar X, Y</button></form>
           <div class="bandeja"><div class="bandeja2"><div class="referencia"></div><div class="referencia2"></div></div></div>
         <br>
-          <form action="" method="post"><button type="submit" class="anim"> Gravar X, Y</button></form>
+          <form action="b2_e" method="post"><button type="submit" class="anim">B2 Gravar X, Y</button></form>
       </div>
 
       <div>
-        <form action="" method="post"><button type="submit" class="anim">Gravar X, Y</button></form>
+        <form action="b3" method="post"><button type="submit" class="anim">B3 Gravar X, Y</button></form>
           <div class="bandeja"><div class="bandeja2"><div class="referencia"></div><div class="referencia2"></div></div></div>
         <br>
-          <form action="" method="post"><button type="submit" class="anim"> Gravar X, Y</button></form>
-
+          <form action="b3_e" method="post"><button type="submit" class="anim">B3 Gravar X, Y</button></form>
         </div>
 
         <div>
@@ -116,10 +115,12 @@
 
   <div class="bloco alinhamento">
     <div class="alinhamento">
-      <form action="" method="post"><button type="submit" class="anim">Ligar Led</button></form>
-      <form action="" method="post"><button type="submit" class="anim">Desligar Led</button></form>
+      <form action="led" method="post">
+        <button onclick="ledOn()" name="on" value="on" type="submit" class="anim">Ligar Led</button>
+        <button onclick="ledOff()" name="off" value="off" type="submit" class="anim">Desligar Led</button>
+      </form>
     </div>
-    <form action="" method="post"><button type="submit" class="anim">Iniciar Ensaio</button></form>
+    <form action="finalizar" method="post"><button type="submit" class="anim" value="Adicionar">Iniciar Ensaio</button></form>
   </div>
   
 </body>
