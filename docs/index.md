@@ -7,10 +7,9 @@
 </td>
 </tr>
 </table>
-
-<font size='20'><center>
-Concepção de sistema de automação industrial
-</center></font>
+<br>
+<br>
+<center><font size=6>Concepção de sistema de automação industrial</font></center>
 
 # **Sumário**
 
@@ -47,6 +46,10 @@ Concepção de sistema de automação industrial
   - [Dispositivos Mecânicos](#dispositivos-mecânicos)
     - [Bandeja Radial](#bandeja-radial)
   - [Validação de Dispositivos](#validação-de-dispositivos)
+  - [Análise do Processamento de Informações e Regras de Negócio](#análise-do-processamento-de-informações-e-regras-de-negócio)
+    - [Instruções de instalação gerais](#instruções-de-instalação-gerais)
+    - [Arquivos importantes](#arquivos-importantes)
+      - [Célula de Carga](#célula-de-carga)
 - [Referências](#referências)
 - [Anexos](#anexos)
 
@@ -81,6 +84,8 @@ O objetivo do parceiro é automatizar o processo de ensaio de separação de mat
 
 ### Objetivos específicos
 
+*Objetivos_específicos*
+
 
 # Análise de Negócio
 
@@ -98,18 +103,18 @@ Considerando o processo de separação magnética realizado, atualmente, pelo In
 | Ímã de Neodímio | R$ 2000,00 |
 | Bandejas (x 3) | R$ 138,00 |
 | Saco Zip Lock (x 10) | R$ 24,00 |
-| Total | R$ 2312,00 ||
+| Total | R$ 2312,00 |
 
-**<font  size=2> Tabela 1 — Valores correspondentes aos componentes do procedimento de separação magnética atual </font>**
+<p align="center"><font size=2><b> Tabela 1 — Valores correspondentes aos componentes do procedimento de separação magnética atual </b></font></p>
 
 | **Componente**| **Valor** |
 |--- |--- |
 | DOBOT Magician Lite| R$ 15000,00 - R$ 25000,00 |
 | Raspberry Pi Pico W | R$ 80,00 - R$ 110,00 |
 | Eletroímã (x 4) | R$ 240,00 |
-| Total | R$ 15320,00 ||
+| Total | R$ 15320,00 |
 
-**<font  size=2> Tabela 2 — Valores correspondentes aos componentes da solução desenvolvida para o novo procedimento </font>**
+<p align="center"><font size=2><b>Tabela 2 — Valores correspondentes aos componentes da solução desenvolvida para o novo procedimento</b></font></p>
 
 Em suma, a qualidade dos ensaios constitui o elemento que agrega valor à solução. Com a retirada da mão de obra, cuja ação no ensaio passa a ser automatizada, o tempo ganho pelo operador para outras tarefas é significativo a longo prazo, salvando um custo operacional para os stakeholders. Diante da análise dos custos da operação e retorno dos ensaios — supondo o valor de R$ 2000,00 por ensaio —, a solução se pagaria em, aproximadamente, nove ensaios.
 
@@ -119,9 +124,10 @@ Em suma, a qualidade dos ensaios constitui o elemento que agrega valor à soluç
 **<font size=2> Figura 1 — Análise SWOT (forças, oportunidades, fraquezas e ameaças) do Instituto de Pesquisas Tecnológicas </font>**
 
 ## Value Proposition Canvas
-![](https://lh5.googleusercontent.com/xYxOS-4i-mqXFikfxJAc7g0b_FhPT96ku_k4FdCSHb3YkBMeSY1eqs4W_UaXE3cQJeg-VFHbNcAk1VyiD-jfpKKON3ua7EBH9ka5fBGwX1h3VGxSt3bfBo4WJKTvUS08PMLSops4Ap2DkbRSgd3jYMk)
 
-**<font size=2> Figura 2 — Value Proposition Canvas do atual procedimento de separação magnética realizado pelo IPT </font>**
+<center><img src="https://lh5.googleusercontent.com/xYxOS-4i-mqXFikfxJAc7g0b_FhPT96ku_k4FdCSHb3YkBMeSY1eqs4W_UaXE3cQJeg-VFHbNcAk1VyiD-jfpKKON3ua7EBH9ka5fBGwX1h3VGxSt3bfBo4WJKTvUS08PMLSops4Ap2DkbRSgd3jYMk" width="90%"></img></center>
+
+<center><b><font size=2> Figura 2 — Value Proposition Canvas do atual procedimento de separação magnética realizado pelo IPT </font></b></center>
 
 ## Matriz de Riscos
 ![](https://lh6.googleusercontent.com/PsuqnxqBCrQZD-gd0dvqBnxThe2AOZWL6vFaLv27mIcgcPJA148UVNPkAnvzPRf696h6kdDlmeOSMsuxcbGsQ7I_WNAlkO6A7GrB65i5mTCvBZB_YU6-Kf9qKl5sqVSC8ANSYEWgnSgn2K9Eush8ml0)
