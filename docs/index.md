@@ -8,8 +8,9 @@
 </tr>
 </table>
 <br>
-<br>
-<center><font size=6>Concepção de sistema de automação industrial</font></center>
+
+<h2 align="center">Concepção de sistema de automação industrial</font></h2>
+
 
 # **Sumário**
 
@@ -30,7 +31,7 @@
 - [Arquitetura do Sistema](#arquitetura-do-sistema)
   - [Módulos do Sistema e Visão Geral (Big Picture) (1.0)](#módulos-do-sistema-e-visão-geral-big-picture-10)
     - [Croqui da Solução](#croqui-da-solução)
-  - [Módulos do Sistema e Visão Geral (Big Picture) (2.0)](#módulos-do-sistema-e-visão-geral-big-picture-20)
+    - [Diagrama da Solução](#diagrama-da-solução)
   - [Sensores](#sensores)
     - [Testes preliminares de resposta dos sensores](#testes-preliminares-de-resposta-dos-sensores)
     - [Demonstrações de Funcionamento dos Sensores](#demonstrações-de-funcionamento-dos-sensores)
@@ -56,13 +57,13 @@
 
 # Autores
 
-[Amanda Ribeiro Fontes](https://www.linkedin.com/in/amanda-fontes/)
-[Gabriel Pascoli](https://www.linkedin.com/in/gabriel-pascoli-73733b200/)
-[Gabriela Barretto Dias](https://www.linkedin.com/in/gabriela-dias-38b484250/)
-[Gustavo Francisco Neto Pereira](https://www.linkedin.com/in/gustavo-pereira1/)
-[João Pedro Gonçalves Carazzato](https://www.linkedin.com/in/jo%C3%A3o-pedro-gon%C3%A7alves-carazzato-147120231/)
-[Kil Matheus Gomes Teixeira](https://www.linkedin.com/in/kil-matheus-gomes-teixeira-78257020a/)
-[Luiz Fernando da Silva Borges](https://www.linkedin.com/in/sbluizfernando/)
+[Amanda Ribeiro Fontes](https://www.linkedin.com/in/amanda-fontes/) <br>
+[Gabriel Pascoli](https://www.linkedin.com/in/gabriel-pascoli-73733b200/)<br>
+[Gabriela Barretto Dias](https://www.linkedin.com/in/gabriela-dias-38b484250/)<br>
+[Gustavo Francisco Neto Pereira](https://www.linkedin.com/in/gustavo-pereira1/)<br>
+[João Pedro Gonçalves Carazzato](https://www.linkedin.com/in/jo%C3%A3o-pedro-gon%C3%A7alves-carazzato-147120231/)<br>
+[Kil Matheus Gomes Teixeira](https://www.linkedin.com/in/kil-matheus-gomes-teixeira-78257020a/)<br>
+[Luiz Fernando da Silva Borges](https://www.linkedin.com/in/sbluizfernando/)<br>
 
 # Visão Geral do Projeto
 
@@ -97,78 +98,166 @@ O objetivo do parceiro é automatizar o processo de ensaio de separação de mat
 
 Considerando o processo de separação magnética realizado, atualmente, pelo Instituto de Pesquisas Tecnológicas, dispõem-se abaixo os valores referentes ao início da operação.
 
-| **Componente**| **Valor** |
-|--- |--- |
-| Operador | R$ 150,00 |
-| Ímã de Neodímio | R$ 2000,00 |
-| Bandejas (x 3) | R$ 138,00 |
-| Saco Zip Lock (x 10) | R$ 24,00 |
-| Total | R$ 2312,00 |
-
+<br>
+<table align="center">
+  <tr>
+    <th>Componente</th>
+    <th>Valor</th>
+  </tr>
+  <tr>
+    <td>Operador </td>
+    <td>R$ 150,00</td>
+<tr>
+	<td>Ímã de Neodímio</td>
+	<td>R$ 2000,00</td>
+</tr>
+<tr>
+	<td>Bandejas (x 3)</td>
+	<td>R$ 138,00</td>
+</tr>
+<tr>
+	<td>Saco Zip Lock (x 10)</td>
+	<td>R$ 24,00</td>
+</tr>
+<tr>
+	<td>Total</td>
+	<td>R$ 2312,00</td>
+</tr>
+</table>
+<br>
 <p align="center"><font size=2><b> Tabela 1 — Valores correspondentes aos componentes do procedimento de separação magnética atual </b></font></p>
 
-| **Componente**| **Valor** |
-|--- |--- |
-| DOBOT Magician Lite| R$ 15000,00 - R$ 25000,00 |
-| Raspberry Pi Pico W | R$ 80,00 - R$ 110,00 |
-| Eletroímã (x 4) | R$ 240,00 |
-| Total | R$ 15320,00 |
-
+<br>
+<table align="center">
+  <tr>
+    <th>Componente</th>
+    <th>Valor</th>
+  </tr>
+  <tr>
+    <td>DOBOT Magician Lite</td>
+    <td>R$ 15000,00 - R$ 25000,00</td>
+<tr>
+	<td>Raspberry Pi Pico W</td>
+	<td>R$ 80,00 - R$ 110,00</td>
+</tr>
+<tr>
+	<td>Eletroímã (x 4)</td>
+	<td>R$ 240,00</td>
+</tr>
+<tr>
+	<td>Total</td>
+	<td>R$ 24,00</td>
+</tr>
+<tr>
+	<td>Total</td>
+	<td>R$ 15320,00</td>
+</tr>
+</table>
+<br>
 <p align="center"><font size=2><b>Tabela 2 — Valores correspondentes aos componentes da solução desenvolvida para o novo procedimento</b></font></p>
 
 Em suma, a qualidade dos ensaios constitui o elemento que agrega valor à solução. Com a retirada da mão de obra, cuja ação no ensaio passa a ser automatizada, o tempo ganho pelo operador para outras tarefas é significativo a longo prazo, salvando um custo operacional para os stakeholders. Diante da análise dos custos da operação e retorno dos ensaios — supondo o valor de R$ 2000,00 por ensaio —, a solução se pagaria em, aproximadamente, nove ensaios.
 
 ## Análise SWOT
-![](https://lh6.googleusercontent.com/zG8EnpZDgBawCTeDtsdIlDg2p6Ucljp306zIdN2e-vJLtzRxG_w4UnhNh5kEH32OZFgOrrOLHLhEsK2zV2kvmrZR1lcEbKyZ-tMikonjjLosjdmX5_fPNudNE6e7JZkfUH1QL_X20P0MP9xkGtSSoBw)
 
-**<font size=2> Figura 1 — Análise SWOT (forças, oportunidades, fraquezas e ameaças) do Instituto de Pesquisas Tecnológicas </font>**
+<br>
+<p align="center"><img src="https://lh6.googleusercontent.com/zG8EnpZDgBawCTeDtsdIlDg2p6Ucljp306zIdN2e-vJLtzRxG_w4UnhNh5kEH32OZFgOrrOLHLhEsK2zV2kvmrZR1lcEbKyZ-tMikonjjLosjdmX5_fPNudNE6e7JZkfUH1QL_X20P0MP9xkGtSSoBw" width="70%"></img></p>
+<p align="center"><font size=2><b>Figura 1 — Análise SWOT (forças, oportunidades, fraquezas e ameaças) do Instituto de Pesquisas Tecnológicas</b></font></p>
+<br>
 
 ## Value Proposition Canvas
 
-<center><img src="https://lh5.googleusercontent.com/xYxOS-4i-mqXFikfxJAc7g0b_FhPT96ku_k4FdCSHb3YkBMeSY1eqs4W_UaXE3cQJeg-VFHbNcAk1VyiD-jfpKKON3ua7EBH9ka5fBGwX1h3VGxSt3bfBo4WJKTvUS08PMLSops4Ap2DkbRSgd3jYMk" width="90%"></img></center>
-
-<center><b><font size=2> Figura 2 — Value Proposition Canvas do atual procedimento de separação magnética realizado pelo IPT </font></b></center>
+<br>
+<p align="center"><img src="https://lh5.googleusercontent.com/xYxOS-4i-mqXFikfxJAc7g0b_FhPT96ku_k4FdCSHb3YkBMeSY1eqs4W_UaXE3cQJeg-VFHbNcAk1VyiD-jfpKKON3ua7EBH9ka5fBGwX1h3VGxSt3bfBo4WJKTvUS08PMLSops4Ap2DkbRSgd3jYMk" width="70%"></img></p>
+<p align="center"><font size=2><b>Figura 2 — Value Proposition Canvas do atual procedimento de separação magnética realizado pelo IPT</b></font></p>
+<br>
 
 ## Matriz de Riscos
-![](https://lh6.googleusercontent.com/PsuqnxqBCrQZD-gd0dvqBnxThe2AOZWL6vFaLv27mIcgcPJA148UVNPkAnvzPRf696h6kdDlmeOSMsuxcbGsQ7I_WNAlkO6A7GrB65i5mTCvBZB_YU6-Kf9qKl5sqVSC8ANSYEWgnSgn2K9Eush8ml0)
 
-**<font size=2> Figura 3 — Matriz de Riscos da solução desenvolvida </font>**
+<br>
+<p align="center"><img src="https://lh6.googleusercontent.com/PsuqnxqBCrQZD-gd0dvqBnxThe2AOZWL6vFaLv27mIcgcPJA148UVNPkAnvzPRf696h6kdDlmeOSMsuxcbGsQ7I_WNAlkO6A7GrB65i5mTCvBZB_YU6-Kf9qKl5sqVSC8ANSYEWgnSgn2K9Eush8ml0" width="70%"></img></p>
+<p align="center"><font size=2><b>Figura 3 — Matriz de Riscos da solução desenvolvida</b></font></p>
+<br>
 
 # Arquitetura do Sistema
 
 ## Módulos do Sistema e Visão Geral (Big Picture) (1.0)
 
-| **Componente**| **Descrição da função/características/requisitos** |
-|--- |--- |
-| DOBOT Magician Lite | Será utilizado o braço robótico Dobot Magician Lite, produto desenvolvido pela Minipa. O robô é inteligente, multifuncional e introduz uma série de métodos de interação entre software e hardware, com foco em um processo de aprendizagem baseado na liberdade de criação. |
-| Raspberry Pi Pico W | Constitui um poderoso microcontrolador com conexão wireless que conta com uma série de aplicações. No contexto do projeto, será programado em MicroPython. É considerada uma ferramenta compacta e de baixo custo. |
-| Eletroímã | Peça composta por um solenóide com um núcleo de material ferromagnético. Ao ser percorrido por um campo elétrico, gera ao seu redor um campo magnético. No projeto, será utilizado para o processo de separação magnética e ficará acoplado ao braço robótico. ||
-
-**<font  size=2> Tabela 3 — Componentes do sistema e descrição de suas respectivas funções, características e requisitos </font>**
+<br>
+<table align="center">
+  <tr>
+    <th>Componente</th>
+    <th>Descrição da função/características/requisitos</th>
+  </tr>
+  <tr>
+    <td>DOBOT Magician Lite</td>
+    <td>Será utilizado o braço robótico Dobot Magician Lite, produto desenvolvido pela Minipa. O robô é inteligente, multifuncional e introduz uma série de métodos de interação entre software e hardware, com foco em um processo de aprendizagem baseado na liberdade de criação.</td>
+<tr>
+	<td>Raspberry Pi Pico W</td>
+	<td>Constitui um poderoso microcontrolador com conexão wireless que conta com uma série de aplicações. No contexto do projeto, será programado em MicroPython. É considerada uma ferramenta compacta e de baixo custo.</td>
+</tr>
+<tr>
+	<td>Eletroímã</td>
+	<td>Peça composta por um solenóide com um núcleo de material ferromagnético. Ao ser percorrido por um campo elétrico, gera ao seu redor um campo magnético. No projeto, será utilizado para o processo de separação magnética e ficará acoplado ao braço robótico.</td>
+</tr>
+</table>
+<br>
+<p align="center"><font size=2><b>Tabela 3 — Componentes do sistema e descrição de suas respectivas funções, características e requisitos</b></font></p>
 
   
 ### Croqui da Solução
-![](https://lh6.googleusercontent.com/ztk3zc9XaL34iNjuaPBuNVShRFIyjokR2Jst5DncvFbHIP54xMl98ww9CKMHN8QmR6n_dpUhHCBDjhhLnVa-wM5NKoTncqdeOXLbuwEs-bQmc2i5oCHimDtJOG6Kifzzl1vRTCi0IrapvS6h1T3StKI)
-  **<font  size=2> Figura 4 — Versão inicial do croqui da solução </font>**
 
-![](https://lh6.googleusercontent.com/h4amFfWdV1cBVHwKohGJG-WkZxRD2XilNjKyljW65xQtF6-O_A-T3Vr2XQTKXalTua54MzlmMWVOQPJDdET_461QWDJG2EaT0YILkZ0aF1DRAhSqUgUCoRmJkkrOlTCSnLFsZ_9a8OftsXZsOJtS0iA)
-  **<font  size=2> Figura 5 — Versão inicial do dispositivo mecânico de suporte para eletroímãs </font>**
-  
+<br>
+<p align="center"><img src="https://lh6.googleusercontent.com/ztk3zc9XaL34iNjuaPBuNVShRFIyjokR2Jst5DncvFbHIP54xMl98ww9CKMHN8QmR6n_dpUhHCBDjhhLnVa-wM5NKoTncqdeOXLbuwEs-bQmc2i5oCHimDtJOG6Kifzzl1vRTCi0IrapvS6h1T3StKI" width="70%"></img></p>
+<p align="center"><font size=2><b>Figura 4 — Versão inicial do croqui da solução</b></font></p>
+<br>
 
-## Módulos do Sistema e Visão Geral (Big Picture) (2.0)
-![](https://lh4.googleusercontent.com/Z5mUwJhEBQMw7qMIhjXzP2YzD2WnL8AAS5TnRI3obXeeZ5wV_fIfszd9qe3LvEW1ql9qz9bZnjREranW4u2LUhCnXDGfMPerODt9Z6T7X5SKTqfQKILhZ0A05YJ4FuuEE-oZA1XZSNeos0sty9EX2jE)
-    **<font  size=2> Figura 6 — Diagrama da solução </font>**
+<br>
+<p align="center"><img src="https://lh6.googleusercontent.com/h4amFfWdV1cBVHwKohGJG-WkZxRD2XilNjKyljW65xQtF6-O_A-T3Vr2XQTKXalTua54MzlmMWVOQPJDdET_461QWDJG2EaT0YILkZ0aF1DRAhSqUgUCoRmJkkrOlTCSnLFsZ_9a8OftsXZsOJtS0iA" width="70%"></img></p>
+<p align="center"><font size=2><b>Figura 5 — Versão inicial do dispositivo mecânico de suporte para eletroímãs</b></font></p>
+<br>
 
+### Diagrama da Solução
 
-| **Componente / Conexão**| **Descrição da função** | Tipo: entrada / saída / atuador |
-|--- |--- | --- |
-| Eletroímã, fios | Recebe uma corrente do Raspberry Pi Pico W, por meio da qual gera um campo eletromagnético. Espera-se que o ímã atraia os materiais interessantes para o ensaio. | Entrada: 12V |
-| Raspberry Pi Pico W, fios (Micro USB) | Microcontrolador principal da solução, responsável por se comunicar via serial com o script python do braço robótico, receber e analisar dados dos sensores ao longo da operação e atuar perante eles. | Entrada: Sensores, dados ( Leituras analógicas). Saída: Volts, dados |
-| Célula de carga + Amplificador Operacional | Sensor eletromecânico que possibilita a verificação da variação de força ou peso de uma determinada estrutura. (Bandeja com os materiais ferromagnéticos). | Entrada: Energia elétrica. Saída: dados (Leituras analógicas da célula de carga) |
-| Sensor de distância | Sensor infravermelho que nos permite converter suas leituras por meio de um cálculo polinomial de quinto grau a uma determinada distância em cm. (Braço e bandeja). | Entrada: Energia elétrica. Saída: dados (Leituras analógicas da célula de carga) |
-| Ponte H | Utilizado como regulador da corrente do eletroímã | Entrada: Energia elétrica. Saída: Energia elétrica |
+<br>
+<p align="center"><img src="https://lh4.googleusercontent.com/Z5mUwJhEBQMw7qMIhjXzP2YzD2WnL8AAS5TnRI3obXeeZ5wV_fIfszd9qe3LvEW1ql9qz9bZnjREranW4u2LUhCnXDGfMPerODt9Z6T7X5SKTqfQKILhZ0A05YJ4FuuEE-oZA1XZSNeos0sty9EX2jE" width="70%"></img></p>
+<p align="center"><font size=2><b>Figura 6 — Diagrama da solução</b></font></p>
 
-**<font  size=2> Tabela 3 — Componentes do sistema contendo suas respectivas formas de conexão, funções e especificações relacionadas a entrada e saída </font>**
+<br>
+<table align="center">
+  <tr>
+    <th>Componente / Conexão</th>
+    <th>Descrição da função</th>
+    <th>Tipo: entrada / saída / atuador</th>
+  </tr>
+  <tr>
+    <td>Eletroímã, fios</td>
+    <td>Recebe uma corrente do Raspberry Pi Pico W, por meio da qual gera um campo eletromagnético. Espera-se que o ímã atraia os materiais interessantes para o ensaio.</td>
+    <td>Entrada: 12V</td>
+<tr>
+	<td>Raspberry Pi Pico W, fios (Micro USB)</td>
+	<td>Microcontrolador principal da solução, responsável por se comunicar via serial com o script python do braço robótico, receber e analisar dados dos sensores ao longo da operação e atuar perante eles.</td>
+	<td>Entrada: Sensores, dados (Leituras analógicas). Saída: Volts, dados</td>
+</tr>
+<tr>
+	<td>Célula de carga + Amplificador Operacional</td>
+	<td>Sensor eletromecânico que possibilita a verificação da variação de força ou peso de uma determinada estrutura. (Bandeja com os materiais ferromagnéticos).</td>
+	<td>Entrada: Energia elétrica. Saída: dados (Leituras analógicas da célula de carga)</td>
+</tr>
+<tr>
+	<td>Sensor de distância</td>
+	<td>Sensor infravermelho que nos permite converter suas leituras por meio de um cálculo polinomial de quinto grau a uma determinada distância em cm. (Braço e bandeja).</td>
+	<td>Entrada: Energia elétrica. Saída: dados (Leituras analógicas da célula de carga)</td>
+</tr>
+<tr>
+	<td>Ponte H</td>
+	<td>Utilizado como regulador da corrente do eletroímã</td>
+	<td>Entrada: Energia elétrica. Saída: Energia elétrica</td>
+</tr>
+</table>
+<br>
+<p align="center"><font size=2><b>Tabela 4 — Componentes do sistema contendo suas respectivas formas de conexão, funções e especificações relacionadas a entrada e saída</b></font></p>
+<br>
 
 ## Sensores
 
@@ -196,11 +285,11 @@ Começamos os testes, primeiramente, buscando entender os sensores que precisáv
 
 Abaixo, encontram-se os vídeos de demonstração de funcionamento dos sensores utilizados na solução.
 
-[<img src="https://lh3.googleusercontent.com/fqUKYFc17_odvZCvnTXnoRLqCDH9Pn9qDU89iT06e85d7JCMgehLY_zv11d5XwpVpe9WBhRMjyfWFEQnsnYrQ1qyxWmC6A1tT2TWTOM-Va5HO0muF4CpKcszElloyR_C5pqJr0lwGDwhx7vwfNHzgyg" width="100%">](https://drive.google.com/file/d/1Ca5yPUheEd5piRgm2pBVEWkggLV0Kput/view?usp=sharing/)
-**<font size="2"> Vídeo para demonstração da calibração do sensor de distância infravermelho </font>**
+[<center><img src="https://lh3.googleusercontent.com/fqUKYFc17_odvZCvnTXnoRLqCDH9Pn9qDU89iT06e85d7JCMgehLY_zv11d5XwpVpe9WBhRMjyfWFEQnsnYrQ1qyxWmC6A1tT2TWTOM-Va5HO0muF4CpKcszElloyR_C5pqJr0lwGDwhx7vwfNHzgyg" width="70%"></img></center>](https://drive.google.com/file/d/1Ca5yPUheEd5piRgm2pBVEWkggLV0Kput/view?usp=sharing/)
+<p align="center"><font size=2><b>Vídeo para demonstração da calibração do sensor de distância infravermelho</b></font></p>
 
-[<img src="https://lh6.googleusercontent.com/auAXAe9Xtx8LeL_hgrhevCSoSas-2hgLQiDJkmaKQMo5Aln3AQPqphcAsPrAwtK9bnkqbQE60VdnC7FYCSS_ISZA1q_zkiNb_pNwf5CONbB9MUBZJx5vqdt1c2HjwwsXzADE1AOcUq4_KOQLKPHPiGU" width="100%">](https://drive.google.com/file/d/1_PykpKwE5UDx0YWhsY6CiHbBpMDh4OsE/view?usp=sharing)
-**<font size=2> Vídeo para demonstração da leitura da célula de carga </font>**
+[<center><img src="https://lh6.googleusercontent.com/auAXAe9Xtx8LeL_hgrhevCSoSas-2hgLQiDJkmaKQMo5Aln3AQPqphcAsPrAwtK9bnkqbQE60VdnC7FYCSS_ISZA1q_zkiNb_pNwf5CONbB9MUBZJx5vqdt1c2HjwwsXzADE1AOcUq4_KOQLKPHPiGU" width="70%"></img></center>](https://drive.google.com/file/d/1_PykpKwE5UDx0YWhsY6CiHbBpMDh4OsE/view?usp=sharing)
+<p align="center"><font size=2><b>Vídeo para demonstração da leitura da célula de carga</b></font></p>
 
 ## Atuadores
 
