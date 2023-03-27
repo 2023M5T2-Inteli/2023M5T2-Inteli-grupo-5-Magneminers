@@ -426,8 +426,16 @@ A solução conta com o microcontrolador Rasperry Pi Pico W e com o auxílio de 
 
 ## Materiais e métodos da fabricação dos dispositivos mecânicos
 As imagens incluídas na documentação mostram o processo de impressão 3D das peças. <br>
-A primeira imagem representa a posição da peça a ser impressa, já a segunda representa o processo de fatiamento - que define o caminho percorrido pelo bico da impressora para imprimir todos os detalhes do objeto. As linhas verdes na primeira imagem representam a base da impressão, que é responsável por sustentar toda a peça durante o processo de impressão. Além disso, os filamentos de suporte visíveis na imagem auxiliam na impressão de partes que requerem suporte adequado. <br>
+As figuras DB1 e DC1 representam a posição da peça a ser impressa, já as figuras DB2 e DC2 representam o processo de fatiamento - que define o caminho percorrido pelo bico da impressora para imprimir todos os detalhes do objeto. As linhas verdes presentes nas primeiras figuras representam a base da impressão, que é responsável por sustentar toda a peça durante o processo de impressão. Além disso, os filamentos de suporte visíveis na imagem auxiliam na impressão de partes que requerem suporte adequado. <br>
 A fim de tornar os dispositivos adequado às necessidades do projeto, o material escolhido foi o filamento PLA.
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/desenhos_tecnicos/arquivos_impressao/1.jpeg" width=35%></img></p><br>
+<p align="center"><font size=1>Figura DB1 — Posição da parte inferior do dispositivo que comporta os eletroímãs</font></p><br>
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/desenhos_tecnicos/arquivos_impressao/3.jpeg" width=25%></img></p><br>
+<p align="center"><font size=1>Figura DC1 — Posição da parte superior do dispositivo que comporta os eletroímãs</font></p><br>
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/desenhos_tecnicos/arquivos_impressao/2.jpeg" width=35%></img></p><br>
+<p align="center"><font size=1>Figura DB2 — Fatiamento da parte inferior do dispositivo que comporta os eletroímãs</font></p><br>
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/desenhos_tecnicos/arquivos_impressao/4.jpeg" width=25%></img></p>
+<p align="center"><font size=1>Figura DC2 — Fatiamento da parte superior do dispositivo que comporta os eletroímãs</font></p><br>
 
 ### Bandeja Radial
 
