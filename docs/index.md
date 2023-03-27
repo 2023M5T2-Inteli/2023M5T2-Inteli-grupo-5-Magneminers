@@ -454,23 +454,35 @@ A comunicação entre dispositivos é fundamental para o sucesso do projeto em q
 ### Instruções de instalação gerais
 - Instalar a última versão do Python (3.11.2) <br>
 - Instalar IDE compatível com o Raspberry Pi Pico W (Para todo o desenvolvimento do projeto e suas testagens foi-se utilizado o Thonny) <br>
-- A ordem das conexões da barra de pinos macho deve ser seguida conforme a imagem abaixo onde: <br>
-A: Comunicação da balança <br>
-B: Comunicação da balança <br>
-C: 5V da balança <br>
-D: Acionador do led <br>
-E: Acionador do led <br>
-F: GND da balança <br>
-G: 2ª polaridade do eletroimã <br>
-H: GND do Led <br>
-I: 1ª polaridade do eletroimã <br>
-"FOTO DAS CONEXÕES"
+- A ordem das conexões da barra de pinos macho da placa principal deve ser seguida conforme a imagem abaixo, onde: <br>
+<b>A:</b> Comunicação da balança <br>
+<b>B:</b> Comunicação da balança <br>
+<b>C:</b> 5V da balança <br>
+<b>D:</b> Acionador do led <br>
+<b>E:</b> Acionador do led <br>
+<b>F:</b> GND da balança <br>
+<b>G:</b> 2ª polaridade do eletroimã <br>
+<b>H:</b> GND do Led <br>
+<b>I:</b> 1ª polaridade do eletroimã <br>
+<div style="text-align:center;"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/esquematicos_eletronicos/Foto%20real%20do%20esquema%20de%20conex%C3%A3o%20da%20Placa%20Principal.jpg"  width="30%"></div>
+<center><font size="1"> Figura xx: Conexão da placa principal e etiquetagem dos jumpers </font></center>
 
-### Arquivos importantes
+### Representação dos arquivos de backend do projeto:
 
-#### Célula de Carga
-Nome do arquivo: backend_celula_de_carga.py <br>
+### Célula de Carga
+<b>Nome do arquivo:</b> backend_celula_de_carga.py <br>
 <img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/diagramas_backend/C%C3%A9lula%20de%20carga.png?raw=true"  width="25%">
+<center><font size="1"> Figura xx: Diagrama de funcionamento simplicado do código da célula de carga </font></center><br>
+
+### Eletroímã
+<b>Nome do arquivo:</b> backend_iv_e_eletroima.py <br>
+<img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/diagramas_backend/Eletro%C3%ADm%C3%A3.png"  width="25%">
+<center><font size="1"> Figura xx: Diagrama de funcionamento simplicado do código do eletroímã </font></center><br>
+
+### Dobot
+<b>Nome do arquivo:</b> controle_dobot_lite.py <br>
+<img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/diagramas_backend/Controle%20do%20Dobot.png"  width="25%">
+<center><font size="1"> Figura xx: Diagrama de funcionamento simplicado do código de controle do dobot </font></center><br>
 
 # Referências
   
