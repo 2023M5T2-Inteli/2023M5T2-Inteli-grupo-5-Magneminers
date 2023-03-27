@@ -1,3 +1,4 @@
+# Importando as bibliotecas necessarias para o script, inculindo funções em outros scripts
 from flask import Flask, render_template, Response, request, redirect
 from conexao import resposta_para_tudo
 from joystick import coordenadas, coordenadas_e
@@ -5,18 +6,25 @@ import pymongo
 from pymongo import MongoClient
 from data.robot_singleton import RobotSingleton
 
+
+# Inicializa o flask
 app = Flask(__name__)
 
+# Declaração de variáveis globais
 global ensaio, ensaiof, id_ensaio
 
+# Inicializa o banco de dados MongoDB
 cluster = MongoClient("mongodb+srv://Gabi-Barretto:DarthVader01@modulo5.ftovxoa.mongodb.net/?retryWrites=true&w=majority")
 db = cluster["Ensaios"]
 collection = db["Ensaios"]
 
+
+# Função para criar ensaio no banco de dados
 def criar_ensaio(e, cic, vrr):
     collection.insert_one({"_id": e, "cic": cic, "vrr": vrr})
     return print("Ensaio criado com sucesso")
 
+# Função para atualizar as coordenadas do ensaio no banco de dados
 def update_ensaio_b1(x, y, z, e):
     collection.update_one({"_id": e}, {"$set": {"x1": x, "y1": y, "z1": z}})
     return print("B1 Atualizado")
@@ -41,18 +49,21 @@ def update_ensaio_b3_e(x, y, e):
     collection.update_one({"_id": e}, {"$set":  {"x3_e": x, "y3_e": y}})
     return print("B3_e Atualizado")
 
-
+# Função para encontrar o ensaio no banco de dados
 def encontra_ensaio(id_ensaio): #Precisa substituir o id por um request.form 
     ensaio_pronto = collection.find_one({"_id": id_ensaio}) 
     print(type(ensaio_pronto))
     return ensaio_pronto
 
+# Declaração da variável ensaio para evitar conflitos
 ensaio = None
 
+# Declaração da rota inicial, com a página home.html
 @app.route("/")
 def index():
     return render_template("home.html", ensaio=ensaio)
 
+# Funções para acionar e desacionar o eletroímã e o led da solução
 def ledOn():
     resposta_para_tudo.write(str('1').encode() + b"\n")
     
@@ -62,6 +73,7 @@ def ledOff():
 def disconnect():
 	resposta_para_tudo.close()
 
+# Rota e funcao para acionar e desacionar o eletroímã e o led da solução	
 @app.route("/led", methods=['GET', 'POST'])
 def led():
 	if request.method == 'POST':
@@ -74,6 +86,7 @@ def led():
 
 	return redirect("/")
 
+# Rota e funcao para criar o ensaio
 @app.route("/criar", methods=["POST"])
 def cria_ensaio():
 	global ensaio
@@ -83,7 +96,7 @@ def cria_ensaio():
 	criar_ensaio(ensaio, request.form["cic"], request.form["vrr"])
 	return redirect("/")
 
-
+# Rotas e funções para complementar o ensaio com as coordenadas
 @app.route("/b1", methods=["POST"])
 def b1():
 	x, y, z = coordenadas()
@@ -120,7 +133,7 @@ def b3_e():
 	update_ensaio_b3_e(x, y, ensaio)    
 	return redirect("/")
     
-
+# Rota e função para iniciar o ensaio
 @app.route("/finalizar", methods=["POST"])
 def iniciar_ensaio():	
 
@@ -128,8 +141,7 @@ def iniciar_ensaio():
 	
 	ensaiof = encontra_ensaio(id_ensaio)
 
-	#print(ensaiof)
-
+	# Inicializa o singleton e seta o ensaio para ser buscado no banco de dados
 	robot = RobotSingleton()
 	robot.set_ensaio_id(ensaiof)
 	print(robot.get_ensaio_id())

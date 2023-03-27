@@ -1,23 +1,18 @@
 # Importação das bibliotecas necessárias para o script
 from enum import Enum
-#import main
+# Importando as funções de conexão com o Dobot e o Raspberry Pi Pico
 from conexao import resposta_para_tudo, dobot
+# Importando singleton para acessar variáveis do banco sobre o ensaio a ser realizado
 from data.robot_singleton import RobotSingleton
 
 global controle_eletroima, percorre_bandeja, despertar, adormercer, AcoesEletroima, Poses, Detalhes
 
+# Inicializa o singleton
 robot = RobotSingleton()
-# ensaio_iniciar = main.encontra_ensaio(main.id_ensaio)
+
+# Encontra o ensaio a ser realizado
 ensaio_iniciar = robot.get_ensaio_id()
 print(ensaio_iniciar)
-
-
-# def envia_id(id):
-#     global id_ensaio
-#     id_ensaio = id
-#     return None
-
-# ensaio_iniciar = encontra_ensaio(id_ensaio)
 
 if ensaio_iniciar is None:
     print("Error: No ensaio_iniciar found.")
@@ -25,7 +20,6 @@ if ensaio_iniciar is None:
 else:
     print(ensaio_iniciar["x1"])
 
-# ensaio_iniciar = encontra_ensaio("22")
 
 class AcoesEletroima(Enum):
     LIGAR = 1
@@ -135,6 +129,8 @@ def adormecer(braco_robotico, com_dispositivo, x0, y0, z0, r0, altura_subida):
     com_dispositivo.close()
 
     return None
+
+# Inicia o ensaio
 
 if __name__ == "__main__":
 
