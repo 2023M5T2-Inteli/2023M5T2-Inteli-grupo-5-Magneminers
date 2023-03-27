@@ -482,25 +482,25 @@ Para Linux: https://github.com/thonny/thonny/wiki/Linux <br>
 <b>G:</b> 2ª polaridade do eletroimã <br>
 <b>H:</b> GND do Led <br>
 <b>I:</b> 1ª polaridade do eletroimã <br>
-<div style="text-align:center;"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/esquematicos_eletronicos/Foto%20real%20do%20esquema%20de%20conex%C3%A3o%20da%20Placa%20Principal.jpg"  width="30%"></div>
-<center><font size="1"> Figura xx: Conexão da placa principal e etiquetagem dos jumpers </font></center>
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/esquematicos_eletronicos/Foto%20real%20do%20esquema%20de%20conex%C3%A3o%20da%20Placa%20Principal.jpg"  width="30%"></p>
+<p align="center"><font size="1"> Figura xx: Conexão da placa principal e etiquetagem dos jumpers </font></p>
 
 ### Representação dos arquivos de backend do projeto:
 
 ### Célula de Carga
 <b>Nome do arquivo:</b> backend_celula_de_carga.py <br>
-<img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/diagramas_backend/C%C3%A9lula%20de%20carga.png?raw=true"  width="25%">
-<center><font size="1"> Figura xx: Diagrama de funcionamento simplicado do código da célula de carga </font></center><br>
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/diagramas_backend/C%C3%A9lula%20de%20carga.png?raw=true"  width="25%"></p>
+<p align="center"><font size="1"> Figura xx: Diagrama de funcionamento simplicado do código da célula de carga </font></p><br>
 
 ### Eletroímã
 <b>Nome do arquivo:</b> backend_iv_e_eletroima.py <br>
-<img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/diagramas_backend/Eletro%C3%ADm%C3%A3.png"  width="25%">
-<center><font size="1"> Figura xx: Diagrama de funcionamento simplicado do código do eletroímã </font></center><br>
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/diagramas_backend/Eletro%C3%ADm%C3%A3.png"  width="25%"></p>
+<p align="center"><font size="1"> Figura xx: Diagrama de funcionamento simplicado do código do eletroímã </font></p><br>
 
 ### Dobot
 <b>Nome do arquivo:</b> controle_dobot_lite.py <br>
-<img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/diagramas_backend/Controle%20do%20Dobot.png"  width="25%">
-<center><font size="1"> Figura xx: Diagrama de funcionamento simplicado do código de controle do dobot </font></center><br>
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/diagramas_backend/Controle%20do%20Dobot.png"  width="25%"></p>
+<p align="center"><font size="1"> Figura xx: Diagrama de funcionamento simplicado do código de controle do dobot </font></p><br>
 
 # Referências
   
