@@ -452,9 +452,14 @@ Para fins de validação dos protótipos iniciais da solução, segue a consolid
 A comunicação entre dispositivos é fundamental para o sucesso do projeto em questão. Nesse sentido, para garantir um desempenho eficiente e preciso, foi necessário o desenvolvimento de um backend que atenda às necessidades específicas do sistema. A presente seção tem como objetivo apresentar as principais características e funcionalidades desse backend, visando fornecer informações claras e objetivas para o uso e manutenção dos dispositivos envolvidos.
 
 ### Instruções de instalação gerais
-- Instalar a última versão do Python (3.11.2) <br>
-- Instalar IDE compatível com o Raspberry Pi Pico W (Para todo o desenvolvimento do projeto e suas testagens foi-se utilizado o Thonny) <br>
-- A ordem das conexões da barra de pinos macho da placa principal deve ser seguida conforme a imagem abaixo, onde: <br>
+1. Instale a última versão do Python (3.11.2) <br>
+- Documentação de instalação do Python: https://docs.python.org/3/download.html <br>
+2. Instale uma IDE compatível com o Raspberry Pi Pico W (Para todo o desenvolvimento do projeto e suas testagens foi-se utilizado o Thonny) <br>
+- Documentação de instalação do Thonny: <br>
+Para Windows: https://github.com/thonny/thonny/wiki/Windows <br>
+Para Mac: https://github.com/thonny/thonny/wiki/MacOSX <br>
+Para Linux: https://github.com/thonny/thonny/wiki/Linux <br>
+3. A ordem das conexões da barra de pinos macho da placa principal deve ser seguida conforme a imagem abaixo, onde: <br>
 <b>A:</b> Comunicação da balança <br>
 <b>B:</b> Comunicação da balança <br>
 <b>C:</b> 5V da balança <br>
