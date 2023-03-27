@@ -424,6 +424,11 @@ A solução conta com o microcontrolador Rasperry Pi Pico W e com o auxílio de 
 
 *Descrição dos dispositivos mecânicos fabricados*
 
+## Materiais e métodos da fabricação dos dispositivos mecânicos
+As imagens incluídas na documentação mostram o processo de impressão 3D das peças. <br>
+A primeira imagem representa a posição da peça a ser impressa, já a segunda representa o processo de fatiamento - que define o caminho percorrido pelo bico da impressora para imprimir todos os detalhes do objeto. As linhas verdes na primeira imagem representam a base da impressão, que é responsável por sustentar toda a peça durante o processo de impressão. Além disso, os filamentos de suporte visíveis na imagem auxiliam na impressão de partes que requerem suporte adequado. <br>
+A fim de tornar os dispositivos adequado às necessidades do projeto, o material escolhido foi o filamento PLA.
+
 ### Bandeja Radial
 
  Materiais utilizados:
