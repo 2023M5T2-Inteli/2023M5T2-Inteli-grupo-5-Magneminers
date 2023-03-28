@@ -220,7 +220,7 @@ Em suma, a qualidade dos ensaios constitui o elemento que agrega valor à soluç
 ### Diagrama da Solução
 
 <br>
-<p align="center"><img src="https://lh4.googleusercontent.com/Z5mUwJhEBQMw7qMIhjXzP2YzD2WnL8AAS5TnRI3obXeeZ5wV_fIfszd9qe3LvEW1ql9qz9bZnjREranW4u2LUhCnXDGfMPerODt9Z6T7X5SKTqfQKILhZ0A05YJ4FuuEE-oZA1XZSNeos0sty9EX2jE" width="70%"></img></p>
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/diagrama_solucao/Diagrama%20da%20Solu%C3%A7%C3%A3o.png" width="70%"></img></p>
 <p align="center"><font size=2><b>Figura 6 — Diagrama da solução</b></font></p>
 
 <br>
