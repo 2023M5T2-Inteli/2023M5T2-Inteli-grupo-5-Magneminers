@@ -20,8 +20,8 @@ collection = db["Ensaios"]
 
 
 # Função para criar ensaio no banco de dados
-def criar_ensaio(e, cic, vrr):
-    collection.insert_one({"_id": e, "cic": cic, "vrr": vrr})
+def criar_ensaio(e, cliente, amostra, projeto, usuario,  cic, vrr):
+    collection.insert_one({"_id": e, "cliente": cliente,"amostra": amostra, "projeto": projeto, "usuario": usuario, "cic": cic, "vrr": vrr})
     return print("Ensaio criado com sucesso")
 
 # Função para atualizar as coordenadas do ensaio no banco de dados
@@ -64,27 +64,27 @@ def index():
     return render_template("home.html", ensaio=ensaio)
 
 # Funções para acionar e desacionar o eletroímã e o led da solução
-def ledOn():
-    resposta_para_tudo.write(str('1').encode() + b"\n")
+# def ledOn():
+#     resposta_para_tudo.write(str('1').encode() + b"\n")
     
-def ledOff():
-	resposta_para_tudo.write(str('0').encode() + b"\n")
+# def ledOff():
+# 	resposta_para_tudo.write(str('0').encode() + b"\n")
 
-def disconnect():
-	resposta_para_tudo.close()
+# def disconnect():
+# 	resposta_para_tudo.close()
 
-# Rota e funcao para acionar e desacionar o eletroímã e o led da solução	
-@app.route("/led", methods=['GET', 'POST'])
-def led():
-	if request.method == 'POST':
-		if 'on' in request.form.to_dict():
-			ledOn()
-		if 'off' in request.form.to_dict():
-			ledOff()
-		if 'dis' in request.form.to_dict():
-			disconnect()
+# # Rota e funcao para acionar e desacionar o eletroímã e o led da solução	
+# @app.route("/led", methods=['GET', 'POST'])
+# def led():
+# 	if request.method == 'POST':
+# 		if 'on' in request.form.to_dict():
+# 			ledOn()
+# 		if 'off' in request.form.to_dict():
+# 			ledOff()
+# 		if 'dis' in request.form.to_dict():
+# 			disconnect()
 
-	return redirect("/")
+# 	return redirect("/")
 
 # Rota e funcao para criar o ensaio
 @app.route("/criar", methods=["POST"])
@@ -93,7 +93,7 @@ def cria_ensaio():
 
 	ensaio = request.form["ensaio"]
 
-	criar_ensaio(ensaio, request.form["cic"], request.form["vrr"])
+	criar_ensaio(ensaio, request.form["cliente"], request.form["amostra"], request.form["projeto"], request.form["usuario"], request.form["cic"], request.form["vrr"])
 	return redirect("/")
 
 # Rotas e funções para complementar o ensaio com as coordenadas
@@ -115,7 +115,7 @@ def b3():
 	update_ensaio_b3(x, y, z, ensaio)
 	return redirect("/")
 	
-@app.route("/b1_e", methods=["POST"])
+@app.route("/b1_e", methods=["POST"]) 
 def b1_e():
 	x, y = coordenadas_e()
 	update_ensaio_b1_e(x, y, ensaio)
