@@ -31,7 +31,8 @@ def setup(taxa_transmissao_comunicacao, tempo_espera_conexao):
     print("Listando portas COM... \n")
     portas_com = lista_coms()                                   # Lista todas as portas COM
     print("Encontrando porta COM do Raspberry Pi Pico... \n")
-    porta_rasp = encontra_rasp(portas_com)                      # Encontra a porta COM do Raspberry Pi Pico
+    porta_rasp = encontra_rasp(portas_com)   
+    porta_rasp = "COM7"                   # Encontra a porta COM do Raspberry Pi Pico
     print("Conectando com o Raspberry Pi Pico... \n")
     com_rasp = conecta_serial(porta_rasp, taxa_transmissao_comunicacao, tempo_espera_conexao)           # Abre um objeto de comunicação com a porta na qual o Raspberry Pi Pico está
 

@@ -39,8 +39,8 @@ class Poses(Enum):
 
 # Configurações do ensaio
 class Ensaio(Enum):
-    NUMERO_VARRERUDAS_AMOSTRA = 3
-    NUMERO_CICLOS_ENSAIO = 10
+    NUMERO_VARRERUDAS_AMOSTRA = 1
+    NUMERO_CICLOS_ENSAIO = 4
 
 
 # Lista todas as portas COM, uma delas é o Raspberry Pi Pico
@@ -135,20 +135,18 @@ def percorre_bandeja(x0, y0, z0, braco_dobot, x_bandeja, y_bandeja, deslocamento
                         z0 + altura_subida, 0,
                         wait=True)
     
-  
-    
     return None
     
 # Prepara o braço robótico e o eletroíma para o ensaio
 def despertar(taxa_transmissao, tempo_espera, altura_subida):
-    print("Conecetando com dispositivos...")
+    print("\nConectando com dispositivos...")
     com_dispositivo, braco_robotico = setup(taxa_transmissao,  tempo_espera)
     controle_eletroima(com_dispositivo, "e,0,100,off")
-    print("Zerando braço robótico...")
+    print("\nZerando braço robótico...")
     (x0, y0, z0, r0, j1, j2, j3, j4) = braco_robotico.pose() 
-    print("Ativação inicial")
+    print("\nAtivação inicial")
     braco_robotico.move_to(x0, y0, z0 + altura_subida, r0, wait=True)
-    print("Ativação do eletroíma")
+    print("\nAtivação do eletroíma")
     controle_eletroima(com_dispositivo, "alarme,1")
     controle_eletroima(com_dispositivo, "e,1,100,g")
 
@@ -170,12 +168,15 @@ if __name__ == "__main__":
     # Inicializa o ensaio
     maganalyzer, x0, y0, z0, com_eletroima = despertar(TAXA_TRANSMISSAO_COMUNICACAO, TEMPO_ESPERA_CONEXAO, Poses.ALTURA_SUBIDA.value)
 
+    lista_deflexoes = []
     lista_diferencas = []
-
     # Executa o ensaio
     for i in range(Ensaio.NUMERO_CICLOS_ENSAIO.value):
 
+        print("\nCiclo ", i, " de ", Ensaio.NUMERO_CICLOS_ENSAIO.value, "\n")
+
         # Amostra material
+        print("Varrendo bandeja de amostragem... \n")
         percorre_bandeja(x0, y0, z0,
                         maganalyzer, 
                         Poses.X_BANDEJA_A.value,
@@ -189,6 +190,7 @@ if __name__ == "__main__":
                         AcoesEletroima.LIGAR.value)
 
         # Lava material
+        print("\nLavando amostra... \n")
         percorre_bandeja(x0, y0, z0, 
                         maganalyzer, 
                         Poses.X_BANDEJA_B.value,
@@ -202,6 +204,7 @@ if __name__ == "__main__":
                         AcoesEletroima.LIGAR.value)
 
         # Deposita material
+        print("\nDepositando amostra... \n")
         percorre_bandeja(x0, y0, z0, 
                         maganalyzer, 
                         Poses.X_BANDEJA_C.value,
@@ -214,12 +217,20 @@ if __name__ == "__main__":
                         com_eletroima, 
                         AcoesEletroima.DESLIGAR.value)
         
-        valor_balanca = le_balanca(com_eletroima)
-        lista_diferencas.append(valor_balanca)
+        valor_balanca = int(le_balanca(com_eletroima))
+        lista_deflexoes.append(valor_balanca)
+        print("\nDeflexão ", i+1, ": ", valor_balanca)
 
+        if len(lista_deflexoes) > 1:
+            diferenca = lista_deflexoes[-1] - lista_deflexoes[-2]
+            lista_diferencas.append(diferenca)
+            print("Diferença entre a última e a penúltima amostra: ", )
+
+    print(lista_deflexoes)
+    print()
 
     controle_eletroima(com_eletroima, "alarme,5")
-    df = pd.DataFrame(lista_diferencas, columns=["diferencas"])
+    df = pd.DataFrame(lista_deflexoes, columns=["diferencas"])
     df.to_csv("diferencas_amostras.csv", index=False)
 
 
