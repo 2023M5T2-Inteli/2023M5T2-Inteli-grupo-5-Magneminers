@@ -1,3 +1,4 @@
+
 <table>
 <tr>
 <td>
@@ -161,21 +162,21 @@ Em suma, a qualidade dos ensaios constitui o elemento que agrega valor à soluç
 ## Análise SWOT
 
 <br>
-<p align="center"><img src="https://lh6.googleusercontent.com/zG8EnpZDgBawCTeDtsdIlDg2p6Ucljp306zIdN2e-vJLtzRxG_w4UnhNh5kEH32OZFgOrrOLHLhEsK2zV2kvmrZR1lcEbKyZ-tMikonjjLosjdmX5_fPNudNE6e7JZkfUH1QL_X20P0MP9xkGtSSoBw" width="70%"></img></p>
+<div align="center"><img src="https://lh6.googleusercontent.com/zG8EnpZDgBawCTeDtsdIlDg2p6Ucljp306zIdN2e-vJLtzRxG_w4UnhNh5kEH32OZFgOrrOLHLhEsK2zV2kvmrZR1lcEbKyZ-tMikonjjLosjdmX5_fPNudNE6e7JZkfUH1QL_X20P0MP9xkGtSSoBw" width="600" height=auto></img></div>
 <p align="center"><font size=2><b>Figura 1 — Análise SWOT (forças, oportunidades, fraquezas e ameaças) do Instituto de Pesquisas Tecnológicas</b></font></p>
 <br>
 
 ## Value Proposition Canvas
 
 <br>
-<p align="center"><img src="https://lh5.googleusercontent.com/xYxOS-4i-mqXFikfxJAc7g0b_FhPT96ku_k4FdCSHb3YkBMeSY1eqs4W_UaXE3cQJeg-VFHbNcAk1VyiD-jfpKKON3ua7EBH9ka5fBGwX1h3VGxSt3bfBo4WJKTvUS08PMLSops4Ap2DkbRSgd3jYMk" width="70%"></img></p>
+<p align="center"><img src="https://lh5.googleusercontent.com/xYxOS-4i-mqXFikfxJAc7g0b_FhPT96ku_k4FdCSHb3YkBMeSY1eqs4W_UaXE3cQJeg-VFHbNcAk1VyiD-jfpKKON3ua7EBH9ka5fBGwX1h3VGxSt3bfBo4WJKTvUS08PMLSops4Ap2DkbRSgd3jYMk" width="600" height=auto></img></p>
 <p align="center"><font size=2><b>Figura 2 — Value Proposition Canvas do atual procedimento de separação magnética realizado pelo IPT</b></font></p>
 <br>
 
 ## Matriz de Riscos
 
 <br>
-<p align="center"><img src="https://lh6.googleusercontent.com/PsuqnxqBCrQZD-gd0dvqBnxThe2AOZWL6vFaLv27mIcgcPJA148UVNPkAnvzPRf696h6kdDlmeOSMsuxcbGsQ7I_WNAlkO6A7GrB65i5mTCvBZB_YU6-Kf9qKl5sqVSC8ANSYEWgnSgn2K9Eush8ml0" width="70%"></img></p>
+<p align="center"><img src="https://lh6.googleusercontent.com/PsuqnxqBCrQZD-gd0dvqBnxThe2AOZWL6vFaLv27mIcgcPJA148UVNPkAnvzPRf696h6kdDlmeOSMsuxcbGsQ7I_WNAlkO6A7GrB65i5mTCvBZB_YU6-Kf9qKl5sqVSC8ANSYEWgnSgn2K9Eush8ml0" width="600" height=auto></img></p>
 <p align="center"><font size=2><b>Figura 3 — Matriz de Riscos da solução desenvolvida</b></font></p>
 <br>
 
@@ -208,19 +209,19 @@ Em suma, a qualidade dos ensaios constitui o elemento que agrega valor à soluç
 ### Croqui da Solução
 
 <br>
-<p align="center"><img src="https://lh6.googleusercontent.com/ztk3zc9XaL34iNjuaPBuNVShRFIyjokR2Jst5DncvFbHIP54xMl98ww9CKMHN8QmR6n_dpUhHCBDjhhLnVa-wM5NKoTncqdeOXLbuwEs-bQmc2i5oCHimDtJOG6Kifzzl1vRTCi0IrapvS6h1T3StKI" width="70%"></img></p>
+<p align="center"><img src="https://lh6.googleusercontent.com/ztk3zc9XaL34iNjuaPBuNVShRFIyjokR2Jst5DncvFbHIP54xMl98ww9CKMHN8QmR6n_dpUhHCBDjhhLnVa-wM5NKoTncqdeOXLbuwEs-bQmc2i5oCHimDtJOG6Kifzzl1vRTCi0IrapvS6h1T3StKI" width="600" height=auto></img></p>
 <p align="center"><font size=2><b>Figura 4 — Versão inicial do croqui da solução</b></font></p>
 <br>
 
 <br>
-<p align="center"><img src="https://lh6.googleusercontent.com/h4amFfWdV1cBVHwKohGJG-WkZxRD2XilNjKyljW65xQtF6-O_A-T3Vr2XQTKXalTua54MzlmMWVOQPJDdET_461QWDJG2EaT0YILkZ0aF1DRAhSqUgUCoRmJkkrOlTCSnLFsZ_9a8OftsXZsOJtS0iA" width="70%"></img></p>
+<p align="center"><img src="https://lh6.googleusercontent.com/h4amFfWdV1cBVHwKohGJG-WkZxRD2XilNjKyljW65xQtF6-O_A-T3Vr2XQTKXalTua54MzlmMWVOQPJDdET_461QWDJG2EaT0YILkZ0aF1DRAhSqUgUCoRmJkkrOlTCSnLFsZ_9a8OftsXZsOJtS0iA" width="600" height=auto></img></p>
 <p align="center"><font size=2><b>Figura 5 — Versão inicial do dispositivo mecânico de suporte para eletroímãs</b></font></p>
 <br>
 
 ### Diagrama da Solução
 
 <br>
-<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/diagrama_solucao/Diagrama%20da%20Solu%C3%A7%C3%A3o.png" width="70%"></img></p>
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/diagrama_solucao/Diagrama%20da%20Solu%C3%A7%C3%A3o.png" width="600" height=auto></img></p>
 <p align="center"><font size=2><b>Figura 6 — Diagrama da solução</b></font></p>
 
 <br>
@@ -351,7 +352,9 @@ Materiais utilizados:
 
 Diante da necessidade de acoplar os eletroímãs e o sensor infravermelho em uma extensão do braço robótico e proteje-los (principalmente da água utilizada nos ensaios), decidimos por colocar-los na parte interior de uma estrutura com o formato de um martelo, na cabeça se encontram os sensores acoplados à placa universal devidamente ligados e o cabo servirá para a conexão braço-suporte e para passar o devido cabeamento que acompanhará o braço robótico por cima. Optamos por deixar o espaço dos eletroímãs e do sensor infra-vermelho pré-estabelecidos e bem delimitados para que não se movimentem durante os ensaios, a fim de uma melhor precisão e acurácia destes. Segue abaixo o esquemático desta proposta com as devidas medidas para sua função:
 
-![Suporte Eletroimã.jpg](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Suporte%20Eletroim%C3%A3.jpg?raw=true)
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Suporte%20Eletroim%C3%A3.jpg?raw=true" width="600" height=auto></img></p>
+<p align="center"><font size=2><b>Figura 7 — Desenho técnico do suporte do eletroímã</b></font></p>
+
 
 ![Tampa Eletroimã.jpg](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Tampa%20Eletroim%C3%A3.jpg?raw=true)
   
