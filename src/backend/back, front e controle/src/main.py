@@ -21,7 +21,7 @@ collection = db["Ensaios"]
 
 # Função para criar ensaio no banco de dados
 def criar_ensaio(e, cliente, amostra, projeto, usuario,  cic, vrr):
-    collection.insert_one({"_id": e, "cliente": cliente,"amostra": amostra, "projeto": projeto, "usuario": usuario, "cic": cic, "vrr": vrr})
+    collection.insert_one({"_id": e, "Cliente": cliente,"Amostra": amostra, "Projeto": projeto, "Usuario": usuario, "cic": cic, "vrr": vrr})
     return print("Ensaio criado com sucesso")
 
 # Função para atualizar as coordenadas do ensaio no banco de dados
