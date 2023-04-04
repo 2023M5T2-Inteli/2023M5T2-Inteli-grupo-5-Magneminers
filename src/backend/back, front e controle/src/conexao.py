@@ -7,4 +7,4 @@ import pydobot
 resposta_para_tudo = serial.Serial("COM5", 115200, timeout = 2)
 
 #Dobot
-dobot = pydobot.Dobot(port="COM8", verbose=True)
+dobot = pydobot.Dobot(port="COM4", verbose=True)
