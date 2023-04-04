@@ -158,3 +158,8 @@ body{
     height: 70px;
     background: #F09F03;
 }
+
+.valor {
+    font-size: 28px;
+    font-family: Inter, sans-serif;
+}

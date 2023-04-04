@@ -150,6 +150,12 @@ def iniciar_ensaio():
 		exec(f.read())
 	return redirect("/")
 
+# Rota para consultar os valores do sensor
+@app.route('/get-value')
+def get_value():
+    value = resposta_para_tudo.readline().decode('utf-8')
+    valor = value.strip()
+    return {'value': valor}
 
 if __name__ == "__main__":
     app.run()

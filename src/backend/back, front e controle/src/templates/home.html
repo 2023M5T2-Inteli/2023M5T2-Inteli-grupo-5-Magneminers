@@ -117,6 +117,11 @@
   </div>
 
   <div class="bloco alinhamento">
+    <div>
+      <h1>Valores da Balança Invertida</h1>
+      <br>
+      <p id="sensor" class="valor"></p>
+    </div>
     <!-- <div class="alinhamento"> -->
       <!-- <form action="led" method="post">
         <button onclick="ledOn()" name="on" value="on" type="submit" class="anim">Ligar Led</button>
@@ -128,6 +133,14 @@
             <button type="submit" class="anim" value="Adicionar">Iniciar Ensaio</button>
       </form>
   </div>
-  
 </body>
+    <script>
+        const value = document.getElementById("sensor");
+        async function updateValue() {
+            const response = await fetch('/get-value');
+            const data = await response.json();
+            value.innerText = data.value;
+        }
+        setInterval(updateValue, 500);
+    </script>
 </html>
