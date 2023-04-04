@@ -16,7 +16,7 @@
 
 - [Autores](#autores)
 - [Visão Geral do Projeto](#visão-geral-do-projeto)
-  - [Parceiro de Negócios](#parceiro-de-negócios)
+- [Parceiro de Negócios](#parceiro-de-negócios)
   - [Definição do Problema](#definição-do-problema)
   - [Objetivos](#objetivos)
     - [Objetivos gerais](#objetivos-gerais)
@@ -328,12 +328,16 @@ Dando início aos testes, foi possível realizar a movimentação do braço de a
  
 ## Protótipo de interface com o usuário
 
-Abaixo, encontram-se as imagens relativas à prototipação da interface gráfica por meio da qual será possível manipular e configurar o robô.
+Abaixo, encontram-se as imagens relativas à primeira versão da prototipação da interface gráfica por meio da qual será possível manipular e configurar o robô.
 
 A primeira imagem mostra como seria a tela de início, tem como principal objetivo mostrar o Status de todas as integrações da solução. Qual é a situação atual do Robô, que tipo de comando ele está recebendo e retornando, e a situação dos componentes, se o imã está em funcionamento e com quanto de voltagem está trabalhando, qual é o peso da bandeja final e se o sistema de revolvimento está em funcionamento. Na lateral direita de página, podemos ver controles que podem movimentar o robô de maneira mais precisa e linear, podendo mover os 3 eixos de coordenadas, uma de cada vez. Tambem pode-se reparar no campo mais abaixo, o controle de atuadores na qual o mesmo pode acionar o compente acoplado utilizando voltagem ou pneumático.
 
-![](https://lh4.googleusercontent.com/-leIWCVZ6h71iuO5nrKRNCiL6M3v2s-F6YT3wfqj0WZ_n9rTOn_-JtPe_AKyriKC6r2yKJwvpkDY7q4fpvTuPOmWiN0arAbJAvKxDDWQNKsdRn00KxmeLaTNXBvXr0R1pZT9EUWhXsyjWl4k0Xk_3G8)
-![](https://lh3.googleusercontent.com/AAZiukdZP169G3rSsd7Mjdb5XNqiA1DmRrz5wreyyGKyAWW7B-RLvG1KOppVzq9wZypDRm8BksFqkm-j6af3J6eeuTFOCKVYBPaA_y-oCN19bxBpjudHgHvxYOhdAZmhhJhdXBlPmbbqtx3rzBkM8BE)![](https://lh6.googleusercontent.com/OW5uM3qnbidyQepBadF9RvSuumPyCVdJYkqrgdwJfAM97-keoVPAuGMx9JuE7CCqDapeCSrc6VBYfo1D8VZ6nQgTq7gsUWm5gjuk2Dnt0-wdf94ZfrX8OfGU3L5kO9a8zZHVNnNBTfHVSeBkijjpOMg)
+<p align="center"><img src="https://lh4.googleusercontent.com/-leIWCVZ6h71iuO5nrKRNCiL6M3v2s-F6YT3wfqj0WZ_n9rTOn_-JtPe_AKyriKC6r2yKJwvpkDY7q4fpvTuPOmWiN0arAbJAvKxDDWQNKsdRn00KxmeLaTNXBvXr0R1pZT9EUWhXsyjWl4k0Xk_3G8" width="70%"></img></p>
+
+<p align="center"><img src="https://lh3.googleusercontent.com/AAZiukdZP169G3rSsd7Mjdb5XNqiA1DmRrz5wreyyGKyAWW7B-RLvG1KOppVzq9wZypDRm8BksFqkm-j6af3J6eeuTFOCKVYBPaA_y-oCN19bxBpjudHgHvxYOhdAZmhhJhdXBlPmbbqtx3rzBkM8BE" width="70%"></img></p>
+
+<p align="center"><img src="https://lh6.googleusercontent.com/OW5uM3qnbidyQepBadF9RvSuumPyCVdJYkqrgdwJfAM97-keoVPAuGMx9JuE7CCqDapeCSrc6VBYfo1D8VZ6nQgTq7gsUWm5gjuk2Dnt0-wdf94ZfrX8OfGU3L5kO9a8zZHVNnNBTfHVSeBkijjpOMg" width="70%"></img></p>
+
 
 ## Dispositivos Eletrônicos
 
@@ -355,17 +359,20 @@ Materiais utilizados:
 
 Diante da necessidade de acoplar os eletroímãs e o sensor infravermelho em uma extensão do braço robótico e proteje-los (principalmente da água utilizada nos ensaios), decidimos por colocar-los na parte interior de uma estrutura com o formato de um martelo, na cabeça se encontram os sensores acoplados à placa universal devidamente ligados e o cabo servirá para a conexão braço-suporte e para passar o devido cabeamento que acompanhará o braço robótico por cima. Optamos por deixar o espaço dos eletroímãs e do sensor infra-vermelho pré-estabelecidos e bem delimitados para que não se movimentem durante os ensaios, a fim de uma melhor precisão e acurácia destes. Segue abaixo o esquemático desta proposta com as devidas medidas para sua função:
 
-<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Suporte%20Eletroim%C3%A3.jpg?raw=true" width="600" height=auto></img></p>
+<h3>Desenho técnico do dispositivo eletrônico dos eletroímãs</h3>
+
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Suporte%20Eletroim%C3%A3.jpg?raw=true" width="70%" height=auto></img></p>
 <p align="center"><font size=2><b>Figura 7 — Desenho técnico do suporte do eletroímã</b></font></p>
 
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Tampa%20Eletroim%C3%A3.jpg?raw=true" width="70%" height=auto></img></p>
 
-![Tampa Eletroimã.jpg](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Tampa%20Eletroim%C3%A3.jpg?raw=true)
+<h3>Imagens do dispositivo eletrônico dos eletroímãs</h3>
+
+<p align="center"><img src="https://lh3.googleusercontent.com/ao0c9nc6mhrP9Fmeg4wEZPEusdrDQIJ61dK5RoYkbhAcVE2yyj0SdazAUlfMO8u-v_EOarZFIAyTD3S7Z383lcbsPOpWUL6tHecSAR_HuqibPbG7mAPTlTrm3K7pNZkhVb2WumgjS6tATrm04RXj-wc" width="70%" height=auto></img></p>
   
-![Eletroímãs e Sensor Infravermelho](https://lh3.googleusercontent.com/ao0c9nc6mhrP9Fmeg4wEZPEusdrDQIJ61dK5RoYkbhAcVE2yyj0SdazAUlfMO8u-v_EOarZFIAyTD3S7Z383lcbsPOpWUL6tHecSAR_HuqibPbG7mAPTlTrm3K7pNZkhVb2WumgjS6tATrm04RXj-wc)
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Eletroima2.jpeg?raw=true" width="70%" height=auto></img></p>
 
-![Eletroima2.jpeg](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Eletroima2.jpeg?raw=true)
-
-![Elertroima3.jpeg](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Elertroima3.jpeg?raw=true)   
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Elertroima3.jpeg?raw=true" width="70%" height=auto></img></p>   
 
 [Modelo 3D - Suporte Eletroímãs](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/arquivo%20de%20modelo%203d/Suporte%20Eletroim%C3%A3.ipt)
 
@@ -389,20 +396,20 @@ Materiais utilizados:
 
 A fim de analisar a todo o momento o resultado da mineração magnética, decidimos utilizar de uma balança invertida, contando com dois imãs de neodímio acoplados na parte superior do sistema (visando que a deformação da célula seja por indução magnética, por isso o nome) e a estrutura física necessária para manter a célula de carga estável (madeiras presas em cada uma de suas devidas extremidades com os parafusos e porcas). Com isso desenvolvemos esse esquemático responsável por interagir com os materiais magnéticos já minerados e constantemente indicar se houve uma nova deposição deste. Assim, caso seja o momento de encerrar o ensaio, saberemos com mais precisão diante das medidas fornecidas por esse sistema. Segue o esquemático:
 
-![Sistema de Pesagem.jpg](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Sistema%20de%20Pesagem.jpg?raw=true)
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Sistema%20de%20Pesagem.jpg?raw=true" width="70%" height=auto></img></p>
 
-![BI-Cima.jpg](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/BI-Cima.jpg?raw=true)
-  
-![BI-Cima2.jpg](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/BI-Cima2.jpg?raw=true)
-  
-![BI-Lado.jpg](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/BI-Lado.jpg?raw=true)
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/BI-Cima.jpg?raw=true" width="70%" height=auto></img></p>
+
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/BI-Cima2.jpg?raw=true" width="70%" height=auto></img></p>
+
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/BI-Lado.jpg?raw=true" width="70%" height=auto></img></p>
   
 [Modelo 3D - Balança Invertida](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/arquivo%20de%20modelo%203d/Sistema%20de%20Pesagem.ipt)
  
 Após o desenvolvimento de seu Critical Prototype (Protótipo Crítico), temos a seguir o resultados dos testes nas condições imaginadas para esta proposta, sendo o objetivo a possibilidade de análise da variação do material magnético depositado na última bandeja. Segue vídeo para validação:
 
 
-[<img src="https://lh3.googleusercontent.com/LEucmNsJTVKrFEJilw-L9K_mW73_YonFrutF2LBpQdQBBJtlpJAzWrnxKNiPXgJjcz0PUfj1uXqKpZDLee4G5w87_VubbwwtLm1lI6OCIn4xfy2Su3Dk0Yfhb_0TrT6ElUhsCQsXMZdjToojH60N_I8" width="100%">](https://drive.google.com/file/d/1h4DZN_CTTuU6obXVIsl4oBb2Dh6Px9GG/view?usp=share_link)
+[<p align="center"><img src="https://lh3.googleusercontent.com/LEucmNsJTVKrFEJilw-L9K_mW73_YonFrutF2LBpQdQBBJtlpJAzWrnxKNiPXgJjcz0PUfj1uXqKpZDLee4G5w87_VubbwwtLm1lI6OCIn4xfy2Su3Dk0Yfhb_0TrT6ElUhsCQsXMZdjToojH60N_I8" width="80%"></p>](https://drive.google.com/file/d/1h4DZN_CTTuU6obXVIsl4oBb2Dh6Px9GG/view?usp=share_link)
 <center><font size="2"> Vídeo para demonstração do funcionamento da balança invertida </font></center>
 
 
@@ -422,9 +429,9 @@ Materiais utilizados:
 
 A solução conta com o microcontrolador Rasperry Pi Pico W e com o auxílio de uma ponte H ligada a este, conseguimos desenvolver o controle de corrente dos eletroímãs, algo crítico para o projeto. A fim de manter seguro e organizados, acoplamos esses materiais em uma placa universal de maneira que fique fixo com seu circuito e portanto de mais fácil integração ao resto do sistema como um todo (esta parte da solução está vinculada com o suporte para os eletroímãs, uma vez que a ponte-H é responsável por alimentar estes e permitir sua polarização e despolarização de maneira imediata e precisa). Com isso, desenvolvemos a estrutura necessária para garantir a segurança e eficiência dessa parte da solução, soldando os dispositivos em uma placa universal de maneira adequada. Segue o esquemático para consolidar esse sistema:
 
-![Diagrama Esquemático Placa Principal.jpg](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Diagrama%20Esquem%C3%A1tico%20Placa%20Principal.jpg?raw=true)
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Diagrama%20Esquem%C3%A1tico%20Placa%20Principal.jpg?raw=true" width="70%" height=auto></img></p>
 
-![Frente.jpg](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Frente.jpg?raw=true)
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Frente.jpg?raw=true" width="70%" height=auto></img></p>
   
 ## Dispositivos Mecânicos
 
@@ -452,7 +459,8 @@ A fim de tornar os dispositivos adequado às necessidades do projeto, o material
 
 Diante da análise das dimensões de movimento do braço robótico (Rotação de 270° e 34 cm de raio), optamos por um conjunto de três bandejas radiais que permitirão o aproveitamento máximo dessas dimensões. Segue o esquemático:
 
-![Conjunto de Bandeja Radial.jpg](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Conjunto%20de%20Bandeja%20Radial.jpg?raw=true)
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Conjunto%20de%20Bandeja%20Radial.jpg?raw=true" width="70%" height=auto></img></p>
+
 
 [Arquivo Autodesk Inventor - Bandeja Radial](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/arquivo%20de%20modelo%203d/Bandeja%20Radial.ipt)
 
@@ -461,11 +469,14 @@ Diante da análise das dimensões de movimento do braço robótico (Rotação de
 
 Para fins de validação dos protótipos iniciais da solução, segue a consolidação da integração dos componentes: [Eletroimã e Sensor-iv](#eletroímã-e-sensor-infravermelho), [Balança Invertida](#célula-de-carga---balança-invertida) e [Raspberry e Ponte-H](#raspberry-pi-pico-w-e-ponte-h) e vídeo de seu funcionamento:
 
-![Critical-Prototype.jpg](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Critical-Prototype.jpg?raw=true)  
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Diagrama%20Esquem%C3%A1tico%20Placa%20Principal.jpg?raw=true" width="70%" height=auto></img></p>
+
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Critical-Prototype.jpg?raw=true" width="70%" height=auto></img></p>
+
 
  Vídeo demonstrativo dos dispositivos em funcionamento:
  
-[<img src="https://lh4.googleusercontent.com/72hif2xu81BUXbT-QnjV6JxvITd-5OMrs_6IRucYrypywCMPoHQbRooMXUI68x3uT1HOcjXxZzqC4WylVjOw3ospo_CIIq_OPmc0d3pswFj2GK29BPvGuL-KFxiPYhK57hlKPKO8l5GG_PTrYPJQdXg" width="100%">](https://drive.google.com/file/d/1txtCYVejKdHhF4Ub3VqGtsHanooMbTtl/view?usp=sharing)
+[<p align="center"><img src="https://lh4.googleusercontent.com/72hif2xu81BUXbT-QnjV6JxvITd-5OMrs_6IRucYrypywCMPoHQbRooMXUI68x3uT1HOcjXxZzqC4WylVjOw3ospo_CIIq_OPmc0d3pswFj2GK29BPvGuL-KFxiPYhK57hlKPKO8l5GG_PTrYPJQdXg" width="80%"></p>](https://drive.google.com/file/d/1txtCYVejKdHhF4Ub3VqGtsHanooMbTtl/view?usp=sharing)
 
 ## Análise do Processamento de Informações e Regras de Negócio
 A comunicação entre dispositivos é fundamental para o sucesso do projeto em questão. Nesse sentido, para garantir um desempenho eficiente e preciso, foi necessário o desenvolvimento de um backend que atenda às necessidades específicas do sistema. A presente seção tem como objetivo apresentar as principais características e funcionalidades desse backend, visando fornecer informações claras e objetivas para o uso e manutenção dos dispositivos envolvidos.
@@ -488,7 +499,7 @@ Para Linux: https://github.com/thonny/thonny/wiki/Linux <br>
 <b>G:</b> 2ª polaridade do eletroimã <br>
 <b>H:</b> GND do Led <br>
 <b>I:</b> 1ª polaridade do eletroimã <br>
-<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/esquematicos_eletronicos/Foto%20real%20do%20esquema%20de%20conex%C3%A3o%20da%20Placa%20Principal.jpg?raw=true"  width="30%"></p>
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/esquematicos_eletronicos/Foto%20real%20do%20esquema%20de%20conex%C3%A3o%20da%20Placa%20Principal.jpg?raw=true"  width="40%"></p>
 <p align="center"><font size="1"> Figura xx: Conexão da placa principal e etiquetagem dos jumpers </font></p>
 
 ### Representação dos arquivos de backend do projeto:
