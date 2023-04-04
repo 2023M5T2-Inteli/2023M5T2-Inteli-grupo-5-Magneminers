@@ -1,4 +1,3 @@
-
 <table>
 <tr>
 <td>
@@ -15,7 +14,6 @@
 
 # **Sumário**
 
-- [**Sumário**](#sumário)
 - [Autores](#autores)
 - [Visão Geral do Projeto](#visão-geral-do-projeto)
   - [Parceiro de Negócios](#parceiro-de-negócios)
@@ -76,7 +74,7 @@ A atuação multidisciplinar do instituto contempla diferentes segmentos: energi
 
 ## Definição do Problema
 
-*Descrição_do_problema*
+Um dos serviços prestados pelo Instituto de Pesquisas Tecnológicas consiste em um ensaio de separação de conteúdo ferromagnético a partir de amostras obtidas por mineradoras. O ensaio, contudo, é feito de forma manual: é necessária a presença de um operador responsável pela condução dos procedimentos utilizados. No ensaio, a amostra, que se encontra despejada sobre uma bandeja, é submetida a uma varredura feita pelo operador utilizando um ímã envolvido por um material plástico. Posteriormente, o material capturado pelo ímã é lavado em uma segunda bandeja contendo água, a fim de que as impurezas eventualmente misturadas ao material coletado sejam removidas. Por fim, o material ferromagnético contido no ímã, já livre das impurezas, é depositado em uma terceira bandeja com água. O processo realizado atualmente demonstra ser uma atividade cansativa para o operador que a executa, além de não apresentar a precisão desejada quanto à separação de todo o material que se deseja obter. Nesse contexto, propor uma solução automatizada seria de significativa utilizade para o cliente, visto que o serviço se tornaria mais eficiente.
 
 ## Objetivos
 
@@ -86,14 +84,19 @@ O objetivo do parceiro é automatizar o processo de ensaio de separação de mat
 
 ### Objetivos específicos
 
-*Objetivos_específicos*
+- Construção um sistema de hardware capaz de realizar, de maneira autônoma, o ensaio de separação de material ferromagnético realizado pelo IPT.
 
+- Implementação de interface integrada ao robô, por meio da qual será possível manipular as variáveis envolvidas no ensaio.
+
+- Centralização dos dados envolvidos no ensaio, por meio da geração de relatório automatizado, para que haja um controle eficiente de informações.
 
 # Análise de Negócio
 
 ## Contexto da indústria
 
-*Contexto_da_indústria*
+A indústria de mineração constitui um setor da economia global que envolve a extração de recursos da natureza, a exemplo dos minérios metálicos. Nesse contexto, o uso da separação magnética representa uma ferramenta de fundamental importância no processamento mineral. Além de econômica, a técnica se demonstra eficaz no que concerne ao tratamento de materiais que serão posteriormente utilizados na produção de bens e serviços em diversos setores: construção civil, indústria automotiva, eletrônica, entre outros.
+
+O uso de soluções de automação tem sido adotado, recorrentemente, em processos industriais de separação de misturas. Portanto, uma vantagem da separação magnética é que ela pode ser automatizada com significativa facilidade. Em empresas que utilizam o processo, é possível afirmar que a adoção da automatização na separação magnética possibilitaria a otimização do uso de recursos, a redução de possíveis erros causados pela ação humana, a padronização dos procedimentos utilizados, entre outras vantagens. No caso do Instituto de Pesquisas Tecnológicas, compreende-se que sua posição perante à indústria de mineração seria de maior competitividade em vista da qualidade do serviço oferecido.
 
 ## Análise financeira
 
@@ -221,7 +224,7 @@ Em suma, a qualidade dos ensaios constitui o elemento que agrega valor à soluç
 ### Diagrama da Solução
 
 <br>
-<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/diagrama_solucao/Diagrama%20da%20Solu%C3%A7%C3%A3o.png" width="600" height=auto></img></p>
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/diagrama_solucao/Diagrama%20da%20Solu%C3%A7%C3%A3o.png?raw=true" width="600" height=auto></img></p>
 <p align="center"><font size=2><b>Figura 6 — Diagrama da solução</b></font></p>
 
 <br>
@@ -431,13 +434,13 @@ A solução conta com o microcontrolador Rasperry Pi Pico W e com o auxílio de 
 As imagens incluídas na documentação mostram o processo de impressão 3D das peças. <br>
 As figuras DB1 e DC1 representam a posição da peça a ser impressa, já as figuras DB2 e DC2 representam o processo de fatiamento - que define o caminho percorrido pelo bico da impressora para imprimir todos os detalhes do objeto. As linhas verdes presentes nas primeiras figuras representam a base da impressão, que é responsável por sustentar toda a peça durante o processo de impressão. Além disso, os filamentos de suporte visíveis na imagem auxiliam na impressão de partes que requerem suporte adequado. <br>
 A fim de tornar os dispositivos adequado às necessidades do projeto, o material escolhido foi o filamento PLA.
-<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/desenhos_tecnicos/arquivos_impressao/1.jpeg" width=35%></img></p><br>
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/desenhos_tecnicos/arquivos_impressao/1.jpeg?raw=true" width=35%></img></p><br>
 <p align="center"><font size=1>Figura DB1 — Posição da parte inferior do dispositivo que comporta os eletroímãs</font></p><br>
-<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/desenhos_tecnicos/arquivos_impressao/3.jpeg" width=25%></img></p><br>
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/desenhos_tecnicos/arquivos_impressao/3.jpeg?raw=true" width=25%></img></p><br>
 <p align="center"><font size=1>Figura DC1 — Posição da parte superior do dispositivo que comporta os eletroímãs</font></p><br>
-<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/desenhos_tecnicos/arquivos_impressao/2.jpeg" width=35%></img></p><br>
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/desenhos_tecnicos/arquivos_impressao/2.jpeg?raw=true" width=35%></img></p><br>
 <p align="center"><font size=1>Figura DB2 — Fatiamento da parte inferior do dispositivo que comporta os eletroímãs</font></p><br>
-<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/desenhos_tecnicos/arquivos_impressao/4.jpeg" width=25%></img></p>
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/desenhos_tecnicos/arquivos_impressao/4.jpeg?raw=true" width=25%></img></p>
 <p align="center"><font size=1>Figura DC2 — Fatiamento da parte superior do dispositivo que comporta os eletroímãs</font></p><br>
 
 ### Bandeja Radial
@@ -485,7 +488,7 @@ Para Linux: https://github.com/thonny/thonny/wiki/Linux <br>
 <b>G:</b> 2ª polaridade do eletroimã <br>
 <b>H:</b> GND do Led <br>
 <b>I:</b> 1ª polaridade do eletroimã <br>
-<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/esquematicos_eletronicos/Foto%20real%20do%20esquema%20de%20conex%C3%A3o%20da%20Placa%20Principal.jpg"  width="30%"></p>
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/esquematicos_eletronicos/Foto%20real%20do%20esquema%20de%20conex%C3%A3o%20da%20Placa%20Principal.jpg?raw=true"  width="30%"></p>
 <p align="center"><font size="1"> Figura xx: Conexão da placa principal e etiquetagem dos jumpers </font></p>
 
 ### Representação dos arquivos de backend do projeto:
@@ -497,12 +500,12 @@ Para Linux: https://github.com/thonny/thonny/wiki/Linux <br>
 
 ### Eletroímã
 <b>Nome do arquivo:</b> backend_iv_e_eletroima.py <br>
-<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/diagramas_backend/Eletro%C3%ADm%C3%A3.png"  width="25%"></p>
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/raw/main/docs/diagramas_backend/Eletro%C3%ADm%C3%A3.png"  width="25%"></p>
 <p align="center"><font size="1"> Figura xx: Diagrama de funcionamento simplicado do código do eletroímã </font></p><br>
 
 ### Dobot
 <b>Nome do arquivo:</b> controle_dobot_lite.py <br>
-<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/diagramas_backend/Controle%20do%20Dobot.png"  width="25%"></p>
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/diagramas_backend/Controle%20do%20Dobot.png?raw=true"  width="25%"></p>
 <p align="center"><font size="1"> Figura xx: Diagrama de funcionamento simplicado do código de controle do dobot </font></p><br>
 
 # Referências
