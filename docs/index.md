@@ -185,7 +185,7 @@ Em suma, a qualidade dos ensaios constitui o elemento que agrega valor à soluç
 
 # Arquitetura do Sistema
 
-## Módulos do Sistema e Visão Geral (Big Picture) (1.0)
+## Módulos do Sistema e Visão Geral (1.0)
 
 <br>
 <table align="center">
@@ -211,6 +211,8 @@ Em suma, a qualidade dos ensaios constitui o elemento que agrega valor à soluç
   
 ### Croqui da Solução
 
+O croqui da solução se encontra na figura disposta abaixo e exibe a visão vertical da solução. As três formas retangulares correspondem às bandejas utilizadas no ensaio, enquanto o círculo representa a área do robô. A área destacada em azul configura o alcance do braço robótico. No croqui, encontram-se também as dimensões da bandeja, a amplitude de varredura do robô e o limite do ângulo de rotação.
+
 <br>
 <p align="center"><img src="https://lh6.googleusercontent.com/ztk3zc9XaL34iNjuaPBuNVShRFIyjokR2Jst5DncvFbHIP54xMl98ww9CKMHN8QmR6n_dpUhHCBDjhhLnVa-wM5NKoTncqdeOXLbuwEs-bQmc2i5oCHimDtJOG6Kifzzl1vRTCi0IrapvS6h1T3StKI" width="600" height=auto></img></p>
 <p align="center"><font size=2><b>Figura 4 — Versão inicial do croqui da solução</b></font></p>
@@ -222,6 +224,8 @@ Em suma, a qualidade dos ensaios constitui o elemento que agrega valor à soluç
 <br>
 
 ### Diagrama da Solução
+
+O diagrama da solução se encontra disposto na figura abaixo e exemplifica as conexões entre cada módulo componente da solução. Além dos dispositivos de hardware, são exibidos também os artefatos de software integrados ao servidor de aplicação responsável pela manutenção do funcionamento do produto.
 
 <br>
 <p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/diagrama_solucao/Diagrama%20da%20Solu%C3%A7%C3%A3o.png?raw=true" width="600" height=auto></img></p>
@@ -267,25 +271,47 @@ Em suma, a qualidade dos ensaios constitui o elemento que agrega valor à soluç
 
 ### Testes preliminares de resposta dos sensores
 
-**Sensor: 
-Função:
-Controle:
-Entrada esperada:
-Saída esperada:
-Entrada obtida:
-Saída obtida:**
+#### Sensor Infravermelho de Distância
 
-**Sensor: 
-Função:
-Controle:
-Entrada esperada:
-Saída esperada:
-Entrada obtida:
-Saída obtida:**
+**Observação:** o sensor infravermelho limita-se à primeira versão da arquiterura da solução e sua utilização ficou restrita a testes. Seu descarte será justificado, posteriormente, na seção referente aos testes realizados.
 
-Começamos os testes, primeiramente, buscando entender os sensores que precisávamos para o projeto, a fim de deixá-lo mais completo. A partir disso, entendemos a necessidade de um **sensor de distância**, para manter o teste o mais preciso possível a partir das necessidades do cliente (manter a mesma distância para maior precisão do processo) eliminando os pontos negativos que o robô tinha por atuar sozinho. Os testes desse sensor foram realizados em junção a um copo de café, atuando com o objeto que queríamos descobrir a distância, funcionando da seguinte forma: possuindo duas lentes, a primeira emite uma luz infravermelha enquanto a segunda captura os sinais da mesma, essa captura funciona através da reflexão da luz na superfície do objeto/local que queremos saber a distância, ao retornar a segunda lente, a partir da intensidade que a luz retorna, é possível descobrir a distância através de um fórmula, medindo distâncias entre 4 a 30 cm com um máximo de 2 cm de desvio da medida real. Em seguida, decidimos utilizar uma **célula de carga** (1kg) e um módulo conversor hx711 específico para realizar leituras analógicas melhores, para verificar a variação de peso na bandeja de deposição de material ferromagnético já minerado. Para o teste, utilizamos dois mini ímãs colocados um em seguida do outro, para assim analisar as variações nas leituras da célula. Concluímos que o funcionamento dela seria eficaz para nossa solução uma vez que sua sensibilidade permitirá que encerramos o processo de mineração com precisão, ou seja, quando já não ocorrer deposição de ferro magnético minerado neste ensaio.
+**Sensor:** sensor infravermelho de distância
+**Tipo de sensor:** sensor eletromecânico de medição
+**Função:** detectar a distância entre a garra do braço robótico e as bordas de cada bandeja
+**Controle:** automático e realizado no início de cada ensaio
+**Entrada esperada:** sinal analógico referente à distância entre lente e material
+**Saída esperada:** distância, em centímetros, entre sensor e objeto
+**Entrada obtida:**  sinal analógico referente à distância entre lente e material
+**Saída obtida:** distância, em centímetros, entre sensor e objeto
 
-### Demonstrações de Funcionamento dos Sensores
+**Funcionamento do sensor**
+
+O sensor infravermelho possui duas lentes: a primeira emite radiação infravermelha, enquanto a segunda captura os sinais obtidos por meio da radiação. A captura funciona através da reflexão da luz na superfície do objeto cuja distância deseja-se obter. Ao retornar à segunda lente, a intensidade da luz permite a obtenção da distância por meio de um cálculo que leva em consideração distâncias entre 4 e 30 centímetros. É importante destacar que pode haver um desvio máximo de dois centímetros da medida real.
+
+**Realização de testes**
+
+Para a prototipação do projeto, foi necessária uma fase de entendimento e reflexão acerca de quais sensores se fariam necessários na solução. A princípio, ponderou-se a ideia de acrescentar ao protótipo um sensor infravermelho de distância, a fim de que as varreduras realizadas pelo braço robótico fossem padronizadas quanto à área percorrida. Foram realizados testes simples nos quais a capacidade de medição do sensor foi colocada à prova. Embora o uso do sensor em questão pudesse ser utilizado para evitar possíveis problemas relacionados à autonomia de atuação do robô, soluções alternativas ao uso do sensor foram encontradas, o que ocasionou o descarte da ideia. 
+
+#### Célula de Carga & HX711
+
+**Sensor:** célula de carga & módulo amplificador HX711
+**Tipo de sensor:** sensor eletromecânico de medição
+**Função:** detectar a quantidade de material ferromagnético obtido em uma varredura
+**Controle:** automático e cíclico enquanto o ensaio se encontra em execução
+**Entrada esperada:** sinal analógico referente à variação de força exercida sobre a célula
+**Saída esperada:** valor numérico indicativo da quantidade do material coletado
+**Entrada obtida:** sinal analógico referente à variação de força exercida sobre a célula
+**Saída obtida:** valor numérico indicativo da quantidade do material coletado
+
+**Funcionamento do sensor**
+
+A célula de carga, através do módulo amplificador HX711, deve receber um sinal analógico quando sofre deformação. Isto é, para situações em que materiais exercem um campo magnético sobre a célula, e esta sofre a ação de uma força, ocorre a medição analógica do nível de deformação provocado pelo campo magnético em questão. Cálculos podem ser realizados a fim de que o valor de saída seja convertido para unidades de massa. Desse modo, o sensor atua como uma balança invertida em que a força peso atua de modo a puxar a célula para cima, diferentemente das formas convencionais de pesagem utilizadas em outros tipos de balança.
+
+**Realização de testes**
+
+Utilizando a célula de carga (1kg) e um módulo conversor HX711 para a realização de melhores leituras analógicas, foram realizados testes a fiz de verificar a variação de peso na última bandeja do ensaio, referente à deposição do material ferromagnético minerado. Para isso, foram utilizados dois ímãs de neodímio colocados lado a lado sobre a célula e, posteriormente, foram aproximados materiais magnéticos capaz de provocar variações na leitura realizada pelo sensor. A conclusão foi de que seu funcionamento seria eficaz para a solução desenvolvida, uma vez que a sensibilidade apresentada demonstrou ser suficiente para a precisão que se desejava obter no processo de medição do material depositado. Desse modo, quando a variação de leitura da célula for mínima, o cliente terá o indicativo de que já não há material ferromagnético para ser depositado, de modo que o ensaio possa ser encerrado.
+
+### Demonstração de funcionamento dos sensores
 
 Abaixo, encontram-se os vídeos de demonstração de funcionamento dos sensores utilizados na solução.
 
@@ -299,13 +325,45 @@ Abaixo, encontram-se os vídeos de demonstração de funcionamento dos sensores 
 
 ### Testes preliminares de resposta dos atuadores
 
-Atuador: 
-Função:
-Controle:
-Entrada esperada:
-Saída esperada:
-Entrada obtida:
-Saída obtida:
+#### Eletroímã (Solenóide)
+
+**Atuador:** eletroímã solenóide
+**Tipo de atuador:** dispositivo eletromagnético
+**Função:** capturar o material ferromagnético da amostra
+**Controle:** automático e constante durante a varredura
+**Entrada esperada:** sinal elétrico capaz de induzir campo magnético
+**Saída esperada:** geração de campo magnético capaz de atrair material magnético
+**Entrada obtida:** sinal elétrico capaz de induzir campo magnético
+**Saída obtida:** geração de campo magnético capaz de atrair material magnético
+
+#### Ponte H
+
+**Atuador:** ponte H
+**Tipo de atuador:** circuito eletrônico
+**Função:** 
+**Controle:**
+**Entrada esperada:** 
+**Saída esperada:**
+**Entrada obtida:**
+**Saída obtida:**
+
+#### Raspberry Pi Pico W
+
+**Atuador:** 
+**Tipo de atuador:**
+**Função:** 
+**Controle:**
+**Entrada esperada:** 
+**Saída esperada:**
+**Entrada obtida:**
+**Saída obtida:**
+
+#### Dobot Magician Lite
+
+**Atuador:** 
+**Tipo de atuador:**
+**Função:** 
+**Controle:**
 
  Diante das necessidades do projeto, os atuadores principais seriam o **braço robótico**, o microcontrolador **Raspberry Pi Pico W**, uma **ponte H** e os **eletroímãs**. A princípio, o braço poderá ser manipulado por meio de um script em Python que irá conter os comandos ideais para realizar sua movimentação. Assim, será possível realizar adaptações para cada ensaio diante dos dados gerados pelos sensores e as ferramentas englobados na solução. O microcontrolador Raspberry ficará responsável pela centralização da solução, dispondo dos dados dos sensores e se comunicando com os scripts de outros atuadores via serial. Por exemplo, em contato com o script do braço robótico previamente citado, ele atualizará as informações necessárias para o procedimento ter a melhor acurácia e precisão possível, como o momento de finalizar o ensaio e a distância que ele precisa se movimentar para se posicionar corretamente sobre a bandeja.
 
@@ -328,6 +386,8 @@ Dando início aos testes, foi possível realizar a movimentação do braço de a
  
 ## Protótipo de interface com o usuário
 
+### Versão 1.0
+
 Abaixo, encontram-se as imagens relativas à primeira versão da prototipação da interface gráfica por meio da qual será possível manipular e configurar o robô.
 
 A primeira imagem mostra como seria a tela de início, tem como principal objetivo mostrar o Status de todas as integrações da solução. Qual é a situação atual do Robô, que tipo de comando ele está recebendo e retornando, e a situação dos componentes, se o imã está em funcionamento e com quanto de voltagem está trabalhando, qual é o peso da bandeja final e se o sistema de revolvimento está em funcionamento. Na lateral direita de página, podemos ver controles que podem movimentar o robô de maneira mais precisa e linear, podendo mover os 3 eixos de coordenadas, uma de cada vez. Tambem pode-se reparar no campo mais abaixo, o controle de atuadores na qual o mesmo pode acionar o compente acoplado utilizando voltagem ou pneumático.
@@ -337,6 +397,8 @@ A primeira imagem mostra como seria a tela de início, tem como principal objeti
 <p align="center"><img src="https://lh3.googleusercontent.com/AAZiukdZP169G3rSsd7Mjdb5XNqiA1DmRrz5wreyyGKyAWW7B-RLvG1KOppVzq9wZypDRm8BksFqkm-j6af3J6eeuTFOCKVYBPaA_y-oCN19bxBpjudHgHvxYOhdAZmhhJhdXBlPmbbqtx3rzBkM8BE" width="70%"></img></p>
 
 <p align="center"><img src="https://lh6.googleusercontent.com/OW5uM3qnbidyQepBadF9RvSuumPyCVdJYkqrgdwJfAM97-keoVPAuGMx9JuE7CCqDapeCSrc6VBYfo1D8VZ6nQgTq7gsUWm5gjuk2Dnt0-wdf94ZfrX8OfGU3L5kO9a8zZHVNnNBTfHVSeBkijjpOMg" width="70%"></img></p>
+
+### Versão 2.0
 
 
 ## Dispositivos Eletrônicos
@@ -396,7 +458,11 @@ Materiais utilizados:
 
 A fim de analisar a todo o momento o resultado da mineração magnética, decidimos utilizar de uma balança invertida, contando com dois imãs de neodímio acoplados na parte superior do sistema (visando que a deformação da célula seja por indução magnética, por isso o nome) e a estrutura física necessária para manter a célula de carga estável (madeiras presas em cada uma de suas devidas extremidades com os parafusos e porcas). Com isso desenvolvemos esse esquemático responsável por interagir com os materiais magnéticos já minerados e constantemente indicar se houve uma nova deposição deste. Assim, caso seja o momento de encerrar o ensaio, saberemos com mais precisão diante das medidas fornecidas por esse sistema. Segue o esquemático:
 
+<h3>Desenho técnico do dispositivo da balança invertida</h3>
+
 <p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Sistema%20de%20Pesagem.jpg?raw=true" width="70%" height=auto></img></p>
+
+<h3>Imagens do dispositivo da balança invertida</h3>
 
 <p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/BI-Cima.jpg?raw=true" width="70%" height=auto></img></p>
 
@@ -450,7 +516,9 @@ A fim de tornar os dispositivos adequado às necessidades do projeto, o material
 <p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/desenhos_tecnicos/arquivos_impressao/4.jpeg?raw=true" width=25%></img></p>
 <p align="center"><font size=1>Figura DC2 — Fatiamento da parte superior do dispositivo que comporta os eletroímãs</font></p><br>
 
-### Bandeja Radial
+### Bandeja radial
+
+**Observação:** a prototipação da bandeja radial limita-se às versões iniciais da arquitetura da solução. Dadas as limitações encontradas, foi necessário o descarte da ideia e a posterior utilização de bandejas padronizadas de formato retangular.
 
  Materiais utilizados:
 
@@ -479,6 +547,7 @@ Para fins de validação dos protótipos iniciais da solução, segue a consolid
 [<p align="center"><img src="https://lh4.googleusercontent.com/72hif2xu81BUXbT-QnjV6JxvITd-5OMrs_6IRucYrypywCMPoHQbRooMXUI68x3uT1HOcjXxZzqC4WylVjOw3ospo_CIIq_OPmc0d3pswFj2GK29BPvGuL-KFxiPYhK57hlKPKO8l5GG_PTrYPJQdXg" width="80%"></p>](https://drive.google.com/file/d/1txtCYVejKdHhF4Ub3VqGtsHanooMbTtl/view?usp=sharing)
 
 ## Análise do Processamento de Informações e Regras de Negócio
+
 A comunicação entre dispositivos é fundamental para o sucesso do projeto em questão. Nesse sentido, para garantir um desempenho eficiente e preciso, foi necessário o desenvolvimento de um backend que atenda às necessidades específicas do sistema. A presente seção tem como objetivo apresentar as principais características e funcionalidades desse backend, visando fornecer informações claras e objetivas para o uso e manutenção dos dispositivos envolvidos.
 
 ### Instruções de instalação gerais
