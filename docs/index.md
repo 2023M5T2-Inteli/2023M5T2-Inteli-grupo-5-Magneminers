@@ -275,6 +275,8 @@ O diagrama da solução se encontra disposto na figura abaixo e exemplifica as c
 
 **Observação:** o sensor infravermelho limita-se à primeira versão da arquiterura da solução e sua utilização ficou restrita a testes. Seu descarte será justificado, posteriormente, na seção referente aos testes realizados.
 
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/media/sensores/sensor_infravermelho-removebg-preview.png?raw=true" width="50%"></img></p>
+
 **Sensor:** sensor infravermelho de distância
 **Tipo de sensor:** sensor eletromecânico de medição
 **Função:** detectar a distância entre a garra do braço robótico e as bordas de cada bandeja
@@ -293,6 +295,8 @@ O sensor infravermelho possui duas lentes: a primeira emite radiação infraverm
 Para a prototipação do projeto, foi necessária uma fase de entendimento e reflexão acerca de quais sensores se fariam necessários na solução. A princípio, ponderou-se a ideia de acrescentar ao protótipo um sensor infravermelho de distância, a fim de que as varreduras realizadas pelo braço robótico fossem padronizadas quanto à área percorrida. Foram realizados testes simples nos quais a capacidade de medição do sensor foi colocada à prova. Embora o uso do sensor em questão pudesse ser utilizado para evitar possíveis problemas relacionados à autonomia de atuação do robô, soluções alternativas ao uso do sensor foram encontradas, o que ocasionou o descarte da ideia. 
 
 #### Célula de Carga & HX711
+
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/media/sensores/celula_carga_hx711-removebg-preview.png?raw=true" width="40%"></img></p>
 
 **Sensor:** célula de carga & módulo amplificador HX711
 **Tipo de sensor:** sensor eletromecânico de medição
@@ -315,10 +319,10 @@ Utilizando a célula de carga (1kg) e um módulo conversor HX711 para a realiza�
 
 Abaixo, encontram-se os vídeos de demonstração de funcionamento dos sensores utilizados na solução.
 
-[<center><img src="https://lh3.googleusercontent.com/fqUKYFc17_odvZCvnTXnoRLqCDH9Pn9qDU89iT06e85d7JCMgehLY_zv11d5XwpVpe9WBhRMjyfWFEQnsnYrQ1qyxWmC6A1tT2TWTOM-Va5HO0muF4CpKcszElloyR_C5pqJr0lwGDwhx7vwfNHzgyg" width="70%"></img></center>](https://drive.google.com/file/d/1Ca5yPUheEd5piRgm2pBVEWkggLV0Kput/view?usp=sharing/)
+<p align="center"><a href="https://drive.google.com/file/d/1Ca5yPUheEd5piRgm2pBVEWkggLV0Kput/view?usp=sharing/"><img src="https://lh3.googleusercontent.com/fqUKYFc17_odvZCvnTXnoRLqCDH9Pn9qDU89iT06e85d7JCMgehLY_zv11d5XwpVpe9WBhRMjyfWFEQnsnYrQ1qyxWmC6A1tT2TWTOM-Va5HO0muF4CpKcszElloyR_C5pqJr0lwGDwhx7vwfNHzgyg" width="50%"></img></a></p>
 <p align="center"><font size=2><b>Vídeo para demonstração da calibração do sensor de distância infravermelho</b></font></p>
 
-[<center><img src="https://lh6.googleusercontent.com/auAXAe9Xtx8LeL_hgrhevCSoSas-2hgLQiDJkmaKQMo5Aln3AQPqphcAsPrAwtK9bnkqbQE60VdnC7FYCSS_ISZA1q_zkiNb_pNwf5CONbB9MUBZJx5vqdt1c2HjwwsXzADE1AOcUq4_KOQLKPHPiGU" width="70%"></img></center>](https://drive.google.com/file/d/1_PykpKwE5UDx0YWhsY6CiHbBpMDh4OsE/view?usp=sharing)
+<p align="center"><a href="https://drive.google.com/file/d/1_PykpKwE5UDx0YWhsY6CiHbBpMDh4OsE/view?usp=sharing"><img src="https://lh6.googleusercontent.com/auAXAe9Xtx8LeL_hgrhevCSoSas-2hgLQiDJkmaKQMo5Aln3AQPqphcAsPrAwtK9bnkqbQE60VdnC7FYCSS_ISZA1q_zkiNb_pNwf5CONbB9MUBZJx5vqdt1c2HjwwsXzADE1AOcUq4_KOQLKPHPiGU" width="50%"></img></a></p>
 <p align="center"><font size=2><b>Vídeo para demonstração da leitura da célula de carga</b></font></p>
 
 ## Atuadores
@@ -326,6 +330,8 @@ Abaixo, encontram-se os vídeos de demonstração de funcionamento dos sensores 
 ### Testes preliminares de resposta dos atuadores
 
 #### Eletroímã (Solenóide)
+
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/media/componentes/eletroima.png?raw=true" width="40%"></img></p>
 
 **Atuador:** eletroímã solenóide
 **Tipo de atuador:** dispositivo eletromagnético
@@ -338,6 +344,8 @@ Abaixo, encontram-se os vídeos de demonstração de funcionamento dos sensores 
 
 #### Ponte H
 
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/media/componentes/ponte_h.png?raw=true" width="40%"></img></p>
+
 **Atuador:** ponte H
 **Tipo de atuador:** circuito eletrônico
 **Função:** 
@@ -349,6 +357,8 @@ Abaixo, encontram-se os vídeos de demonstração de funcionamento dos sensores 
 
 #### Raspberry Pi Pico W
 
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/media/componentes/raspberry.png?raw=true" width="40%"></img></p>
+
 **Atuador:** 
 **Tipo de atuador:**
 **Função:** 
@@ -359,6 +369,8 @@ Abaixo, encontram-se os vídeos de demonstração de funcionamento dos sensores 
 **Saída obtida:**
 
 #### Dobot Magician Lite
+
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/media/componentes/dobot.jpg?raw=true" width="50%"></img></p>
 
 **Atuador:** 
 **Tipo de atuador:**
@@ -463,6 +475,7 @@ A fim de analisar a todo o momento o resultado da mineração magnética, decidi
 <p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Sistema%20de%20Pesagem.jpg?raw=true" width="70%" height=auto></img></p>
 
 <h3>Imagens do dispositivo da balança invertida</h3>
+
 
 <p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/BI-Cima.jpg?raw=true" width="70%" height=auto></img></p>
 
