@@ -5,7 +5,7 @@ from joystick import coordenadas, coordenadas_e
 import pymongo
 from pymongo import MongoClient
 from data.robot_singleton import RobotSingleton
-
+from time import sleep
 
 # Inicializa o flask
 app = Flask(__name__)
@@ -18,6 +18,16 @@ cluster = MongoClient("mongodb+srv://Gabi-Barretto:DarthVader01@modulo5.ftovxoa.
 db = cluster["Ensaios"]
 collection = db["Ensaios"]
 
+# Envia um comando para o Raspberry Pi Pico controlar o eletroímã
+def controle_eletroima(com_serial_ima, estado):
+    com_serial_ima.write(str(estado).encode() + b"\n")
+    return None
+
+def le_balanca(com_recebimento):
+    for i in range(3):
+        controle_eletroima(com_recebimento, "b")
+        mensagem_recebida = com_recebimento.readline().decode().strip()
+    return mensagem_recebida
 
 # Função para criar ensaio no banco de dados
 def criar_ensaio(e, cliente, amostra, projeto, usuario,  cic, vrr):
@@ -86,6 +96,7 @@ def index():
 
 # 	return redirect("/")
 
+
 # Rota e funcao para criar o ensaio
 @app.route("/criar", methods=["POST"])
 def cria_ensaio():
@@ -153,9 +164,10 @@ def iniciar_ensaio():
 # Rota para consultar os valores do sensor
 @app.route('/get-value')
 def get_value():
-    value = resposta_para_tudo.readline().decode('utf-8')
+    value = le_balanca(resposta_para_tudo)
     valor = value.strip()
     return {'value': valor}
+
 
 if __name__ == "__main__":
     app.run()
