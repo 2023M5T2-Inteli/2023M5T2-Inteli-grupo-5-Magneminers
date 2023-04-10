@@ -344,8 +344,6 @@ A célula de carga, através do módulo amplificador HX711, deve receber um sina
 
 Utilizando a célula de carga (1kg) e um módulo conversor HX711 para a realização de melhores leituras analógicas, foram realizados testes a fim de verificar a variação de peso na última bandeja do ensaio, referente à deposição do material ferromagnético minerado. Para isso, foram utilizados dois ímãs de neodímio colocados lado a lado sobre a célula e, posteriormente, foram aproximados materiais magnéticos capaz de provocar variações na leitura realizada pelo sensor. A conclusão foi de que seu funcionamento seria eficaz para a solução desenvolvida, uma vez que a sensibilidade apresentada demonstrou ser suficiente para a precisão que se desejava obter no processo de medição do material depositado. Desse modo, quando a variação de leitura da célula for mínima, o cliente terá o indicativo de que já não há material ferromagnético para ser depositado, de modo que o ensaio possa ser encerrado.
 
-#### Demonstração de funcionamento dos sensores
-
 Abaixo, encontram-se os vídeos de demonstração de funcionamento dos sensores utilizados na solução.
 
 <p align="center"><a href="https://drive.google.com/file/d/1Ca5yPUheEd5piRgm2pBVEWkggLV0Kput/view?usp=sharing/"><img src="https://lh3.googleusercontent.com/fqUKYFc17_odvZCvnTXnoRLqCDH9Pn9qDU89iT06e85d7JCMgehLY_zv11d5XwpVpe9WBhRMjyfWFEQnsnYrQ1qyxWmC6A1tT2TWTOM-Va5HO0muF4CpKcszElloyR_C5pqJr0lwGDwhx7vwfNHzgyg" width="50%"></img></a></p>
@@ -353,6 +351,14 @@ Abaixo, encontram-se os vídeos de demonstração de funcionamento dos sensores 
 
 <p align="center"><a href="https://drive.google.com/file/d/1_PykpKwE5UDx0YWhsY6CiHbBpMDh4OsE/view?usp=sharing"><img src="https://lh6.googleusercontent.com/auAXAe9Xtx8LeL_hgrhevCSoSas-2hgLQiDJkmaKQMo5Aln3AQPqphcAsPrAwtK9bnkqbQE60VdnC7FYCSS_ISZA1q_zkiNb_pNwf5CONbB9MUBZJx5vqdt1c2HjwwsXzADE1AOcUq4_KOQLKPHPiGU" width="50%"></img></a></p>
 <p align="center"><font size=2><b>Vídeo para demonstração da leitura da célula de carga</b></font></p>
+
+### Testes finais de resposta dos sensores
+
+Abaixo, encontram-se o vídeo de demonstração referente aos últimos testes realizados durante a última semana de desenvolvimento do projeto.
+
+<p align="center"><a href="https://drive.google.com/file/d/1Go0l2dWt6Tjkxnxu1H2qais44fiJLgiR/view?usp=sharing"><img src="https://lh5.googleusercontent.com/WtDZ8g7SmJSpKJt064KCBUbJkEHbdYOro7TZkUaBhh-MTaP9glODtU_glmR-yUjjFfLcSYvzpLlpl68_cGIHtl9mbF6LkeITuKxYeuKz1p7CyFCJV3Xqdbw-KhccEJPLW6zfHuqipa1l" width="50%"></img></a></p>
+<p align="center"><font size=2><b>Vídeo para demonstração do sensor de deposição dos materiais ferromagnéticos</b></font></p>
+
 
 ## Atuadores
 
@@ -386,9 +392,10 @@ No primeiro teste realizado, foi possível coordenar a movimentação do braço 
 
 ### Testes finais de resposta dos atuadores
 
-Abaixo, encontram-se vídeos de demonstração referentes aos últimos testes realizados durante a última semana de desenvolvimento do projeto.
+Abaixo, encontram-se o vídeo de demonstração referente aos últimos testes realizados durante a última semana de desenvolvimento do projeto.
 
-_Vídeos_
+<p align="center"><a href="https://drive.google.com/file/d/1Go0l2dWt6Tjkxnxu1H2qais44fiJLgiR/view?usp=sharing"><img src="https://lh5.googleusercontent.com/rmyrJEVQL_QcL8YiDnK4OIMr2LvX9yx7WEgu31EmZgON7PV7QzoK_4DBBGLnjpGSmNu8an2WRf8-VxUgSqEwWknRriLWbdURtkekSWy4QrKkZKpcqgF8505KNM-U6X23DC7fGOlrauWL" width="50%"></img></a></p>
+<p align="center"><font size=2><b>Vídeo para demonstração do acionamento dos eletroímãs no coletor eletromagnético</b></font></p>
 
 # Análise de Experiência do Usuário
 
@@ -405,7 +412,7 @@ _Vídeos_
 5. Enquanto operador responsável pelas múltiplas etapas envolvidas no ensaio, gostaria de gerar relatórios automaticamente, para analisar, com maior eficiência, os resultados do ensaio.
 
  
-## Protótipo de interface com o usuário
+## Protótipo de interface de usuário
 
 ### Versão 1.0
 
@@ -546,6 +553,7 @@ As imagens incluídas na documentação mostram o processo de impressão 3D das 
 As figuras DB1 e DC1 representam a posição da peça a ser impressa, já as figuras DB2 e DC2 representam o processo de fatiamento - que define o caminho percorrido pelo bico da impressora para imprimir todos os detalhes do objeto. As linhas verdes presentes nas primeiras figuras representam a base da impressão, que é responsável por sustentar toda a peça durante o processo de impressão. Além disso, os filamentos de suporte visíveis na imagem auxiliam na impressão de partes que requerem suporte adequado. <br>
 A fim de tornar os dispositivos adequado às necessidades do projeto, o material escolhido foi o filamento PLA.
 <p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/desenhos_tecnicos/arquivos_impressao/1.jpeg?raw=true" width=35%></img></p><br>
+
 <p align="center"><font size=1>Figura DB1 — Posição da parte inferior do dispositivo que comporta os eletroímãs</font></p><br>
 <p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/desenhos_tecnicos/arquivos_impressao/3.jpeg?raw=true" width=25%></img></p><br>
 <p align="center"><font size=1>Figura DC1 — Posição da parte superior do dispositivo que comporta os eletroímãs</font></p><br>
@@ -566,19 +574,20 @@ A fim de tornar os dispositivos adequado às necessidades do projeto, o material
 Diante da análise das dimensões de movimento do braço robótico (Rotação de 270° e 34 cm de raio), optamos por um conjunto de três bandejas radiais que permitirão o aproveitamento máximo dessas dimensões. Segue o esquemático:
 
 <p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Conjunto%20de%20Bandeja%20Radial.jpg?raw=true" width="70%" height=auto></img></p>
+<p align="center"><font size=2><b>Figura 29 — Desenho técnico da bandeja radial</b></font></p>
+
 
 ## Validação de Dispositivos
 
 Para fins de validação dos protótipos iniciais da solução, segue a consolidação da integração dos componentes: [Eletroimã e Sensor-iv](#eletroímã-e-sensor-infravermelho), [Balança Invertida](#célula-de-carga---balança-invertida) e [Raspberry e Ponte-H](#raspberry-pi-pico-w-e-ponte-h) e vídeo de seu funcionamento:
 
-<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Diagrama%20Esquem%C3%A1tico%20Placa%20Principal.jpg?raw=true" width="70%" height=auto></img></p>
-
-<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Critical-Prototype.jpg?raw=true" width="70%" height=auto></img></p>
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Critical-Prototype.jpg?raw=true" width="40%" height=auto></img></p>
+<p align="center"><font size=2><b>Figura 30 — Dispositivos integrados para validação inicial</b></font></p>
 
 
  Vídeo demonstrativo dos dispositivos em funcionamento:
- 
-[<p align="center"><img src="https://lh4.googleusercontent.com/72hif2xu81BUXbT-QnjV6JxvITd-5OMrs_6IRucYrypywCMPoHQbRooMXUI68x3uT1HOcjXxZzqC4WylVjOw3ospo_CIIq_OPmc0d3pswFj2GK29BPvGuL-KFxiPYhK57hlKPKO8l5GG_PTrYPJQdXg" width="80%"></p>](https://drive.google.com/file/d/1txtCYVejKdHhF4Ub3VqGtsHanooMbTtl/view?usp=sharing)
+<p align="center"><a href="https://drive.google.com/file/d/1txtCYVejKdHhF4Ub3VqGtsHanooMbTtl/view?usp=sharing"><img src="https://lh4.googleusercontent.com/72hif2xu81BUXbT-QnjV6JxvITd-5OMrs_6IRucYrypywCMPoHQbRooMXUI68x3uT1HOcjXxZzqC4WylVjOw3ospo_CIIq_OPmc0d3pswFj2GK29BPvGuL-KFxiPYhK57hlKPKO8l5GG_PTrYPJQdXg" width="50%"></img></a></p>
+<p align="center"><font size=2><b>Vídeo para demonstração do funcionamento da balança invertida</b></font></p>
 
 ## Análise do Processamento de Informações e Regras de Negócio
 
@@ -602,28 +611,33 @@ Para Linux: https://github.com/thonny/thonny/wiki/Linux <br>
 <b>G:</b> 2ª polaridade do eletroimã <br>
 <b>H:</b> GND do Led <br>
 <b>I:</b> 1ª polaridade do eletroimã <br>
-<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/esquematicos_eletronicos/Foto%20real%20do%20esquema%20de%20conex%C3%A3o%20da%20Placa%20Principal.jpg?raw=true"  width="40%"></p>
-<p align="center"><font size="1"> Figura xx: Conexão da placa principal e etiquetagem dos jumpers </font></p>
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/esquematicos_eletronicos/Foto%20real%20do%20esquema%20de%20conex%C3%A3o%20da%20Placa%20Principal.jpg?raw=true" width="40%"></p>
+<p align="center"><font size=2><b>Figura 31 — Conexão da placa principal e etiquetagem dos jumpers</b></font></p>
 
-### Representação dos arquivos de backend do projeto:
+### Representação dos arquivos de Back-End do projeto:
 
 ### Célula de Carga
 <b>Nome do arquivo:</b> backend_celula_de_carga.py <br>
-<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/diagramas_backend/C%C3%A9lula%20de%20carga.png?raw=true"  width="25%"></p>
-<p align="center"><font size="1"> Figura xx: Diagrama de funcionamento simplicado do código da célula de carga </font></p><br>
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/diagramas_backend/C%C3%A9lula%20de%20carga.png?raw=true"  width="20%"></p>
+<p align="center"><font size=2><b>Figura 32 — Diagrama de funcionamento simplicado do código da célula de carga</b></font></p>
 
 ### Eletroímã
 <b>Nome do arquivo:</b> backend_iv_e_eletroima.py <br>
-<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/raw/main/docs/diagramas_backend/Eletro%C3%ADm%C3%A3.png"  width="25%"></p>
-<p align="center"><font size="1"> Figura xx: Diagrama de funcionamento simplicado do código do eletroímã </font></p><br>
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/raw/main/docs/diagramas_backend/Eletro%C3%ADm%C3%A3.png" width="20%"></p>
+<p align="center"><font size=2><b>Figura 33 — Diagrama de funcionamento simplicado do código do eletroímã</b></font></p>
 
 ### Dobot
 <b>Nome do arquivo:</b> controle_dobot_lite.py <br>
-<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/diagramas_backend/Controle%20do%20Dobot.png?raw=true"  width="25%"></p>
-<p align="center"><font size="1"> Figura xx: Diagrama de funcionamento simplicado do código de controle do dobot </font></p><br>
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/diagramas_backend/Controle%20do%20Dobot.png?raw=true" width="20%"></p>
+<p align="center"><font size=2><b>Figura 34 — Diagrama de funcionamento simplicado do código de controle do braço robótico</b></font></p>
 
-# Referências
-  
+# Versão final da solução
+
+Abaixo, encontra-se o vídeo demonstrativo da solução final, que exibe um ensaio de separação magnética concluído pelo sistema de automação desenvolvido.
+
+<p align="center"><a href="https://drive.google.com/file/d/1Wbv227RLnqGQc1osCOLZijP8_PQVYuIM/view?usp=sharing
+"><img src="https://lh5.googleusercontent.com/EgU0xBGRsU8Fi96IV3vkOlSIflXD1IFZDwVwDORySlJucDlDwuH4cmbOAPcu9aJVMdGxFMohQ45RNHjzTe_zRC9vE3GWc_V6jzk__kopNMXjiMc2AmMCo3i0juhxB6YKIQ8J2tTW6-EV" width="50%"></img></a></p>
+<p align="center"><font size=2><b>Vídeo para demonstração do acionamento dos eletroímãs no coletor eletromagnético</b></font></p>
 
 # Anexos
 
