@@ -1,7 +1,7 @@
 <table>
 <tr>
 <td>
-<a  href= "https://www.ipt.br/"><img  src="https://www.ipt.br/imagens/logo_ipt.gif"  alt="IPT"  border="0"  width="70%"></a>
+<a  href= "https://www.ipt.br/"><img  src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/media/outros/logo_ipt.png?raw=true"  alt="IPT"  border="0"  width="30%"></a>
 </td>
 <td><a  href= "https://www.inteli.edu.br/"><img  src="https://www.inteli.edu.br/wp-content/uploads/2021/08/20172028/marca_1-2.png"  alt="Inteli - Instituto de Tecnologia e Liderança"  border="0"  width="30%"></a>
 </td>
@@ -162,25 +162,33 @@ Considerando o processo de separação magnética realizado, atualmente, pelo In
 
 Em suma, a qualidade dos ensaios constitui o elemento que agrega valor à solução. Com a retirada da mão de obra, cuja ação no ensaio passa a ser automatizada, o tempo ganho pelo operador para outras tarefas é significativo a longo prazo, salvando um custo operacional para os stakeholders. Diante da análise dos custos da operação e retorno dos ensaios — supondo o valor de R$ 2000,00 por ensaio —, a solução se pagaria em, aproximadamente, nove ensaios.
 
+## Persona
+
+<br>
+<div align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/media/negocios/persona.png?raw=true
+" width="600" height=auto></img></div>
+<p align="center"><font size=2><b>Figura 1 — Persona da solução</b></font></p>
+<br>
+
 ## Análise SWOT
 
 <br>
-<div align="center"><img src="https://lh6.googleusercontent.com/zG8EnpZDgBawCTeDtsdIlDg2p6Ucljp306zIdN2e-vJLtzRxG_w4UnhNh5kEH32OZFgOrrOLHLhEsK2zV2kvmrZR1lcEbKyZ-tMikonjjLosjdmX5_fPNudNE6e7JZkfUH1QL_X20P0MP9xkGtSSoBw" width="600" height=auto></img></div>
-<p align="center"><font size=2><b>Figura 1 — Análise SWOT (forças, oportunidades, fraquezas e ameaças) do Instituto de Pesquisas Tecnológicas</b></font></p>
+<div align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/media/negocios/analise_swot.png?raw=true" width="600" height=auto></img></div>
+<p align="center"><font size=2><b>Figura 2 — Análise SWOT (forças, oportunidades, fraquezas e ameaças) do Instituto de Pesquisas Tecnológicas</b></font></p>
 <br>
 
 ## Value Proposition Canvas
 
 <br>
-<p align="center"><img src="https://lh5.googleusercontent.com/xYxOS-4i-mqXFikfxJAc7g0b_FhPT96ku_k4FdCSHb3YkBMeSY1eqs4W_UaXE3cQJeg-VFHbNcAk1VyiD-jfpKKON3ua7EBH9ka5fBGwX1h3VGxSt3bfBo4WJKTvUS08PMLSops4Ap2DkbRSgd3jYMk" width="600" height=auto></img></p>
-<p align="center"><font size=2><b>Figura 2 — Value Proposition Canvas do atual procedimento de separação magnética realizado pelo IPT</b></font></p>
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/media/negocios/value_proposition_canvas.png?raw=true" width="80%" height=auto></img></p>
+<p align="center"><font size=2><b>Figura 3 — Value Proposition Canvas do atual procedimento de separação magnética realizado pelo IPT</b></font></p>
 <br>
 
 ## Matriz de Riscos
 
-<br>
-<p align="center"><img src="https://lh6.googleusercontent.com/PsuqnxqBCrQZD-gd0dvqBnxThe2AOZWL6vFaLv27mIcgcPJA148UVNPkAnvzPRf696h6kdDlmeOSMsuxcbGsQ7I_WNAlkO6A7GrB65i5mTCvBZB_YU6-Kf9qKl5sqVSC8ANSYEWgnSgn2K9Eush8ml0" width="600" height=auto></img></p>
-<p align="center"><font size=2><b>Figura 3 — Matriz de Riscos da solução desenvolvida</b></font></p>
+
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/media/negocios/risk_matrix.png?raw=true" width="80%" height=auto></img></p>
+<p align="center"><font size=2><b>Figura 4 — Matriz de Riscos da solução desenvolvida</b></font></p>
 <br>
 
 # Arquitetura do Sistema
@@ -215,13 +223,15 @@ O croqui da solução se encontra na figura disposta abaixo e exibe a visão ver
 
 <br>
 <p align="center"><img src="https://lh6.googleusercontent.com/ztk3zc9XaL34iNjuaPBuNVShRFIyjokR2Jst5DncvFbHIP54xMl98ww9CKMHN8QmR6n_dpUhHCBDjhhLnVa-wM5NKoTncqdeOXLbuwEs-bQmc2i5oCHimDtJOG6Kifzzl1vRTCi0IrapvS6h1T3StKI" width="600" height=auto></img></p>
-<p align="center"><font size=2><b>Figura 4 — Versão inicial do croqui da solução</b></font></p>
+<p align="center"><font size=2><b>Figura 5 — Versão inicial do croqui da solução</b></font></p>
 <br>
 
 <br>
 <p align="center"><img src="https://lh6.googleusercontent.com/h4amFfWdV1cBVHwKohGJG-WkZxRD2XilNjKyljW65xQtF6-O_A-T3Vr2XQTKXalTua54MzlmMWVOQPJDdET_461QWDJG2EaT0YILkZ0aF1DRAhSqUgUCoRmJkkrOlTCSnLFsZ_9a8OftsXZsOJtS0iA" width="600" height=auto></img></p>
-<p align="center"><font size=2><b>Figura 5 — Versão inicial do dispositivo mecânico de suporte para eletroímãs</b></font></p>
+<p align="center"><font size=2><b>Figura 6 — Versão inicial do dispositivo mecânico de suporte para eletroímãs</b></font></p>
 <br>
+
+## Módulos do Sistema e Visão Geral (2.0)
 
 ### Diagrama da Solução
 
@@ -229,7 +239,7 @@ O diagrama da solução se encontra disposto na figura abaixo e exemplifica as c
 
 <br>
 <p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/docs/diagrama_solucao/Diagrama%20da%20Solu%C3%A7%C3%A3o.png?raw=true" width="600" height=auto></img></p>
-<p align="center"><font size=2><b>Figura 6 — Diagrama da solução</b></font></p>
+<p align="center"><font size=2><b>Figura 7 — Diagrama da solução</b></font></p>
 
 <br>
 <table align="center">
@@ -267,15 +277,34 @@ O diagrama da solução se encontra disposto na figura abaixo e exemplifica as c
 <p align="center"><font size=2><b>Tabela 4 — Componentes do sistema contendo suas respectivas formas de conexão, funções e especificações relacionadas a entrada e saída</b></font></p>
 <br>
 
-## Sensores
+Diante das necessidades do projeto, os atuadores principais seriam o braço robótico, o microcontrolador Raspberry Pi Pico W, uma ponte H e eletroímãs. A princípio, o braço poderá ser manipulado por meio de um script Python que irá conter os comandos correspondentes à sua movimentação. Desse modo, será possível realizar adaptações para cada ensaio diante dos dados gerados pelos sensores e as ferramentas englobados na solução. O microcontrolador ficará responsável por embarcar o firmware dos módulos da solução, dispondo dos dados dos sensores e se comunicando com os scripts dos atuadores via serial. Ao entrar em execução paralelamente ao script do braço robótico mencionado, ele atualizará as informações necessárias para que o procedimento apresente uma melhor precisão.
 
-### Testes preliminares de resposta dos sensores
+#### Dobot Magician Lite
+
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/media/componentes/dobot.jpg?raw=true" width="40%"></img></p>
+<p align="center"><font size=2><b>Figura 8 — Braço robótico Dobot Magician Lite</b></font></p>
+
+**Tipo de componente:** dispositivo robótico 
+**Função:** realizar, de forma autônoma, a rotina do ensaio de separação magnética
+**Controle:** via interface de usuário
+
+#### Raspberry Pi Pico W
+
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/media/componentes/raspberry.png?raw=true" width="40%"></img></p>
+<p align="center"><font size=2><b>Figura 9 — Microcontrolador Raspberry Pi Pico W</b></font></p>
+
+**Tipo de componente:** microcontrolador
+**Função:** armazenar o firmware responsável pelo controle dos sensores e atuadores da solução
+**Controle:** atrelado ao robô; em execução uma vez que o firmware é embarcado no microcontrolador
+
+## Sensores
 
 #### Sensor Infravermelho de Distância
 
 **Observação:** o sensor infravermelho limita-se à primeira versão da arquiterura da solução e sua utilização ficou restrita a testes. Seu descarte será justificado, posteriormente, na seção referente aos testes realizados.
 
-<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/media/sensores/sensor_infravermelho-removebg-preview.png?raw=true" width="50%"></img></p>
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/media/componentes/sensor_infravermelho.png?raw=true" width="40%"></img></p>
+<p align="center"><font size=2><b>Figura 10 — Sensor infravermelho de distância</b></font></p>
 
 **Sensor:** sensor infravermelho de distância
 **Tipo de sensor:** sensor eletromecânico de medição
@@ -296,7 +325,8 @@ Para a prototipação do projeto, foi necessária uma fase de entendimento e ref
 
 #### Célula de Carga & HX711
 
-<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/media/sensores/celula_carga_hx711-removebg-preview.png?raw=true" width="40%"></img></p>
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/media/componentes/celula_carga_hx711.png?raw=true" width="40%"></img></p>
+<p align="center"><font size=2><b>Figura 11 — Célula de carga junto ao módulo HX711</b></font></p>
 
 **Sensor:** célula de carga & módulo amplificador HX711
 **Tipo de sensor:** sensor eletromecânico de medição
@@ -311,11 +341,11 @@ Para a prototipação do projeto, foi necessária uma fase de entendimento e ref
 
 A célula de carga, através do módulo amplificador HX711, deve receber um sinal analógico quando sofre deformação. Isto é, para situações em que materiais exercem um campo magnético sobre a célula, e esta sofre a ação de uma força, ocorre a medição analógica do nível de deformação provocado pelo campo magnético em questão. Cálculos podem ser realizados a fim de que o valor de saída seja convertido para unidades de massa. Desse modo, o sensor atua como uma balança invertida em que a força peso atua de modo a puxar a célula para cima, diferentemente das formas convencionais de pesagem utilizadas em outros tipos de balança.
 
-**Realização de testes**
+### Testes preliminares de resposta dos sensores
 
-Utilizando a célula de carga (1kg) e um módulo conversor HX711 para a realização de melhores leituras analógicas, foram realizados testes a fiz de verificar a variação de peso na última bandeja do ensaio, referente à deposição do material ferromagnético minerado. Para isso, foram utilizados dois ímãs de neodímio colocados lado a lado sobre a célula e, posteriormente, foram aproximados materiais magnéticos capaz de provocar variações na leitura realizada pelo sensor. A conclusão foi de que seu funcionamento seria eficaz para a solução desenvolvida, uma vez que a sensibilidade apresentada demonstrou ser suficiente para a precisão que se desejava obter no processo de medição do material depositado. Desse modo, quando a variação de leitura da célula for mínima, o cliente terá o indicativo de que já não há material ferromagnético para ser depositado, de modo que o ensaio possa ser encerrado.
+Utilizando a célula de carga (1kg) e um módulo conversor HX711 para a realização de melhores leituras analógicas, foram realizados testes a fim de verificar a variação de peso na última bandeja do ensaio, referente à deposição do material ferromagnético minerado. Para isso, foram utilizados dois ímãs de neodímio colocados lado a lado sobre a célula e, posteriormente, foram aproximados materiais magnéticos capaz de provocar variações na leitura realizada pelo sensor. A conclusão foi de que seu funcionamento seria eficaz para a solução desenvolvida, uma vez que a sensibilidade apresentada demonstrou ser suficiente para a precisão que se desejava obter no processo de medição do material depositado. Desse modo, quando a variação de leitura da célula for mínima, o cliente terá o indicativo de que já não há material ferromagnético para ser depositado, de modo que o ensaio possa ser encerrado.
 
-### Demonstração de funcionamento dos sensores
+#### Demonstração de funcionamento dos sensores
 
 Abaixo, encontram-se os vídeos de demonstração de funcionamento dos sensores utilizados na solução.
 
@@ -327,11 +357,10 @@ Abaixo, encontram-se os vídeos de demonstração de funcionamento dos sensores 
 
 ## Atuadores
 
-### Testes preliminares de resposta dos atuadores
-
-#### Eletroímã (Solenóide)
+#### Eletroímã
 
 <p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/media/componentes/eletroima.png?raw=true" width="40%"></img></p>
+<p align="center"><font size=2><b>Figura 12 — Eletroímã solenóide</b></font></p>
 
 **Atuador:** eletroímã solenóide
 **Tipo de atuador:** dispositivo eletromagnético
@@ -345,41 +374,22 @@ Abaixo, encontram-se os vídeos de demonstração de funcionamento dos sensores 
 #### Ponte H
 
 <p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/media/componentes/ponte_h.png?raw=true" width="40%"></img></p>
+<p align="center"><font size=2><b>Figura 13 — Ponte H</b></font></p>
 
 **Atuador:** ponte H
 **Tipo de atuador:** circuito eletrônico
-**Função:** 
-**Controle:**
-**Entrada esperada:** 
-**Saída esperada:**
-**Entrada obtida:**
-**Saída obtida:**
+**Função:** inversão da polaridade da corrente que flui para os eletroímãs
+**Controle:** atrelado ao firmware embarcado no microcontrolador
 
-#### Raspberry Pi Pico W
+### Testes preliminares de resposta dos atuadores
 
-<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/media/componentes/raspberry.png?raw=true" width="40%"></img></p>
+No primeiro teste realizado, foi possível coordenar a movimentação do braço com o eletroímã já acoplado a ele e a um microcontrolador juntamente à ponte H. Dessa forma, foi possível concretizar um protótipo crítico da solução, uma vez que os componentes de maior relevância já estavam em funcionamento. Foi possível observar o braço percorrendo o caminho já delimitado em seu script em conjunto com o acionamento e desligamento do eletroímã nos momentos apropriados.
 
-**Atuador:** 
-**Tipo de atuador:**
-**Função:** 
-**Controle:**
-**Entrada esperada:** 
-**Saída esperada:**
-**Entrada obtida:**
-**Saída obtida:**
+### Testes finais de resposta dos atuadores
 
-#### Dobot Magician Lite
+Abaixo, encontram-se vídeos de demonstração referentes aos últimos testes realizados durante a última semana de desenvolvimento do projeto.
 
-<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/media/componentes/dobot.jpg?raw=true" width="50%"></img></p>
-
-**Atuador:** 
-**Tipo de atuador:**
-**Função:** 
-**Controle:**
-
- Diante das necessidades do projeto, os atuadores principais seriam o **braço robótico**, o microcontrolador **Raspberry Pi Pico W**, uma **ponte H** e os **eletroímãs**. A princípio, o braço poderá ser manipulado por meio de um script em Python que irá conter os comandos ideais para realizar sua movimentação. Assim, será possível realizar adaptações para cada ensaio diante dos dados gerados pelos sensores e as ferramentas englobados na solução. O microcontrolador Raspberry ficará responsável pela centralização da solução, dispondo dos dados dos sensores e se comunicando com os scripts de outros atuadores via serial. Por exemplo, em contato com o script do braço robótico previamente citado, ele atualizará as informações necessárias para o procedimento ter a melhor acurácia e precisão possível, como o momento de finalizar o ensaio e a distância que ele precisa se movimentar para se posicionar corretamente sobre a bandeja.
-
-Dando início aos testes, foi possível realizar a movimentação do braço de acordo com suas respectivas dimensões e a das ferramentas presentes no ensaio (bandeja), com o eletroímã já acoplado a ele e a um raspberry juntamente a uma ponte H. Com isso, foi possível realizar um protótipo crítico da solução, uma vez que seus principais componentes e funcionalidades estavam presentes. Foi possível observar o braço percorrendo o caminho já delimitado em seu script em conjunto com o acionamento e desligamento do eletroímã nos momentos apropriados.
+_Vídeos_
 
 # Análise de Experiência do Usuário
 
@@ -404,30 +414,40 @@ Abaixo, encontram-se as imagens relativas à primeira versão da prototipação 
 
 A primeira imagem mostra como seria a tela de início, tem como principal objetivo mostrar o Status de todas as integrações da solução. Qual é a situação atual do Robô, que tipo de comando ele está recebendo e retornando, e a situação dos componentes, se o imã está em funcionamento e com quanto de voltagem está trabalhando, qual é o peso da bandeja final e se o sistema de revolvimento está em funcionamento. Na lateral direita de página, podemos ver controles que podem movimentar o robô de maneira mais precisa e linear, podendo mover os 3 eixos de coordenadas, uma de cada vez. Tambem pode-se reparar no campo mais abaixo, o controle de atuadores na qual o mesmo pode acionar o compente acoplado utilizando voltagem ou pneumático.
 
-<p align="center"><img src="https://lh4.googleusercontent.com/-leIWCVZ6h71iuO5nrKRNCiL6M3v2s-F6YT3wfqj0WZ_n9rTOn_-JtPe_AKyriKC6r2yKJwvpkDY7q4fpvTuPOmWiN0arAbJAvKxDDWQNKsdRn00KxmeLaTNXBvXr0R1pZT9EUWhXsyjWl4k0Xk_3G8" width="70%"></img></p>
+<p align="center"><img src="https://lh4.googleusercontent.com/-leIWCVZ6h71iuO5nrKRNCiL6M3v2s-F6YT3wfqj0WZ_n9rTOn_-JtPe_AKyriKC6r2yKJwvpkDY7q4fpvTuPOmWiN0arAbJAvKxDDWQNKsdRn00KxmeLaTNXBvXr0R1pZT9EUWhXsyjWl4k0Xk_3G8" width="50%"></img></p>
+<p align="center"><font size=2><b>Figura 14 — Tela de interface de usuário (versão 1.0)</b></font></p>
 
-<p align="center"><img src="https://lh3.googleusercontent.com/AAZiukdZP169G3rSsd7Mjdb5XNqiA1DmRrz5wreyyGKyAWW7B-RLvG1KOppVzq9wZypDRm8BksFqkm-j6af3J6eeuTFOCKVYBPaA_y-oCN19bxBpjudHgHvxYOhdAZmhhJhdXBlPmbbqtx3rzBkM8BE" width="70%"></img></p>
+<p align="center"><img src="https://lh3.googleusercontent.com/AAZiukdZP169G3rSsd7Mjdb5XNqiA1DmRrz5wreyyGKyAWW7B-RLvG1KOppVzq9wZypDRm8BksFqkm-j6af3J6eeuTFOCKVYBPaA_y-oCN19bxBpjudHgHvxYOhdAZmhhJhdXBlPmbbqtx3rzBkM8BE" width="50%"></img></p>
+<p align="center"><font size=2><b>Figura 15 — Tela de interface de usuário (versão 1.0)</b></font></p>
 
-<p align="center"><img src="https://lh6.googleusercontent.com/OW5uM3qnbidyQepBadF9RvSuumPyCVdJYkqrgdwJfAM97-keoVPAuGMx9JuE7CCqDapeCSrc6VBYfo1D8VZ6nQgTq7gsUWm5gjuk2Dnt0-wdf94ZfrX8OfGU3L5kO9a8zZHVNnNBTfHVSeBkijjpOMg" width="70%"></img></p>
+<p align="center"><img src="https://lh6.googleusercontent.com/OW5uM3qnbidyQepBadF9RvSuumPyCVdJYkqrgdwJfAM97-keoVPAuGMx9JuE7CCqDapeCSrc6VBYfo1D8VZ6nQgTq7gsUWm5gjuk2Dnt0-wdf94ZfrX8OfGU3L5kO9a8zZHVNnNBTfHVSeBkijjpOMg" width="50%"></img></p>
+<p align="center"><font size=2><b>Figura 16 — Tela de interface de usuário (versão 1.0)</b></font></p>
 
 ### Versão 2.0
 
+<p align="center"><img src="https://lh5.googleusercontent.com/ZViqolIPfW3kLjJQgTnW5MkBmjN898MZy8-lvXjTz1IPSv6aeOTJjbJfEen0k8ZadyW3YlR_wdLpcW8RFHtutDw6B3ZHngoqcyKLlxWqEyJ_dlXfVOr6mtQHwKvB6lwjV2hH2VYEH7kc" width="50%"></img></p>
+<p align="center"><font size=2><b>Figura 17 — Tela de interface de usuário (versão 2.0)</b></font></p>
+
+<p align="center"><img src="https://lh4.googleusercontent.com/ld8LCiTVFjiahYIs0YtQFlDBaFXtl8HLrXyyQUMQy_rWG0e78vrk6Ei8O3qzDISUQIvr4MFWdajMHAXTiFLQYKdSkbLwFHgduBCtkoqFWObtJc1gjKhwLUN93QpN8LjO9_dACr0T2jN1" width="50%"></img></p>
+<p align="center"><font size=2><b>Figura 18 — Tela de interface de usuário (versão 2.1)</b></font></p>
 
 ## Dispositivos Eletrônicos
 
-### Dispositivo acoplado à garra do braço robótico (eletroímãs e sensor infravermelho)
+### Dispositivo acoplado à garra do braço robótico (eletroímãs & sensor infravermelho)
 
-Materiais utilizados:
+**Materiais utilizados:**
 
-- Dois eletroímãs de 9V.
+- Eletroímã de 9V (2 un.)
 
-- Uma placa universal (3cmX4cm)
+- Placa universal (3x4 cm) (1 un.)
 
-- Um Led RGB
+- Um LED (1 un.)
 
-- Jumpers, Solda e Parafusos (2)
+- Jumpers, solda e parafusos (2 un.)
 
-- AutoDesk Inventor para modelagem
+**Tecnologias utilizadas**
+
+- Autodesk Inventor 
 
 - Impressora 3D  
 
@@ -435,22 +455,25 @@ Diante da necessidade de acoplar os eletroímãs e o sensor infravermelho em uma
 
 <h3>Desenho técnico do dispositivo eletrônico dos eletroímãs</h3>
 
-<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Suporte%20Eletroim%C3%A3.jpg?raw=true" width="70%" height=auto></img></p>
-<p align="center"><font size=2><b>Figura 7 — Desenho técnico do suporte do eletroímã</b></font></p>
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Suporte%20Eletroim%C3%A3.jpg?raw=true" width="50%" height=auto></img></p>
+<p align="center"><font size=2><b>Figura 17 — Desenho técnico referente ao dispositivo eletrônico em que ficam acoplados os eletroímãs</b></font></p>
 
-<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Tampa%20Eletroim%C3%A3.jpg?raw=true" width="70%" height=auto></img></p>
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Tampa%20Eletroim%C3%A3.jpg?raw=true" width="50%" height=auto></img></p>
+<p align="center"><font size=2><b>Figura 19 — Desenho técnico referente à tampa do dispositivo eletrônico em que ficam acoplados os eletroímãs</b></font></p>
+
+
+**Observação:** os arquivos referentes à modelagem 3D do dispositivo podem ser encontrados no mesmo diretório em que se encontra o presente documento.
 
 <h3>Imagens do dispositivo eletrônico dos eletroímãs</h3>
 
-<p align="center"><img src="https://lh3.googleusercontent.com/ao0c9nc6mhrP9Fmeg4wEZPEusdrDQIJ61dK5RoYkbhAcVE2yyj0SdazAUlfMO8u-v_EOarZFIAyTD3S7Z383lcbsPOpWUL6tHecSAR_HuqibPbG7mAPTlTrm3K7pNZkhVb2WumgjS6tATrm04RXj-wc" width="70%" height=auto></img></p>
+<p align="center"><img src="https://lh3.googleusercontent.com/ao0c9nc6mhrP9Fmeg4wEZPEusdrDQIJ61dK5RoYkbhAcVE2yyj0SdazAUlfMO8u-v_EOarZFIAyTD3S7Z383lcbsPOpWUL6tHecSAR_HuqibPbG7mAPTlTrm3K7pNZkhVb2WumgjS6tATrm04RXj-wc" width="40%" height=auto></img></p>
+<p align="center"><font size=2><b>Figura 20 — Visão oblíqua da primeira versão da fabricação do dispositivo eletrônico dos eletroímãs</b></font></p>
   
-<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Eletroima2.jpeg?raw=true" width="70%" height=auto></img></p>
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Eletroima2.jpeg?raw=true" width="40%" height=auto></img></p>
+<p align="center"><font size=2><b>Figura 21 — Visão oblíqua da primeira versão da fabricação do dispositivo eletrônico dos eletroímãs</b></font></p>
 
-<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Elertroima3.jpeg?raw=true" width="70%" height=auto></img></p>   
-
-[Modelo 3D - Suporte Eletroímãs](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/arquivo%20de%20modelo%203d/Suporte%20Eletroim%C3%A3.ipt)
-
-[Modelo 3D - Tampa Eletroímãs](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/arquivo%20de%20modelo%203d/Tampa%20Eletroim%C3%A3.ipt)
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Elertroima3.jpeg?raw=true" width="40%" height=auto></img></p>
+<p align="center"><font size=2><b>Figura 22 — Visão lateral da primeira versão da fabricação do dispositivo eletrônico dos eletroímãs</b></font></p>
 
 ### Balança invertida: sistema de pesagem utilizando célula de carga
 
@@ -472,51 +495,54 @@ A fim de analisar a todo o momento o resultado da mineração magnética, decidi
 
 <h3>Desenho técnico do dispositivo da balança invertida</h3>
 
-<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Sistema%20de%20Pesagem.jpg?raw=true" width="70%" height=auto></img></p>
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Sistema%20de%20Pesagem.jpg?raw=true" width="50%" height=auto></img></p>
+<p align="center"><font size=2><b>Figura 23 — Desenho técnico referente ao dispositivo da balança invertida</b></font></p>
+
+**Observação:** os arquivos referentes à modelagem 3D do dispositivo podem ser encontrados no mesmo diretório em que se encontra o presente documento.
 
 <h3>Imagens do dispositivo da balança invertida</h3>
 
-
 <p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/BI-Cima.jpg?raw=true" width="70%" height=auto></img></p>
+<p align="center"><font size=2><b>Figura 24 — Visão vertical do dispositivo da balança invertida</b></font></p>
+
 
 <p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/BI-Cima2.jpg?raw=true" width="70%" height=auto></img></p>
+<p align="center"><font size=2><b>Figura 25 — Visão vertical ampliada do dispositivo da balança invertida</b></font></p>
+
 
 <p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/BI-Lado.jpg?raw=true" width="70%" height=auto></img></p>
-  
-[Modelo 3D - Balança Invertida](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/arquivo%20de%20modelo%203d/Sistema%20de%20Pesagem.ipt)
- 
+<p align="center"><font size=2><b>Figura 26 — Visão frontal do dispositivo da balança invertida</b></font></p>
+
 Após o desenvolvimento de seu Critical Prototype (Protótipo Crítico), temos a seguir o resultados dos testes nas condições imaginadas para esta proposta, sendo o objetivo a possibilidade de análise da variação do material magnético depositado na última bandeja. Segue vídeo para validação:
 
+<p align="center"><a href="https://drive.google.com/file/d/1h4DZN_CTTuU6obXVIsl4oBb2Dh6Px9GG/view?usp=share_link"><img src="https://lh3.googleusercontent.com/LEucmNsJTVKrFEJilw-L9K_mW73_YonFrutF2LBpQdQBBJtlpJAzWrnxKNiPXgJjcz0PUfj1uXqKpZDLee4G5w87_VubbwwtLm1lI6OCIn4xfy2Su3Dk0Yfhb_0TrT6ElUhsCQsXMZdjToojH60N_I8" width="50%"></img></a></p>
+<p align="center"><font size=2><b>Vídeo para demonstração do funcionamento da balança invertida</b></font></p>
 
-[<p align="center"><img src="https://lh3.googleusercontent.com/LEucmNsJTVKrFEJilw-L9K_mW73_YonFrutF2LBpQdQBBJtlpJAzWrnxKNiPXgJjcz0PUfj1uXqKpZDLee4G5w87_VubbwwtLm1lI6OCIn4xfy2Su3Dk0Yfhb_0TrT6ElUhsCQsXMZdjToojH60N_I8" width="80%"></p>](https://drive.google.com/file/d/1h4DZN_CTTuU6obXVIsl4oBb2Dh6Px9GG/view?usp=share_link)
-<center><font size="2"> Vídeo para demonstração do funcionamento da balança invertida </font></center>
-
-
-### Dispositivo principal: Raspberry Pi Pico W e Ponte H
-
-*Descrição da placa principal*
+### Dispositivo principal: Raspberry Pi Pico W & Ponte H
 
 Materiais utilizados:
 
-- Raspberry pi pico w
+- Raspberry Pi Pico W (1 un.)
 
-- Ponte H
+- Ponte H (1 un.)
 
-- Placa universal
+- Placa universal (1 un.)
 
 - Jumpers e solda
 
 A solução conta com o microcontrolador Rasperry Pi Pico W e com o auxílio de uma ponte H ligada a este, conseguimos desenvolver o controle de corrente dos eletroímãs, algo crítico para o projeto. A fim de manter seguro e organizados, acoplamos esses materiais em uma placa universal de maneira que fique fixo com seu circuito e portanto de mais fácil integração ao resto do sistema como um todo (esta parte da solução está vinculada com o suporte para os eletroímãs, uma vez que a ponte-H é responsável por alimentar estes e permitir sua polarização e despolarização de maneira imediata e precisa). Com isso, desenvolvemos a estrutura necessária para garantir a segurança e eficiência dessa parte da solução, soldando os dispositivos em uma placa universal de maneira adequada. Segue o esquemático para consolidar esse sistema:
 
-<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Diagrama%20Esquem%C3%A1tico%20Placa%20Principal.jpg?raw=true" width="70%" height=auto></img></p>
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Diagrama%20Esquem%C3%A1tico%20Placa%20Principal.jpg?raw=true" width="50%" height=auto></img></p>
+<p align="center"><font size=2><b>Figura 27 — Esquemático da placa do microcontrolador integrado à ponte H</b></font></p>
 
-<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Frente.jpg?raw=true" width="70%" height=auto></img></p>
+<p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Frente.jpg?raw=true" width="40%" height=auto></img></p>
+<p align="center"><font size=2><b>Figura 28 — Placa principal: microcontrolador, ponte H e buzzer</b></font></p>
+
   
 ## Dispositivos Mecânicos
 
-*Descrição dos dispositivos mecânicos fabricados*
+### Materiais e métodos da fabricação dos dispositivos mecânicos
 
-## Materiais e métodos da fabricação dos dispositivos mecânicos
 As imagens incluídas na documentação mostram o processo de impressão 3D das peças. <br>
 As figuras DB1 e DC1 representam a posição da peça a ser impressa, já as figuras DB2 e DC2 representam o processo de fatiamento - que define o caminho percorrido pelo bico da impressora para imprimir todos os detalhes do objeto. As linhas verdes presentes nas primeiras figuras representam a base da impressão, que é responsável por sustentar toda a peça durante o processo de impressão. Além disso, os filamentos de suporte visíveis na imagem auxiliam na impressão de partes que requerem suporte adequado. <br>
 A fim de tornar os dispositivos adequado às necessidades do projeto, o material escolhido foi o filamento PLA.
@@ -533,18 +559,14 @@ A fim de tornar os dispositivos adequado às necessidades do projeto, o material
 
 **Observação:** a prototipação da bandeja radial limita-se às versões iniciais da arquitetura da solução. Dadas as limitações encontradas, foi necessário o descarte da ideia e a posterior utilização de bandejas padronizadas de formato retangular.
 
- Materiais utilizados:
+ Tecnologias utilizadas:
 
- - Autodesk Inventor para modelagem
+ - Autodesk Inventor
 - Impressora 3D
 
 Diante da análise das dimensões de movimento do braço robótico (Rotação de 270° e 34 cm de raio), optamos por um conjunto de três bandejas radiais que permitirão o aproveitamento máximo dessas dimensões. Segue o esquemático:
 
 <p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/edicao-documentacao/media/Conjunto%20de%20Bandeja%20Radial.jpg?raw=true" width="70%" height=auto></img></p>
-
-
-[Arquivo Autodesk Inventor - Bandeja Radial](https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/desenho_suporte_eletroima/modelo%203D/arquivo%20de%20modelo%203d/Bandeja%20Radial.ipt)
-
 
 ## Validação de Dispositivos
 
