@@ -1,7 +1,7 @@
 <table>
 <tr>
 <td>
-<a  href= "https://www.ipt.br/"><img  src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/media/outros/logo_ipt.png?raw=true"  alt="IPT"  border="0"  width="30%"></a>
+<a  href= "https://www.ipt.br/"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/media/logos/logo_ipt.png?raw=true"  alt="IPT"  border="0"  width="30%"></a>
 </td>
 <td><a  href= "https://www.inteli.edu.br/"><img  src="https://www.inteli.edu.br/wp-content/uploads/2021/08/20172028/marca_1-2.png"  alt="Inteli - Instituto de Tecnologia e Liderança"  border="0"  width="30%"></a>
 </td>
