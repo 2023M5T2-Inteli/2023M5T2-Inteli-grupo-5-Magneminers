@@ -165,8 +165,7 @@ Em suma, a qualidade dos ensaios constitui o elemento que agrega valor à soluç
 ## Persona
 
 <br>
-<div align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/media/negocios/persona.png?raw=true
-" width="600" height=auto></img></div>
+<div align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/media/negocios/persona.png?raw=true" width="600" height=auto></img></div>
 <p align="center"><font size=2><b>Figura 1 — Persona da solução</b></font></p>
 <br>
 
@@ -284,18 +283,18 @@ Diante das necessidades do projeto, os atuadores principais seriam o braço rob�
 <p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/media/componentes/dobot.jpg?raw=true" width="40%"></img></p>
 <p align="center"><font size=2><b>Figura 8 — Braço robótico Dobot Magician Lite</b></font></p>
 
-**Tipo de componente:** dispositivo robótico 
-**Função:** realizar, de forma autônoma, a rotina do ensaio de separação magnética
-**Controle:** via interface de usuário
+**Tipo de componente:** dispositivo robótico<br>
+**Função:** realizar, de forma autônoma, a rotina do ensaio de separação magnética<br>
+**Controle:** via interface de usuário<br>
 
 #### Raspberry Pi Pico W
 
 <p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/media/componentes/raspberry.png?raw=true" width="40%"></img></p>
 <p align="center"><font size=2><b>Figura 9 — Microcontrolador Raspberry Pi Pico W</b></font></p>
 
-**Tipo de componente:** microcontrolador
-**Função:** armazenar o firmware responsável pelo controle dos sensores e atuadores da solução
-**Controle:** atrelado ao robô; em execução uma vez que o firmware é embarcado no microcontrolador
+**Tipo de componente:** microcontrolador<br>
+**Função:** armazenar o firmware responsável pelo controle dos sensores e atuadores da solução<br>
+**Controle:** atrelado ao robô; em execução uma vez que o firmware é embarcado no microcontrolador<br>
 
 ## Sensores
 
@@ -306,14 +305,14 @@ Diante das necessidades do projeto, os atuadores principais seriam o braço rob�
 <p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/media/componentes/sensor_infravermelho.png?raw=true" width="40%"></img></p>
 <p align="center"><font size=2><b>Figura 10 — Sensor infravermelho de distância</b></font></p>
 
-**Sensor:** sensor infravermelho de distância
-**Tipo de sensor:** sensor eletromecânico de medição
-**Função:** detectar a distância entre a garra do braço robótico e as bordas de cada bandeja
-**Controle:** automático e realizado no início de cada ensaio
-**Entrada esperada:** sinal analógico referente à distância entre lente e material
-**Saída esperada:** distância, em centímetros, entre sensor e objeto
-**Entrada obtida:**  sinal analógico referente à distância entre lente e material
-**Saída obtida:** distância, em centímetros, entre sensor e objeto
+**Sensor:** sensor infravermelho de distância<br>
+**Tipo de sensor:** sensor eletromecânico de medição<br>
+**Função:** detectar a distância entre a garra do braço robótico e as bordas de cada bandeja<br>
+**Controle:** automático e realizado no início de cada ensaio<br>
+**Entrada esperada:** sinal analógico referente à distância entre lente e material<br>
+**Saída esperada:** distância, em centímetros, entre sensor e objeto<br>
+**Entrada obtida:**  sinal analógico referente à distância entre lente e material<br>
+**Saída obtida:** distância, em centímetros, entre sensor e objeto<br>
 
 **Funcionamento do sensor**
 
@@ -328,14 +327,14 @@ Para a prototipação do projeto, foi necessária uma fase de entendimento e ref
 <p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/media/componentes/celula_carga_hx711.png?raw=true" width="40%"></img></p>
 <p align="center"><font size=2><b>Figura 11 — Célula de carga junto ao módulo HX711</b></font></p>
 
-**Sensor:** célula de carga & módulo amplificador HX711
-**Tipo de sensor:** sensor eletromecânico de medição
-**Função:** detectar a quantidade de material ferromagnético obtido em uma varredura
-**Controle:** automático e cíclico enquanto o ensaio se encontra em execução
-**Entrada esperada:** sinal analógico referente à variação de força exercida sobre a célula
-**Saída esperada:** valor numérico indicativo da quantidade do material coletado
-**Entrada obtida:** sinal analógico referente à variação de força exercida sobre a célula
-**Saída obtida:** valor numérico indicativo da quantidade do material coletado
+**Sensor:** célula de carga & módulo amplificador HX711<br>
+**Tipo de sensor:** sensor eletromecânico de medição<br>
+**Função:** detectar a quantidade de material ferromagnético obtido em uma varredura<br>
+**Controle:** automático e cíclico enquanto o ensaio se encontra em execução<br>
+**Entrada esperada:** sinal analógico referente à variação de força exercida sobre a célula<br>
+**Saída esperada:** valor numérico indicativo da quantidade do material coletado<br>
+**Entrada obtida:** sinal analógico referente à variação de força exercida sobre a célula<br>
+**Saída obtida:** valor numérico indicativo da quantidade do material coletado<br>
 
 **Funcionamento do sensor**
 
@@ -362,24 +361,24 @@ Abaixo, encontram-se os vídeos de demonstração de funcionamento dos sensores 
 <p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/media/componentes/eletroima.png?raw=true" width="40%"></img></p>
 <p align="center"><font size=2><b>Figura 12 — Eletroímã solenóide</b></font></p>
 
-**Atuador:** eletroímã solenóide
-**Tipo de atuador:** dispositivo eletromagnético
-**Função:** capturar o material ferromagnético da amostra
-**Controle:** automático e constante durante a varredura
-**Entrada esperada:** sinal elétrico capaz de induzir campo magnético
-**Saída esperada:** geração de campo magnético capaz de atrair material magnético
-**Entrada obtida:** sinal elétrico capaz de induzir campo magnético
-**Saída obtida:** geração de campo magnético capaz de atrair material magnético
+**Atuador:** eletroímã solenóide<br>
+**Tipo de atuador:** dispositivo eletromagnético<br>
+**Função:** capturar o material ferromagnético da amostra<br>
+**Controle:** automático e constante durante a varredura<br>
+**Entrada esperada:** sinal elétrico capaz de induzir campo magnético<br>
+**Saída esperada:** geração de campo magnético capaz de atrair material magnético<br>
+**Entrada obtida:** sinal elétrico capaz de induzir campo magnético<br>
+**Saída obtida:** geração de campo magnético capaz de atrair material magnético<br>
 
 #### Ponte H
 
 <p align="center"><img src="https://github.com/2023M5T2-Inteli/2023M5T2-Inteli-grupo-5-Magneminers/blob/main/media/componentes/ponte_h.png?raw=true" width="40%"></img></p>
 <p align="center"><font size=2><b>Figura 13 — Ponte H</b></font></p>
 
-**Atuador:** ponte H
-**Tipo de atuador:** circuito eletrônico
-**Função:** inversão da polaridade da corrente que flui para os eletroímãs
-**Controle:** atrelado ao firmware embarcado no microcontrolador
+**Atuador:** ponte H<br>
+**Tipo de atuador:** circuito eletrônico<br>
+**Função:** inversão da polaridade da corrente que flui para os eletroímãs<br>
+**Controle:** atrelado ao firmware embarcado no microcontrolador<br>
 
 ### Testes preliminares de resposta dos atuadores
 
